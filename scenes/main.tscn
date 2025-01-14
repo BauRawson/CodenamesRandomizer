@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://cbhs1fyyoyx4e"]
+[gd_scene load_steps=10 format=3 uid="uid://cbhs1fyyoyx4e"]
 
 [ext_resource type="PackedScene" uid="uid://by33i2ggay16c" path="res://scenes/tile.tscn" id="1_su1v0"]
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_w8ijf"]
 [ext_resource type="FontFile" uid="uid://d3wupf6mtl0b" path="res://assets/Roboto-Black.ttf" id="3_i7mcx"]
+[ext_resource type="Texture2D" uid="uid://62ekkuv4p8bv" path="res://assets/settings_icon.png" id="4_fnipu"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2tnf0"]
 bg_color = Color(0.635294, 0.294118, 0.435294, 1)
@@ -16,6 +17,10 @@ bg_color = Color(0.243137, 0.207843, 0.27451, 1)
 [sub_resource type="LabelSettings" id="LabelSettings_6v0ed"]
 font = ExtResource("3_i7mcx")
 font_size = 40
+
+[sub_resource type="LabelSettings" id="LabelSettings_l63nd"]
+font = ExtResource("3_i7mcx")
+font_size = 32
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -192,6 +197,154 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_2tnf0")
 theme_override_styles/normal = SubResource("StyleBoxFlat_2tnf0")
 text = "YES"
 
+[node name="Settings" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SettingsCloseButton" type="Button" parent="Settings"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/focus = SubResource("StyleBoxFlat_7svbl")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_7svbl")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_7svbl")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_7svbl")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_7svbl")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_7svbl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7svbl")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_7svbl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7svbl")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_7svbl")
+theme_override_styles/normal = SubResource("StyleBoxFlat_7svbl")
+
+[node name="Panel" type="Panel" parent="Settings"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -340.0
+offset_top = -340.0
+offset_right = 340.0
+offset_bottom = 340.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_r85fn")
+
+[node name="TitleLabel" type="Label" parent="Settings/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -322.0
+offset_top = 23.0
+offset_right = 322.0
+offset_bottom = 76.0
+grow_horizontal = 2
+text = "SETTINGS"
+label_settings = SubResource("LabelSettings_6v0ed")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Settings/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 96
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Settings/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="Team1Label" type="Label" parent="Settings/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "TEAM 1 COLOR"
+label_settings = SubResource("LabelSettings_l63nd")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Settings/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 46
+
+[node name="Tile2" parent="Settings/Panel/MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource("1_su1v0")]
+layout_mode = 2
+color = Color(0.301961, 0.396078, 0.705882, 1)
+is_color_switcher = true
+
+[node name="Tile3" parent="Settings/Panel/MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource("1_su1v0")]
+layout_mode = 2
+color = Color(0.701961, 0.219608, 0.192157, 1)
+is_color_switcher = true
+
+[node name="Tile4" parent="Settings/Panel/MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource("1_su1v0")]
+layout_mode = 2
+color = Color(0.929412, 0.501961, 0.6, 1)
+is_color_switcher = true
+
+[node name="Separator" type="Control" parent="Settings/Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="Team2Label" type="Label" parent="Settings/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "TEAM 2 COLOR"
+label_settings = SubResource("LabelSettings_l63nd")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Settings/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 46
+
+[node name="Tile2" parent="Settings/Panel/MarginContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("1_su1v0")]
+layout_mode = 2
+color = Color(0.301961, 0.396078, 0.705882, 1)
+is_color_switcher = true
+
+[node name="Tile3" parent="Settings/Panel/MarginContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("1_su1v0")]
+layout_mode = 2
+color = Color(0.701961, 0.219608, 0.192157, 1)
+is_color_switcher = true
+
+[node name="Tile4" parent="Settings/Panel/MarginContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("1_su1v0")]
+layout_mode = 2
+color = Color(0.929412, 0.501961, 0.6, 1)
+is_color_switcher = true
+
+[node name="Separator2" type="Control" parent="Settings/Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="CloseSettingsButton" type="Button" parent="Settings/Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 66)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_i7mcx")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_2tnf0")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_2tnf0")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_2tnf0")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_2tnf0")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_2tnf0")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_2tnf0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2tnf0")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_2tnf0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2tnf0")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_2tnf0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2tnf0")
+text = "CLOSE"
+
 [node name="TopColorRect" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 1
@@ -209,7 +362,28 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 0
 
+[node name="SettingsButton" type="TextureButton" parent="."]
+modulate = Color(0.780392, 0.862745, 0.815686, 1)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -171.0
+offset_top = 96.0
+offset_right = -48.0
+offset_bottom = 224.0
+grow_horizontal = 0
+texture_normal = ExtResource("4_fnipu")
+texture_pressed = ExtResource("4_fnipu")
+texture_hover = ExtResource("4_fnipu")
+texture_disabled = ExtResource("4_fnipu")
+texture_focused = ExtResource("4_fnipu")
+stretch_mode = 5
+
 [connection signal="pressed" from="RandomizeButton" to="." method="on_randomize_pressed"]
 [connection signal="pressed" from="AreYouSureControl/AreYouSureCloseButton" to="." method="hide_are_you_sure"]
 [connection signal="pressed" from="AreYouSureControl/Panel/HBoxContainer/CancelRandomizeButton" to="." method="hide_are_you_sure"]
 [connection signal="pressed" from="AreYouSureControl/Panel/HBoxContainer/ConfirmRandomizeButton" to="." method="randomize_and_replace"]
+[connection signal="pressed" from="Settings/SettingsCloseButton" to="." method="hide_settings"]
+[connection signal="pressed" from="Settings/Panel/MarginContainer/VBoxContainer/CloseSettingsButton" to="." method="hide_settings"]
+[connection signal="pressed" from="SettingsButton" to="." method="show_settings"]
