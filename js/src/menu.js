@@ -5,8 +5,8 @@ export function renderMenu(app) {
   app.innerHTML = `
     <div class="scene">
       <h1 class="title">CODIGO</h1>
-      <button class="btn" id="tv-btn">TV</button>
-      <button class="btn" id="phone-btn">PHONE (SPYMASTER)</button>
+      <button class="btn" id="tv-btn">TELEVISOR</button>
+      <button class="btn" id="phone-btn">MÓVIL (ESPÍA)</button>
     </div>
   `
 

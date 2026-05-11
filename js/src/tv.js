@@ -13,14 +13,14 @@ export function renderTV(app) {
   app.innerHTML = `
     <div class="scene">
       <h1 class="title">CODIGO</h1>
-      <p class="label">Open the app on your phone and enter this code:</p>
+      <p class="label">Abre la app en tu móvil e ingresa este código:</p>
       <div class="room-code">${code}</div>
-      <p id="status" class="status">Waiting for phone…</p>
+      <p id="status" class="status">Esperando al móvil…</p>
     </div>
   `
 
   Conn.on('connected', () => {
-    document.getElementById('status').textContent = 'Phone connected!'
+    document.getElementById('status').textContent = '¡Móvil conectado!'
   })
 
   Conn.on('message', (data) => {
@@ -32,7 +32,7 @@ export function renderTV(app) {
 
   Conn.on('disconnected', () => {
     const el = document.getElementById('status')
-    if (el) el.textContent = '⚠️ Phone disconnected'
+    if (el) el.textContent = '⚠️ Móvil desconectado'
   })
 
   Conn.on('error', (e) => {
@@ -139,13 +139,13 @@ function updateCounter(team) {
 function showWin(team, app) {
   playWin(team)
   const color = COLORS[team]
-  const label = team === 0 ? 'TEAM 1' : 'TEAM 2'
+  const label = team === 0 ? 'EQUIPO 1' : 'EQUIPO 2'
   showConfetti(color)
 
   const overlay = document.createElement('div')
   overlay.className = 'win-overlay'
   overlay.innerHTML = `
-    <div class="win-text" style="color:${color}">${label} WINS!</div>
+    <div class="win-text" style="color:${color}">${label} GANA!</div>
   `
   app.appendChild(overlay)
 }

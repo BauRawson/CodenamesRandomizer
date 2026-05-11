@@ -15,10 +15,10 @@ export function renderEnterCode(app) {
   app.innerHTML = `
     <div class="scene">
       <h1 class="title">CODIGO</h1>
-      <p class="label">Enter the 4-digit code shown on the TV:</p>
+      <p class="label">Ingresa el código de 4 dígitos que aparece en el televisor:</p>
       <input id="code-input" type="tel" inputmode="numeric"
              pattern="[0-9]*" maxlength="4" placeholder="0000" autocomplete="off">
-      <button class="btn" id="connect-btn">CONNECT</button>
+      <button class="btn" id="connect-btn">CONECTAR</button>
       <p id="status" class="status"></p>
     </div>
   `
@@ -29,15 +29,15 @@ export function renderEnterCode(app) {
 
   const connect = () => {
     const code = input.value.trim()
-    if (code.length !== 4) { status.textContent = 'Enter the full 4-digit code'; return }
+    if (code.length !== 4) { status.textContent = 'Ingresa el código de 4 dígitos completo'; return }
 
     btn.disabled = true
-    status.textContent = 'Connecting…'
+    status.textContent = 'Conectando…'
 
     Conn.on('connected', () => renderSpymaster(app))
     Conn.on('error', (e) => {
       status.textContent = e.type === 'peer-unavailable'
-        ? '❌ Wrong code — check the TV'
+        ? '❌ Código incorrecto — revisa el televisor'
         : `❌ ${e.type}`
       btn.disabled = false
     })
@@ -74,7 +74,7 @@ export function renderSpymaster(app) {
       </div>
       <div class="board phone-board" id="board"></div>
       <div class="team-banner" style="background:${startColor}22; border-top:3px solid ${startColor}">
-        <button class="new-board-btn" id="new-board-btn">NEW BOARD</button>
+        <button class="new-board-btn" id="new-board-btn">NUEVO TABLERO</button>
       </div>
     </div>
   `
@@ -96,7 +96,7 @@ export function renderSpymaster(app) {
   Conn.send({ type: 'board', ...board })
 
   document.getElementById('new-board-btn').addEventListener('click', () => {
-    if (confirm('Generate a new board? This resets the TV too.')) {
+    if (confirm('¿Generar un nuevo tablero? Esto reinicia el televisor también.')) {
       playNewBoard()
       renderSpymaster(app)
     }
@@ -161,10 +161,10 @@ function checkWin(team) {
 
   const overlay = document.createElement('div')
   overlay.className = 'win-overlay'
-  const label = team === 0 ? 'TEAM 1' : 'TEAM 2'
+  const label = team === 0 ? 'EQUIPO 1' : 'EQUIPO 2'
   overlay.innerHTML = `
-    <div class="win-text" style="color:${COLORS[team]}">${label} WINS!</div>
-    <button class="btn" id="win-new-btn">NEW GAME</button>
+    <div class="win-text" style="color:${COLORS[team]}">${label} GANA!</div>
+    <button class="btn" id="win-new-btn">NUEVA PARTIDA</button>
   `
   _app.appendChild(overlay)
   document.getElementById('win-new-btn').addEventListener('click', () => {
