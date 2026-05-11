@@ -84,39 +84,90 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
   border: 3px solid var(--accent);
   border-radius: 12px;
   outline: none;
-  /* hide number spinners */
   -moz-appearance: textfield;
 }
 #code-input::-webkit-outer-spin-button,
 #code-input::-webkit-inner-spin-button { -webkit-appearance: none; }
 
-/* ── Board layout ── */
-.board-scene { gap: 0; padding: 0; }
-
-.color-bar {
-  width: 100%;
-  height: clamp(18px, 3.5vh, 40px);
-  flex-shrink: 0;
+/* ── Board scene wrapper ── */
+.board-scene {
+  gap: 0;
+  padding: 0;
+  justify-content: stretch;
 }
 
+/* ── Team banner (replaces thin color-bar) ── */
+.team-banner {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 10px 20px;
+}
+
+.team-banner-text {
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.92);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+/* ── Team counters ── */
+.counters {
+  display: flex;
+  gap: 24px;
+}
+
+.counter {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 900;
+  padding: 4px 14px;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.25);
+  letter-spacing: 0.05em;
+}
+
+/* ── Board layout ── */
 .board {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: clamp(5px, 1vw, 10px);
-  padding: clamp(10px, 2vw, 20px);
-  width: min(96vw, 900px);
-  margin: auto;
-  flex-shrink: 0;
+  padding: clamp(8px, 1.5vw, 16px);
+  flex: 1;
+  align-self: stretch;
+}
+
+/* ── TV board: taller tiles, bigger text ── */
+.tv-board .tile {
+  height: auto;
+  aspect-ratio: unset;
+  min-height: clamp(55px, 10vh, 90px);
+  border-radius: clamp(6px, 1vw, 12px);
+}
+
+.tv-board .tile-word {
+  font-size: clamp(12px, 2.2vw, 22px);
+}
+
+/* ── Phone board: wider/shorter tiles (landscape-friendly) ── */
+.phone-board .tile {
+  height: clamp(44px, 9vw, 70px);
+  border-radius: clamp(4px, 0.8vw, 8px);
+}
+
+.phone-board .tile-word {
+  font-size: clamp(10px, 2vw, 16px);
 }
 
 /* ── Tiles ── */
 .tile {
-  height: clamp(38px, 9vh, 65px);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 4px 6px;
-  border-radius: clamp(4px, 0.8vw, 8px);
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -124,7 +175,6 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 }
 
 .tile-word {
-  font-size: clamp(8px, 1.6vw, 13px);
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -156,11 +206,11 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 
 /* ── Randomize button (phone) ── */
 .new-board-btn {
-  width: calc(100% - 40px);
+  width: calc(100% - 32px);
   max-width: 480px;
-  margin: 14px auto;
-  padding: 20px;
-  font-size: 1.4rem;
+  margin: 10px auto;
+  padding: 16px;
+  font-size: 1.3rem;
   font-weight: 900;
   letter-spacing: 0.05em;
   color: #fff;
@@ -172,7 +222,28 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 }
 .new-board-btn:active { opacity: 0.75; }
 
+/* ── Win overlay ── */
+.win-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  z-index: 100;
+  background: rgba(0,0,0,0.72);
+}
+
+.win-text {
+  font-size: clamp(2.5rem, 10vw, 6rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+}
+
 /* ── TV: bigger board on wide screens ── */
 @media (min-width: 800px) {
-  .board { max-width: min(740px, 90vw); gap: 14px; }
+  .board { gap: 14px; }
 }

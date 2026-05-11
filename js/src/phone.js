@@ -1,9 +1,15 @@
 import * as Conn from './connection.js'
 import { generateBoard, COLORS } from './game.js'
+import { animateReveal, showConfetti } from './vfx.js'
+import { playReveal, playHide, playWin, playNewBoard } from './sounds.js'
 
-let board = null
+let board    = null
 let revealed = []
-let tileEls = []
+let tileEls  = []
+let counts   = [0, 0]
+let totals   = [0, 0]
+let won      = false
+let _app     = null
 
 export function renderEnterCode(app) {
   app.innerHTML = `
@@ -17,8 +23,8 @@ export function renderEnterCode(app) {
     </div>
   `
 
-  const input = document.getElementById('code-input')
-  const btn   = document.getElementById('connect-btn')
+  const input  = document.getElementById('code-input')
+  const btn    = document.getElementById('connect-btn')
   const status = document.getElementById('status')
 
   const connect = () => {
@@ -44,18 +50,34 @@ export function renderEnterCode(app) {
 }
 
 export function renderSpymaster(app) {
-  board = generateBoard()
+  _app     = app
+  board    = generateBoard()
   revealed = new Array(25).fill(false)
-  tileEls = []
+  tileEls  = []
+  won      = false
+
+  totals = [
+    board.tiles.filter((t) => t === 0).length,
+    board.tiles.filter((t) => t === 1).length,
+  ]
+  counts = [...totals]
 
   const startColor = COLORS[board.isTeamOneFirst ? 0 : 1]
+  const startLabel = board.isTeamOneFirst ? 'TEAM 1 STARTS' : 'TEAM 2 STARTS'
 
   app.innerHTML = `
     <div class="scene board-scene">
-      <div class="color-bar" style="background:${startColor}"></div>
-      <div class="board" id="board"></div>
-      <div class="color-bar" style="background:${startColor}"></div>
-      <button class="new-board-btn" id="new-board-btn">NEW BOARD</button>
+      <div class="team-banner" style="background:${startColor}22; border-bottom:3px solid ${startColor}">
+        <span class="team-banner-text">${startLabel}</span>
+        <div class="counters">
+          <span class="counter" id="c0" style="color:${COLORS[0]}">${counts[0]}</span>
+          <span class="counter" id="c1" style="color:${COLORS[1]}">${counts[1]}</span>
+        </div>
+      </div>
+      <div class="board phone-board" id="board"></div>
+      <div class="team-banner" style="background:${startColor}22; border-top:3px solid ${startColor}">
+        <button class="new-board-btn" id="new-board-btn">NEW BOARD</button>
+      </div>
     </div>
   `
 
@@ -74,17 +96,63 @@ export function renderSpymaster(app) {
   Conn.send({ type: 'board', ...board })
 
   document.getElementById('new-board-btn').addEventListener('click', () => {
-    if (confirm('Generate a new board? This resets the TV too.')) renderSpymaster(app)
+    if (confirm('Generate a new board? This resets the TV too.')) {
+      playNewBoard()
+      renderSpymaster(app)
+    }
   })
 }
 
 function toggleTile(index, el) {
+  if (won) return
   revealed[index] = !revealed[index]
   el.classList.toggle('checked', revealed[index])
 
-  Conn.send(
-    revealed[index]
-      ? { type: 'reveal', index, color: COLORS[board.tiles[index]] }
-      : { type: 'hide', index }
-  )
+  const tileType = board.tiles[index]
+
+  if (revealed[index]) {
+    animateReveal(el)
+    playReveal(tileType)
+    Conn.send({ type: 'reveal', index, color: COLORS[tileType], tileType })
+
+    if (tileType === 0 || tileType === 1) {
+      counts[tileType] = Math.max(0, counts[tileType] - 1)
+      updateCounter(tileType)
+      checkWin(tileType)
+    }
+  } else {
+    playHide()
+    Conn.send({ type: 'hide', index, tileType })
+
+    if (tileType === 0 || tileType === 1) {
+      counts[tileType] = Math.min(totals[tileType], counts[tileType] + 1)
+      updateCounter(tileType)
+    }
+  }
+}
+
+function updateCounter(team) {
+  const el = document.getElementById(`c${team}`)
+  if (el) el.textContent = counts[team]
+}
+
+function checkWin(team) {
+  if (counts[team] > 0) return
+  won = true
+  playWin(team)
+  showConfetti(COLORS[team])
+  Conn.send({ type: 'win', team })
+
+  const overlay = document.createElement('div')
+  overlay.className = 'win-overlay'
+  const label = team === 0 ? 'TEAM 1' : 'TEAM 2'
+  overlay.innerHTML = `
+    <div class="win-text" style="color:${COLORS[team]}">${label} WINS!</div>
+    <button class="btn" id="win-new-btn">NEW GAME</button>
+  `
+  _app.appendChild(overlay)
+  document.getElementById('win-new-btn').addEventListener('click', () => {
+    playNewBoard()
+    renderSpymaster(_app)
+  })
 }
