@@ -118,7 +118,7 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 /* ── Team counters ── */
 .counters {
   display: flex;
-  gap: 24px;
+  gap: clamp(12px, 2.5vw, 48px);
 }
 
 .counter {

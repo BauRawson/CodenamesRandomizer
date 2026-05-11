@@ -89,6 +89,7 @@ export function renderSpymaster(app) {
     tile.addEventListener('click', () => toggleTile(i, tile))
     boardEl.appendChild(tile)
     tileEls.push(tile)
+    fitText(tile)
   })
 
   Conn.send({ type: 'board', ...board })
@@ -99,6 +100,16 @@ export function renderSpymaster(app) {
       renderSpymaster(app)
     }
   })
+}
+
+function fitText(tileEl) {
+  const wordEl = tileEl.querySelector('.tile-word')
+  if (!wordEl) return
+  let size = parseFloat(getComputedStyle(wordEl).fontSize)
+  while (wordEl.scrollWidth > wordEl.clientWidth + 1 && size > 7) {
+    size -= 0.5
+    wordEl.style.fontSize = `${size}px`
+  }
 }
 
 function toggleTile(index, el) {
