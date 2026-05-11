@@ -91,6 +91,7 @@ export function renderSpymaster(app) {
     boardEl.appendChild(tile)
     tileEls.push(tile)
   })
+  requestAnimationFrame(() => tileEls.forEach(fitText))
 
   Conn.send({ type: 'board', ...board })
 
@@ -100,6 +101,19 @@ export function renderSpymaster(app) {
       renderSpymaster(app)
     }
   })
+}
+
+function fitText(tileEl) {
+  const wordEl = tileEl.querySelector('.tile-word')
+  if (!wordEl) return
+  let size = parseFloat(getComputedStyle(wordEl).fontSize)
+  while (wordEl.scrollWidth > wordEl.clientWidth + 1 && size > 9) {
+    size -= 0.5
+    wordEl.style.fontSize = `${size}px`
+  }
+  if (wordEl.scrollWidth > wordEl.clientWidth + 1) {
+    wordEl.style.whiteSpace = 'normal'
+  }
 }
 
 function toggleTile(index, el) {
