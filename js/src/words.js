@@ -62,6 +62,7 @@ cabo
 cactus
 cadena
 caja
+calentito
 cama
 cámara
 cambio
@@ -166,6 +167,7 @@ fiesta
 figura
 flauta
 flecha
+forro
 foso
 francia
 frente
@@ -295,6 +297,7 @@ paso
 pasta
 pastel
 pavo
+pedo
 pekín
 película
 pelotón
@@ -403,6 +406,7 @@ viento
 yema
 zanahoria
 zapato
+zócalo
 `
 
 export const words = raw

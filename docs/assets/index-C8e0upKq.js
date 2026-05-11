@@ -98,6 +98,7 @@ cabo
 cactus
 cadena
 caja
+calentito
 cama
 cámara
 cambio
@@ -202,6 +203,7 @@ fiesta
 figura
 flauta
 flecha
+forro
 foso
 francia
 frente
@@ -331,6 +333,7 @@ paso
 pasta
 pastel
 pavo
+pedo
 pekín
 película
 pelotón
@@ -439,6 +442,7 @@ viento
 yema
 zanahoria
 zapato
+zócalo
 `,dn=pn.trim().split(`
 `).map(r=>r.trim().toUpperCase()).filter(Boolean),T=["#8c3232","#2e5fa8","#d8c9a8","#111115"];function un(){const r=Math.random()<.5,e=[...Array(r?9:8).fill(0),...Array(r?8:9).fill(1),...Array(7).fill(2),...Array(1).fill(3)];for(let i=e.length-1;i>0;i--){const s=Math.floor(Math.random()*(i+1));[e[i],e[s]]=[e[s],e[i]]}const t=[...dn];for(let i=t.length-1;i>0;i--){const s=Math.floor(Math.random()*(i+1));[t[i],t[s]]=[t[s],t[i]]}const n=t.slice(0,25);return{tiles:e,isTeamOneFirst:r,words:n}}function Et(r){r.animate([{transform:"scale(0.88)",opacity:.6},{transform:"scale(1.06)",opacity:1},{transform:"scale(1)",opacity:1}],{duration:240,easing:"ease-out",fill:"none"})}function It(r){const e=document.createElement("canvas");e.style.cssText="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:999",document.body.appendChild(e);const t=e.getContext("2d");e.width=window.innerWidth,e.height=window.innerHeight;const i=Array.from({length:120},()=>({x:Math.random()*e.width,y:-20-Math.random()*80,vx:(Math.random()-.5)*4,vy:2+Math.random()*4,rot:Math.random()*Math.PI*2,vrot:(Math.random()-.5)*.2,w:8+Math.random()*8,h:5+Math.random()*5,color:Math.random()<.6?r:"#fbb954",alpha:1}));let s;const o=()=>{t.clearRect(0,0,e.width,e.height);let a=!1;for(const c of i)c.x+=c.vx,c.y+=c.vy,c.vy+=.08,c.rot+=c.vrot,c.y>e.height*.85&&(c.alpha-=.03),!(c.alpha<=0)&&(a=!0,t.save(),t.globalAlpha=c.alpha,t.translate(c.x,c.y),t.rotate(c.rot),t.fillStyle=c.color,t.fillRect(-c.w/2,-c.h/2,c.w,c.h),t.restore());a?s=requestAnimationFrame(o):e.remove()};s=requestAnimationFrame(o),setTimeout(()=>{cancelAnimationFrame(s),e.remove()},4e3)}let ie=null;const hn=()=>(ie||(ie=new(window.AudioContext||window.webkitAudioContext)),ie);function O({freq:r=440,end:e,dur:t=.15,vol:n=.28,type:i="sine",at:s=0}){const o=hn(),a=o.createOscillator(),c=o.createGain();a.connect(c),c.connect(o.destination),a.type=i,a.frequency.setValueAtTime(r,o.currentTime+s),e!=null&&a.frequency.exponentialRampToValueAtTime(e,o.currentTime+s+t),c.gain.setValueAtTime(n,o.currentTime+s),c.gain.exponentialRampToValueAtTime(.001,o.currentTime+s+t),a.start(o.currentTime+s),a.stop(o.currentTime+s+t+.05)}function Dt(r){O(r===0?{freq:523,end:659,dur:.12,vol:.25}:r===1?{freq:349,end:440,dur:.12,vol:.25}:r===2?{freq:420,end:400,dur:.09,vol:.12}:{freq:180,end:70,dur:.28,vol:.35,type:"sawtooth"})}function Mt(){O({freq:420,end:300,dur:.08,vol:.1})}function Ot(r){const e=r===0?523:440;[1,1.25,1.5,2,2.5].forEach((t,n)=>O({freq:e*t,dur:.18,vol:.28,at:n*.11}))}function $t(){O({freq:660,end:220,dur:.22,vol:.18,type:"triangle"})}let V=[],D=[0,0],he=[0,0];function mn(r){const e=cn();r.innerHTML=`
     <div class="scene">
@@ -491,6 +495,6 @@ zapato
     <div class="scene">
       <h1 class="title">CODIGO</h1>
       <button class="btn" id="tv-btn">TELEVISOR</button>
-      <button class="btn" id="phone-btn">MÓVIL (ESPÍA)</button>
+      <button class="btn" id="phone-btn">MÓVIL (CAPITÁN)</button>
     </div>
   `,document.getElementById("tv-btn").focus(),document.getElementById("tv-btn").onclick=()=>mn(r),document.getElementById("phone-btn").onclick=()=>vn(r)}Rn(document.getElementById("app"));

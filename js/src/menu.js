@@ -6,7 +6,7 @@ export function renderMenu(app) {
     <div class="scene">
       <h1 class="title">CODIGO</h1>
       <button class="btn" id="tv-btn">TELEVISOR</button>
-      <button class="btn" id="phone-btn">MÓVIL (ESPÍA)</button>
+      <button class="btn" id="phone-btn">MÓVIL (CAPITÁN)</button>
     </div>
   `
 
