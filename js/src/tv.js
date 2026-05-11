@@ -93,6 +93,7 @@ function revealTile(index, color, tileType) {
   const tile = tileEls[index]
   if (!tile) return
   tile.style.background = color
+  tile.dataset.type = tileType
   tile.classList.remove('tile-neutral')
   tile.classList.add('revealed')
   animateReveal(tile)

@@ -1,10 +1,10 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #2d2231;
-  --surface: #3d3350;
-  --accent: #a24b6f;
-  --neutral-tile: #4a3c5a;
+  --bg: #1a1a1e;
+  --surface: #26262c;
+  --accent: #2e5fa8;
+  --neutral-tile: #d8c9a8;
 }
 
 html, body { height: 100%; background: var(--bg); color: #fff; font-family: system-ui, sans-serif; }
@@ -175,6 +175,7 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
   position: relative;
   overflow: hidden;
   transition: transform 0.1s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.45);
 }
 
 .tile-word {
@@ -192,6 +193,18 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 .tile:active { transform: scale(0.93); }
 
 .tile-neutral { background: var(--neutral-tile); }
+
+/* Dark text on light-background tiles (neutral/cream) */
+.tile-neutral .tile-word,
+[data-type="2"] .tile-word {
+  color: rgba(35, 22, 10, 0.88);
+  text-shadow: none;
+}
+
+/* Dark checkmark on cream tiles */
+[data-type="2"].checked::after {
+  color: rgba(35, 22, 10, 0.72);
+}
 
 /* checkmark overlay (phone) */
 .tile.checked::after {

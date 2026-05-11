@@ -84,6 +84,7 @@ export function renderSpymaster(app) {
   board.tiles.forEach((type, i) => {
     const tile = document.createElement('div')
     tile.className = 'tile'
+    tile.dataset.type = type
     tile.style.background = COLORS[type]
     tile.innerHTML = `<span class="tile-word">${board.words[i] ?? ''}</span>`
     tile.addEventListener('click', () => toggleTile(i, tile))

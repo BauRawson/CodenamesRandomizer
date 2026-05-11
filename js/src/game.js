@@ -1,6 +1,6 @@
 import { words } from './words.js'
 
-export const COLORS = ['#ed8099', '#4d65b4', '#fbb954', '#313638']
+export const COLORS = ['#8c3232', '#2e5fa8', '#d8c9a8', '#111115']
 
 export function generateBoard() {
   const isTeamOneFirst = Math.random() < 0.5
