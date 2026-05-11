@@ -250,7 +250,7 @@ mesa
 metro
 méxico
 micro
-microscopi
+microscopio
 mielo
 millonario
 mina
@@ -352,7 +352,7 @@ ronda
 rosa
 ruleta
 sable
-sáhara
+sahara
 salsa
 satélite
 saturno
