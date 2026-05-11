@@ -1,7 +1,7 @@
 import basicSsl from '@vitejs/plugin-basic-ssl'
 
 export default {
-  base: '/CodenamesRandomizer/',
+  base: '/',
   plugins: [basicSsl()],
   server: {
     https: true,
