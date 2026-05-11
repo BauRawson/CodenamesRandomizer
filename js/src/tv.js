@@ -52,9 +52,10 @@ function renderBoard(app, data) {
   tileEls = []
   const boardEl = document.getElementById('board')
 
-  data.tiles.forEach(() => {
+  data.tiles.forEach((_, i) => {
     const tile = document.createElement('div')
     tile.className = 'tile tile-neutral'
+    tile.innerHTML = `<span class="tile-word">${data.words[i] ?? ''}</span>`
     boardEl.appendChild(tile)
     tileEls.push(tile)
   })

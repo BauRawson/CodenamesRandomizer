@@ -1,3 +1,5 @@
+import { words } from './words.js'
+
 export const COLORS = ['#ed8099', '#4d65b4', '#fbb954', '#313638']
 
 export function generateBoard() {
@@ -15,5 +17,13 @@ export function generateBoard() {
     ;[tiles[i], tiles[j]] = [tiles[j], tiles[i]]
   }
 
-  return { tiles, isTeamOneFirst }
+  // Pick 25 unique random words
+  const pool = [...words]
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[pool[i], pool[j]] = [pool[j], pool[i]]
+  }
+  const selectedWords = pool.slice(0, 25)
+
+  return { tiles, isTeamOneFirst, words: selectedWords }
 }

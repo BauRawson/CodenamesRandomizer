@@ -65,6 +65,7 @@ export function renderSpymaster(app) {
     const tile = document.createElement('div')
     tile.className = 'tile'
     tile.style.background = COLORS[type]
+    tile.innerHTML = `<span class="tile-word">${board.words[i] ?? ''}</span>`
     tile.addEventListener('click', () => toggleTile(i, tile))
     boardEl.appendChild(tile)
     tileEls.push(tile)

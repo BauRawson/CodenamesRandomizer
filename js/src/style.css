@@ -101,25 +101,40 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 
 .board {
   display: grid;
-  /* explicit rows + columns means tiles get real height without aspect-ratio */
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  gap: clamp(5px, 1.2vmin, 12px);
-  padding: clamp(8px, 1.5vmin, 16px);
-  /* vmin keeps the board square on both portrait phones and landscape TVs */
-  width:  min(90vmin, 520px);
-  height: min(90vmin, 520px);
+  gap: clamp(5px, 1vw, 10px);
+  padding: clamp(10px, 2vw, 20px);
+  width: min(96vw, 900px);
   margin: auto;
   flex-shrink: 0;
 }
 
 /* ── Tiles ── */
 .tile {
-  border-radius: clamp(4px, 1.2vmin, 10px);
+  height: clamp(38px, 9vh, 65px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 6px;
+  border-radius: clamp(4px, 0.8vw, 8px);
   cursor: pointer;
   position: relative;
-  transition: transform 0.1s;
   overflow: hidden;
+  transition: transform 0.1s;
+}
+
+.tile-word {
+  font-size: clamp(8px, 1.6vw, 13px);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  pointer-events: none;
 }
 .tile:active { transform: scale(0.93); }
 
