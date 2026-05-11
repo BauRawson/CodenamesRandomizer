@@ -112,6 +112,9 @@ function fitText(tileEl) {
     wordEl.style.fontSize = `${size}px`
   }
   if (wordEl.scrollWidth > wordEl.clientWidth + 1) {
+    wordEl.style.letterSpacing = '0'
+  }
+  if (wordEl.scrollWidth > wordEl.clientWidth + 1) {
     wordEl.style.whiteSpace = 'normal'
   }
 }
