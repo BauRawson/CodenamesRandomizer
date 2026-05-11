@@ -203,6 +203,12 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
   text-shadow: none;
 }
 
+/* Revealed neutral on TV: white text so players can tell it was guessed */
+.tile.revealed[data-type="2"] .tile-word {
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
 /* Dark overlay on all checked tiles — makes any tile look "used" */
 .tile.checked::before {
   content: '';
