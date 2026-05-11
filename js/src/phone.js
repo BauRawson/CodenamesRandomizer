@@ -63,12 +63,10 @@ export function renderSpymaster(app) {
   counts = [...totals]
 
   const startColor = COLORS[board.isTeamOneFirst ? 0 : 1]
-  const startLabel = board.isTeamOneFirst ? 'TEAM 1 STARTS' : 'TEAM 2 STARTS'
 
   app.innerHTML = `
     <div class="scene board-scene">
       <div class="team-banner" style="background:${startColor}22; border-bottom:3px solid ${startColor}">
-        <span class="team-banner-text">${startLabel}</span>
         <div class="counters">
           <span class="counter" id="c0" style="color:${COLORS[0]}">${counts[0]}</span>
           <span class="counter" id="c1" style="color:${COLORS[1]}">${counts[1]}</span>

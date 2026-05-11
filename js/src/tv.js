@@ -1,6 +1,6 @@
 import * as Conn from './connection.js'
 import { COLORS } from './game.js'
-import { animateReveal } from './vfx.js'
+import { animateReveal, showConfetti } from './vfx.js'
 import { playReveal, playHide, playWin } from './sounds.js'
 
 let tileEls = []
@@ -46,7 +46,6 @@ export function renderTV(app) {
 function renderBoard(app, data) {
   tileEls = []
   const startColor  = COLORS[data.isTeamOneFirst ? 0 : 1]
-  const startLabel  = data.isTeamOneFirst ? 'TEAM 1 STARTS' : 'TEAM 2 STARTS'
 
   totals = [
     data.tiles.filter((t) => t === 0).length,
@@ -57,7 +56,6 @@ function renderBoard(app, data) {
   app.innerHTML = `
     <div class="scene board-scene">
       <div class="team-banner" style="background:${startColor}22; border-bottom:3px solid ${startColor}">
-        <span class="team-banner-text">${startLabel}</span>
         <div class="counters">
           <span class="counter" id="c0" style="color:${COLORS[0]}">${counts[0]}</span>
           <span class="counter" id="c1" style="color:${COLORS[1]}">${counts[1]}</span>
@@ -118,6 +116,7 @@ function showWin(team, app) {
   playWin(team)
   const color = COLORS[team]
   const label = team === 0 ? 'TEAM 1' : 'TEAM 2'
+  showConfetti(color)
 
   const overlay = document.createElement('div')
   overlay.className = 'win-overlay'

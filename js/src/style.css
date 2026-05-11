@@ -93,7 +93,7 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 .board-scene {
   gap: 0;
   padding: 0;
-  justify-content: stretch;
+  justify-content: space-between;
 }
 
 /* ── Team banner (replaces thin color-bar) ── */
@@ -134,32 +134,35 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 .board {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: clamp(5px, 1vw, 10px);
-  padding: clamp(8px, 1.5vw, 16px);
-  flex: 1;
-  align-self: stretch;
+  gap: clamp(6px, 1.2vw, 12px);
+  padding: clamp(8px, 1.5vw, 18px);
+  width: min(97vw, 1100px);
+  margin: 0 auto;
 }
 
-/* ── TV board: taller tiles, bigger text ── */
+/* ── TV board: fills height with grid rows, bigger text ── */
+.tv-board {
+  grid-template-rows: repeat(5, 1fr);
+  height: clamp(400px, 74vh, 700px);
+}
+
 .tv-board .tile {
   height: auto;
-  aspect-ratio: unset;
-  min-height: clamp(55px, 10vh, 90px);
-  border-radius: clamp(6px, 1vw, 12px);
+  border-radius: clamp(8px, 1vw, 16px);
 }
 
 .tv-board .tile-word {
-  font-size: clamp(12px, 2.2vw, 22px);
+  font-size: clamp(15px, 2.4vw, 28px);
 }
 
-/* ── Phone board: wider/shorter tiles (landscape-friendly) ── */
+/* ── Phone board: vw-based height for proportional tiles ── */
 .phone-board .tile {
-  height: clamp(44px, 9vw, 70px);
+  height: clamp(44px, 12vw, 72px);
   border-radius: clamp(4px, 0.8vw, 8px);
 }
 
 .phone-board .tile-word {
-  font-size: clamp(10px, 2vw, 16px);
+  font-size: clamp(11px, 3vw, 18px);
 }
 
 /* ── Tiles ── */
@@ -243,7 +246,3 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
   text-shadow: 0 2px 12px rgba(0,0,0,0.5);
 }
 
-/* ── TV: bigger board on wide screens ── */
-@media (min-width: 800px) {
-  .board { gap: 14px; }
-}
