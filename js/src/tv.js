@@ -75,18 +75,7 @@ function renderBoard(app, data) {
     tile.innerHTML = `<span class="tile-word">${data.words[i] ?? ''}</span>`
     boardEl.appendChild(tile)
     tileEls.push(tile)
-    fitText(tile)
   })
-}
-
-function fitText(tileEl) {
-  const wordEl = tileEl.querySelector('.tile-word')
-  if (!wordEl) return
-  let size = parseFloat(getComputedStyle(wordEl).fontSize)
-  while (wordEl.scrollWidth > wordEl.clientWidth + 1 && size > 7) {
-    size -= 0.5
-    wordEl.style.fontSize = `${size}px`
-  }
 }
 
 function revealTile(index, color, tileType) {
