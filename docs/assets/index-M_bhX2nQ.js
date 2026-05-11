@@ -493,4 +493,4 @@ zapato
       <button class="btn" id="tv-btn">TELEVISOR</button>
       <button class="btn" id="phone-btn">MÓVIL (ESPÍA)</button>
     </div>
-  `,document.getElementById("tv-btn").onclick=()=>mn(r),document.getElementById("phone-btn").onclick=()=>vn(r)}Rn(document.getElementById("app"));
+  `,document.getElementById("tv-btn").focus(),document.getElementById("tv-btn").onclick=()=>mn(r),document.getElementById("phone-btn").onclick=()=>vn(r)}Rn(document.getElementById("app"));

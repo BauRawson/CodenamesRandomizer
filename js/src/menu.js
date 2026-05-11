@@ -10,6 +10,7 @@ export function renderMenu(app) {
     </div>
   `
 
+  document.getElementById('tv-btn').focus()
   document.getElementById('tv-btn').onclick    = () => renderTV(app)
   document.getElementById('phone-btn').onclick = () => renderEnterCode(app)
 }
