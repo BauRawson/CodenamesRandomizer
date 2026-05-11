@@ -91,7 +91,7 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 #code-input::-webkit-inner-spin-button { -webkit-appearance: none; }
 
 /* ── Board layout ── */
-.board-scene { gap: 0; padding: 0; justify-content: flex-start; }
+.board-scene { gap: 0; padding: 0; }
 
 .color-bar {
   width: 100%;
@@ -101,23 +101,25 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 
 .board {
   display: grid;
+  /* explicit rows + columns means tiles get real height without aspect-ratio */
   grid-template-columns: repeat(5, 1fr);
-  gap: clamp(6px, 1.5vw, 14px);
-  padding: clamp(12px, 2.5vw, 24px);
-  width: 100%;
-  max-width: min(520px, 100vw);
+  grid-template-rows: repeat(5, 1fr);
+  gap: clamp(5px, 1.2vmin, 12px);
+  padding: clamp(8px, 1.5vmin, 16px);
+  /* vmin keeps the board square on both portrait phones and landscape TVs */
+  width:  min(90vmin, 520px);
+  height: min(90vmin, 520px);
   margin: auto;
-  flex: 1;
-  align-content: center;
+  flex-shrink: 0;
 }
 
 /* ── Tiles ── */
 .tile {
-  aspect-ratio: 1;
-  border-radius: clamp(4px, 1.2vw, 10px);
+  border-radius: clamp(4px, 1.2vmin, 10px);
   cursor: pointer;
   position: relative;
   transition: transform 0.1s;
+  overflow: hidden;
 }
 .tile:active { transform: scale(0.93); }
 
