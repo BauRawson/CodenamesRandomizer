@@ -286,7 +286,7 @@ mesa
 metro
 méxico
 micro
-microscopi
+microscopio
 mielo
 millonario
 mina
@@ -460,7 +460,7 @@ zapato
         <span class="team-banner-text" style="color:rgba(255,255,255,0.5)">michicho.com</span>
       </div>
     </div>
-  `;const n=document.getElementById("board");e.tiles.forEach((i,s)=>{const o=document.createElement("div");o.className="tile tile-neutral",o.innerHTML=`<span class="tile-word">${e.words[s]??""}</span>`,n.appendChild(o),ee.push(o)})}function yn(r,e,t){const n=ee[r];n&&(n.style.background=e,n.dataset.type=t,n.classList.remove("tile-neutral"),n.classList.add("revealed"),Et(n),It(t),(t===0||t===1)&&(I[t]=Math.max(0,I[t]-1),Lt(t)))}function _n(r,e){const t=ee[r];t&&(t.style.background="",t.classList.remove("revealed"),t.classList.add("tile-neutral"),Mt(),(e===0||e===1)&&(I[e]=Math.min(ue[e],I[e]+1),Lt(e)))}function Lt(r){const e=document.getElementById(`c${r}`);e&&(e.textContent=I[r])}function Cn(r,e){Ot(r);const t=T[r],n=r===0?"TEAM 1":"TEAM 2";Dt(t);const i=document.createElement("div");i.className="win-overlay",i.innerHTML=`
+  `;const n=document.getElementById("board");e.tiles.forEach((i,s)=>{const o=document.createElement("div");o.className="tile tile-neutral",o.innerHTML=`<span class="tile-word">${e.words[s]??""}</span>`,n.appendChild(o),ee.push(o)})}function yn(r,e,t){const n=ee[r];if(n){if(n.style.background=e,n.dataset.type=t,n.classList.remove("tile-neutral"),n.classList.add("revealed"),t===2){const i=n.querySelector(".tile-word");i&&(i.style.color="rgba(255,255,255,0.92)")}Et(n),It(t),(t===0||t===1)&&(I[t]=Math.max(0,I[t]-1),Lt(t))}}function _n(r,e){const t=ee[r];if(!t)return;t.style.background="",t.classList.remove("revealed"),t.classList.add("tile-neutral");const n=t.querySelector(".tile-word");n&&(n.style.color=""),Mt(),(e===0||e===1)&&(I[e]=Math.min(ue[e],I[e]+1),Lt(e))}function Lt(r){const e=document.getElementById(`c${r}`);e&&(e.textContent=I[r])}function Cn(r,e){Ot(r);const t=T[r],n=r===0?"TEAM 1":"TEAM 2";Dt(t);const i=document.createElement("div");i.className="win-overlay",i.innerHTML=`
     <div class="win-text" style="color:${t}">${n} WINS!</div>
   `,e.appendChild(i)}let x=null,N=[],Ae=[],R=[0,0],he=[0,0],Re=!1,me=null;function bn(r){r.innerHTML=`
     <div class="scene">

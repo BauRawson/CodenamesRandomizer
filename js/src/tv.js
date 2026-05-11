@@ -85,6 +85,10 @@ function revealTile(index, color, tileType) {
   tile.dataset.type = tileType
   tile.classList.remove('tile-neutral')
   tile.classList.add('revealed')
+  if (tileType === 2) {
+    const w = tile.querySelector('.tile-word')
+    if (w) w.style.color = 'rgba(255,255,255,0.92)'
+  }
   animateReveal(tile)
   playReveal(tileType)
 
@@ -100,6 +104,8 @@ function hideTile(index, tileType) {
   tile.style.background = ''
   tile.classList.remove('revealed')
   tile.classList.add('tile-neutral')
+  const w = tile.querySelector('.tile-word')
+  if (w) w.style.color = ''
   playHide()
 
   if (tileType === 0 || tileType === 1) {
