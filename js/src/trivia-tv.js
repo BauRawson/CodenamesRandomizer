@@ -111,22 +111,27 @@ function nextQuestion() {
 }
 
 function renderQuestionTV(q, index) {
+  const bar = `background:rgba(46,95,168,0.12);`
   _app.innerHTML = `
-    <div class="trivia-tv-scene">
-      <div class="trivia-tv-top">
+    <div class="scene board-scene">
+      <div class="team-banner" style="${bar}border-bottom:3px solid var(--accent);justify-content:space-between">
         <span class="trivia-tv-progress">${index + 1} / ${gameQuestions.length}</span>
         <span class="trivia-tv-timer" id="tv-timer">${QUESTION_TIME}</span>
       </div>
-      <div class="trivia-tv-question">${q.q}</div>
-      <div class="trivia-tv-options">
-        ${q.options.map((opt, i) => `
-          <div class="trivia-tv-option" id="opt-${i}">
-            <span class="trivia-opt-label">${LABELS[i]}</span>
-            <span class="trivia-opt-text">${opt}</span>
-          </div>
-        `).join('')}
+      <div class="trivia-tv-body">
+        <div class="trivia-tv-question">${q.q}</div>
+        <div class="trivia-tv-options">
+          ${q.options.map((opt, i) => `
+            <div class="trivia-tv-option" id="opt-${i}">
+              <span class="trivia-opt-label">${LABELS[i]}</span>
+              <span class="trivia-opt-text">${opt}</span>
+            </div>
+          `).join('')}
+        </div>
       </div>
-      <div class="trivia-tv-players" id="tv-players"></div>
+      <div class="team-banner" style="${bar}border-top:3px solid var(--accent)">
+        <div id="tv-players" class="trivia-tv-players"></div>
+      </div>
     </div>
   `
   updatePlayerDots()

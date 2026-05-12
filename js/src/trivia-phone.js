@@ -94,22 +94,25 @@ function renderQuestion(app, data) {
   currentShuffle = indices
   const shuffledOptions = indices.map(i => data.options[i])
 
+  const bar = `background:rgba(46,95,168,0.12);`
   app.innerHTML = `
-    <div class="trivia-phone-scene">
-      <div class="trivia-phone-top">
+    <div class="scene board-scene">
+      <div class="team-banner" style="${bar}border-bottom:3px solid var(--accent);justify-content:space-between">
         <span class="trivia-phone-progress">${data.index + 1} / ${data.total}</span>
         <span class="trivia-phone-score" id="phone-score">${myScore} pts</span>
         <span class="trivia-phone-timer" id="phone-timer">10</span>
       </div>
-      <div class="trivia-phone-question">${data.q}</div>
-      <div class="trivia-phone-options">
-        ${shuffledOptions.map((opt, i) => `
-          <button class="trivia-phone-option" data-display="${i}">
-            ${opt}
-          </button>
-        `).join('')}
+      <div class="trivia-phone-body">
+        <div class="trivia-phone-question">${data.q}</div>
+        <div class="trivia-phone-options">
+          ${shuffledOptions.map((opt, i) => `
+            <button class="trivia-phone-option" data-display="${i}">
+              ${opt}
+            </button>
+          `).join('')}
+        </div>
+        <div id="phone-status" class="trivia-phone-status"></div>
       </div>
-      <div id="phone-status" class="trivia-phone-status"></div>
     </div>
   `
 

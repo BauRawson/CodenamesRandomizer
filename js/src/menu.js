@@ -28,7 +28,7 @@ export function renderMenu(app) {
     <div class="scene">
       <h1 class="title">CÓDIGO</h1>
       <button class="btn" id="cs-btn">CÓDIGO SECRETO</button>
-      <button class="btn" id="trivia-btn" style="background:#6b3fa0">TRIVIA</button>
+      <button class="btn" id="trivia-btn">TRIVIA</button>
     </div>
   `
 

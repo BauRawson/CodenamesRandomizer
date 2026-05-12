@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^git -C /Users/bau/Documents/GitHub/CodenamesRandomizer status --short -- js/src/questions\\.js && python3 - <<'PY'\nfrom pathlib import Path\np = Path\\('/Users/bau/Documents/GitHub/CodenamesRandomizer/js/src/questions\\.js'\\)\ntext = p\\.read_text\\(\\)\nprint\\('contains', '\\(Trivia #' in text\\)\nprint\\('count', text\\.count\\('\\(Trivia #'\\)\\)\nPY$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

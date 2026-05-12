@@ -248,5 +248,10005 @@ export const questions = [
         "q": "¿Qué animal produce lana?",
         "options": ["Cabra", "Vaca", "Oveja", "Cerdo"],
         "answer": 2
-    }
+    },
+    {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Louis Pasteur",
+      "Alexander Fleming",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién interpretó a Iron Man en el MCU?",
+    "options": [
+      "Chris Evans",
+      "Robert Downey Jr.",
+      "Chris Hemsworth",
+      "Mark Ruffalo"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué célula transporta oxígeno en la sangre?",
+    "options": [
+      "Plaqueta",
+      "Neurona",
+      "Glóbulo rojo",
+      "Leucocito"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país inventó el judo?",
+    "options": [
+      "China",
+      "Corea",
+      "Japón",
+      "Tailandia"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la capital de Mongolia?",
+    "options": [
+      "Ulán Bator",
+      "Taskent",
+      "Astaná",
+      "Katmandú"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el ADN?",
+    "options": [
+      "Ácido desoxirribonucleico",
+      "Ácido sulfúrico",
+      "Proteína celular",
+      "Hormona"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué deporte se utiliza un scrum?",
+    "options": [
+      "Rugby",
+      "Béisbol",
+      "Tenis",
+      "Hockey"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién fue el primer emperador romano?",
+    "options": [
+      "Julio César",
+      "Augusto",
+      "Nerón",
+      "Trajano"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene forma de hexágono en los mapas?",
+    "options": [
+      "Italia",
+      "Francia",
+      "Alemania",
+      "Polonia"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué mar separa Europa de África?",
+    "options": [
+      "Mar Rojo",
+      "Mar Negro",
+      "Mediterráneo",
+      "Caspio"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es el mamífero más grande?",
+    "options": [
+      "Elefante",
+      "Ballena azul",
+      "Hipopótamo",
+      "Jirafa"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Quién ganó más Balones de Oro hasta 2025?",
+    "options": [
+      "Cristiano Ronaldo",
+      "Lionel Messi",
+      "Pelé",
+      "Maradona"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué serie tiene a Walter White como protagonista?",
+    "options": [
+      "Breaking Bad",
+      "The Sopranos",
+      "Dark",
+      "Lost"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué civilización construyó Machu Picchu?",
+    "options": [
+      "Azteca",
+      "Maya",
+      "Inca",
+      "Olmeca"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Qué actor interpretó a Joker en The Dark Knight?",
+    "options": [
+      "Joaquin Phoenix",
+      "Jack Nicholson",
+      "Heath Ledger",
+      "Jared Leto"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "options": [
+      "1912",
+      "1914",
+      "1916",
+      "1918"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué país tiene más población?",
+    "options": [
+      "India",
+      "China",
+      "Estados Unidos",
+      "Indonesia"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué órgano produce insulina?",
+    "options": [
+      "Riñón",
+      "Hígado",
+      "Páncreas",
+      "Pulmón"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuántos sets se necesitan ganar en un partido masculino de Grand Slam?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿Qué cantante lanzó el álbum Thriller?",
+    "options": [
+      "Prince",
+      "Michael Jackson",
+      "Elvis Presley",
+      "Madonna"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "¿En qué país ocurrió la Revolución Francesa?",
+    "options": [
+      "Italia",
+      "Alemania",
+      "Francia",
+      "España"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Cuál es la montaña más alta de África?",
+    "options": [
+      "Kilimanjaro",
+      "Aconcagua",
+      "Everest",
+      "Elbrus"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "options": [
+      "Vitamina A",
+      "Vitamina B12",
+      "Vitamina C",
+      "Vitamina D"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "¿Cuántos jugadores titulares tiene un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "¿Quién dirigió Jurassic Park?",
+    "options": [
+      "James Cameron",
+      "Steven Spielberg",
+      "George Lucas",
+      "Christopher Nolan"
+    ],
+    "answer": 1
+  }
 ]
