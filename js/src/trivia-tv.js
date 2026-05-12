@@ -10,10 +10,11 @@ const QUESTION_TIME = 10
 const QUESTIONS_PER_GAME = Math.min(10, allQuestions.length)
 const LABELS = ['A', 'B', 'C', 'D']
 
-let _app    = null
-let _onMenu = null
-let players = new Map()   // conn → { name, score, answered }
-let currentQ = -1
+let _app      = null
+let _onMenu   = null
+let players   = new Map()   // conn → { name, score, answered }
+let currentQ  = -1
+let revealing = false
 let timerInterval = null
 let gameQuestions = []
 
@@ -89,6 +90,7 @@ function startGame() {
 
 function nextQuestion() {
   currentQ++
+  revealing = false
   if (currentQ >= gameQuestions.length) { endGame(); return }
   players.forEach(p => { p.answered = false })
 
@@ -176,6 +178,8 @@ function updatePlayerDots() {
 }
 
 function revealAnswer() {
+  if (revealing) return
+  revealing = true
   const correctIndex = gameQuestions[currentQ].answer
 
   document.querySelectorAll('.trivia-tv-option').forEach((el, i) => {
