@@ -1,7 +1,6 @@
 import * as Conn from './connection.js'
 import { playTap, playCorrect, playWrong } from './sounds.js'
 
-const OPTION_COLORS = ['#8c3232', '#2e5fa8', '#2d7a4f', '#7a4fa8']
 
 let _app    = null
 let _onMenu = null
@@ -105,7 +104,7 @@ function renderQuestion(app, data) {
       <div class="trivia-phone-question">${data.q}</div>
       <div class="trivia-phone-options">
         ${shuffledOptions.map((opt, i) => `
-          <button class="trivia-phone-option" data-display="${i}" style="background:${OPTION_COLORS[i]}">
+          <button class="trivia-phone-option" data-display="${i}">
             ${opt}
           </button>
         `).join('')}

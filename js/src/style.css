@@ -342,21 +342,21 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 }
 
 .trivia-tv-options {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: clamp(8px, 1.5vw, 18px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 1vh, 14px);
   flex: 1;
   min-height: 0;
 }
 
 .trivia-tv-option {
+  flex: 1;
   background: var(--surface);
   border-radius: clamp(8px, 1vw, 16px);
   display: flex;
   align-items: center;
   gap: clamp(8px, 1.5vw, 20px);
-  padding: clamp(8px, 1.5vw, 20px) clamp(12px, 2vw, 28px);
+  padding: 0 clamp(12px, 2vw, 32px);
   box-shadow: 0 2px 12px rgba(0,0,0,0.3);
   transition: background 0.3s, opacity 0.3s;
   overflow: hidden;
@@ -463,6 +463,7 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
   border: none;
   border-radius: 14px;
   color: #fff;
+  background: var(--surface);
   font-size: clamp(1rem, 4vw, 1.25rem);
   font-weight: 900;
   line-height: 1.25;
