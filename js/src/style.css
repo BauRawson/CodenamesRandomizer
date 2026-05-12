@@ -272,3 +272,291 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
   text-shadow: 0 2px 12px rgba(0,0,0,0.5);
 }
 
+/* ── Back button ── */
+.btn-back {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.35);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-top: 4px;
+  letter-spacing: 0.04em;
+}
+.btn-back:hover { color: rgba(255,255,255,0.65); }
+
+/* ── Name input (trivia) ── */
+.name-input {
+  width: 280px;
+  padding: 16px 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background: var(--surface);
+  border: 3px solid var(--accent);
+  border-radius: 12px;
+  outline: none;
+}
+.name-input::placeholder { color: rgba(255,255,255,0.3); font-weight: 400; }
+
+/* ── Trivia: TV scene ── */
+.trivia-tv-scene {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(12px, 2vw, 28px);
+  gap: clamp(8px, 1.5vh, 20px);
+}
+
+.trivia-tv-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.trivia-tv-progress {
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
+  font-weight: 900;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.05em;
+}
+
+.trivia-tv-timer {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 1;
+  min-width: 1.5em;
+  text-align: right;
+}
+
+.trivia-tv-question {
+  font-size: clamp(1.4rem, 3.5vw, 3rem);
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.2;
+  flex-shrink: 0;
+  padding: 0 clamp(8px, 2vw, 40px);
+}
+
+.trivia-tv-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: clamp(8px, 1.5vw, 18px);
+  flex: 1;
+  min-height: 0;
+}
+
+.trivia-tv-option {
+  background: var(--surface);
+  border-radius: clamp(8px, 1vw, 16px);
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 1.5vw, 20px);
+  padding: clamp(8px, 1.5vw, 20px) clamp(12px, 2vw, 28px);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  transition: background 0.3s, opacity 0.3s;
+  overflow: hidden;
+}
+
+.trivia-opt-label {
+  font-size: clamp(1.2rem, 2.5vw, 2.2rem);
+  font-weight: 900;
+  color: rgba(255,255,255,0.35);
+  flex-shrink: 0;
+  min-width: 1.4em;
+  text-align: center;
+}
+
+.trivia-opt-text {
+  font-size: clamp(1rem, 2.2vw, 2rem);
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.trivia-tv-option.opt-correct {
+  background: #1a5c2e;
+  box-shadow: 0 0 0 3px #4ade80;
+}
+.trivia-tv-option.opt-correct .trivia-opt-label { color: #4ade80; }
+.trivia-tv-option.opt-wrong { opacity: 0.3; }
+
+.trivia-tv-players {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  flex-shrink: 0;
+  min-height: 36px;
+  align-items: center;
+}
+
+.player-dot {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.35);
+  transition: all 0.25s;
+}
+.player-dot.dot-answered {
+  background: rgba(74, 222, 128, 0.18);
+  color: #4ade80;
+}
+
+/* ── Trivia: phone scene ── */
+.trivia-phone-scene {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 12px;
+}
+
+.trivia-phone-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.trivia-phone-progress,
+.trivia-phone-score {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.45);
+}
+
+.trivia-phone-timer {
+  font-size: 1.5rem;
+  font-weight: 900;
+  min-width: 1.5em;
+  text-align: right;
+}
+
+.timer-urgent {
+  color: #f87171;
+  animation: pulse 0.5s ease-in-out infinite alternate;
+}
+@keyframes pulse {
+  from { opacity: 1; }
+  to   { opacity: 0.45; }
+}
+
+.trivia-phone-question {
+  font-size: clamp(1.1rem, 4.5vw, 1.6rem);
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.3;
+  padding: 8px 0;
+  flex-shrink: 0;
+}
+
+.trivia-phone-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  flex: 1;
+}
+
+.trivia-phone-option {
+  border: none;
+  border-radius: 14px;
+  color: #fff;
+  font-size: clamp(0.85rem, 3.5vw, 1.2rem);
+  font-weight: 900;
+  line-height: 1.25;
+  cursor: pointer;
+  padding: 12px 8px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.4);
+  transition: transform 0.1s, opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trivia-phone-option:active { transform: scale(0.95); }
+
+.trivia-phone-status {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  min-height: 1.6em;
+  color: rgba(255,255,255,0.65);
+  flex-shrink: 0;
+}
+
+/* ── Shared scoreboard ── */
+.trivia-scoreboard {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.score-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-weight: 900;
+}
+
+.score-row-me {
+  background: rgba(46, 95, 168, 0.3);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.score-rank { color: rgba(255,255,255,0.35); min-width: 1.5em; text-align: center; }
+.score-name { flex: 1; }
+.score-pts  { color: rgba(255,255,255,0.65); }
+
+/* Player chips in waiting room */
+.trivia-player-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  max-width: 480px;
+  min-height: 40px;
+}
+
+.player-chip {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 6px 18px;
+  border-radius: 20px;
+  background: var(--surface);
+  color: rgba(255,255,255,0.85);
+}
+
+/* Trivia score interlude */
+.trivia-interlude-title {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+/* Winner display */
+.winner-name {
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 900;
+  color: #a78bfa;
+  text-align: center;
+}
+
+/* Phone end screen */
+.trivia-my-score { text-align: center; padding: 16px 0; }
+.trivia-my-score-num   { font-size: 4rem; font-weight: 900; color: var(--accent); line-height: 1; }
+.trivia-my-score-label { font-size: 1rem; color: rgba(255,255,255,0.5); margin-top: 4px; }
+.trivia-my-score-rank  { font-size: 0.9rem; color: rgba(255,255,255,0.35); margin-top: 6px; }
+
