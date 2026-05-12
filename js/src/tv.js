@@ -3,11 +3,25 @@ import { COLORS } from './game.js'
 import { animateReveal, showConfetti } from './vfx.js'
 import { playReveal, playHide, playWin } from './sounds.js'
 
-let tileEls = []
-let counts  = [0, 0]   // remaining tiles per team
-let totals  = [0, 0]
+let tileEls  = []
+let counts   = [0, 0]
+let totals   = [0, 0]
+
+// Multi-connection state
+let captainConn    = null
+let spectatorConns = []
+let boardData      = null                    // last received board message
+let revealedState  = new Array(25).fill(null) // null | {color, tileType}
+
+let _app = null
 
 export function renderTV(app) {
+  _app = app
+  captainConn    = null
+  spectatorConns = []
+  boardData      = null
+  revealedState  = new Array(25).fill(null)
+
   const code = Conn.generateCode()
 
   app.innerHTML = `
@@ -19,20 +33,61 @@ export function renderTV(app) {
     </div>
   `
 
-  Conn.on('connected', () => {
-    document.getElementById('status').textContent = '¡Móvil conectado!'
+  // Assign role and sync state whenever a phone connects
+  Conn.on('connected', (c) => {
+    if (!captainConn) {
+      captainConn = c
+      if (boardData) {
+        Conn.sendTo(c, { type: 'sync', role: 'captain', board: boardData, revealed: revealedState })
+      } else {
+        Conn.sendTo(c, { type: 'role', role: 'captain' })
+      }
+    } else {
+      spectatorConns.push(c)
+      if (boardData) {
+        Conn.sendTo(c, { type: 'sync', role: 'spectator', board: boardData, revealed: revealedState })
+      } else {
+        Conn.sendTo(c, { type: 'role', role: 'spectator' })
+      }
+    }
+    updateStatus()
+  })
+
+  Conn.on('peer-left', (c) => {
+    if (c === captainConn) captainConn = null
+    spectatorConns = spectatorConns.filter(s => s !== c)
+    updateStatus()
   })
 
   Conn.on('message', (data) => {
-    if (data.type === 'board')  renderBoard(app, data)
-    if (data.type === 'reveal') revealTile(data.index, data.color, data.tileType)
-    if (data.type === 'hide')   hideTile(data.index, data.tileType)
-    if (data.type === 'win')    showWin(data.team, app)
-  })
-
-  Conn.on('disconnected', () => {
-    const el = document.getElementById('status')
-    if (el) el.textContent = '⚠️ Móvil desconectado'
+    if (data.type === 'board') {
+      boardData     = { ...data }
+      revealedState = new Array(25).fill(null)
+      renderBoard(app, data)
+      spectatorConns.filter(s => s.open).forEach(s =>
+        Conn.sendTo(s, { type: 'board-update', ...data })
+      )
+    }
+    if (data.type === 'reveal') {
+      revealedState[data.index] = { color: data.color, tileType: data.tileType }
+      revealTile(data.index, data.color, data.tileType)
+      spectatorConns.filter(s => s.open).forEach(s =>
+        Conn.sendTo(s, { type: 'reveal', index: data.index, color: data.color })
+      )
+    }
+    if (data.type === 'hide') {
+      revealedState[data.index] = null
+      hideTile(data.index, data.tileType)
+      spectatorConns.filter(s => s.open).forEach(s =>
+        Conn.sendTo(s, { type: 'hide', index: data.index })
+      )
+    }
+    if (data.type === 'win') {
+      showWin(data.team, app)
+      spectatorConns.filter(s => s.open).forEach(s =>
+        Conn.sendTo(s, { type: 'win', team: data.team })
+      )
+    }
   })
 
   Conn.on('error', (e) => {
@@ -43,9 +98,19 @@ export function renderTV(app) {
   Conn.hostRoom(code)
 }
 
+function updateStatus() {
+  const el = document.getElementById('status')
+  if (!el) return
+  const specCount = spectatorConns.filter(c => c.open).length
+  const parts = []
+  if (captainConn?.open) parts.push('¡Capitán conectado!')
+  if (specCount > 0) parts.push(`${specCount} espectador${specCount > 1 ? 'es' : ''} conectado${specCount > 1 ? 's' : ''}`)
+  el.textContent = parts.length ? parts.join(' · ') : 'Esperando al móvil…'
+}
+
 function renderBoard(app, data) {
   tileEls = []
-  const startColor  = COLORS[data.isTeamOneFirst ? 0 : 1]
+  const startColor = COLORS[data.isTeamOneFirst ? 0 : 1]
 
   totals = [
     data.tiles.filter((t) => t === 0).length,
@@ -87,12 +152,8 @@ function fitText(tileEl) {
     size -= 0.5
     wordEl.style.fontSize = `${size}px`
   }
-  if (wordEl.scrollWidth > wordEl.clientWidth + 1) {
-    wordEl.style.letterSpacing = '0'
-  }
-  if (wordEl.scrollWidth > wordEl.clientWidth + 1) {
-    wordEl.style.whiteSpace = 'normal'
-  }
+  if (wordEl.scrollWidth > wordEl.clientWidth + 1) wordEl.style.letterSpacing = '0'
+  if (wordEl.scrollWidth > wordEl.clientWidth + 1) wordEl.style.whiteSpace = 'normal'
 }
 
 function revealTile(index, color, tileType) {
@@ -144,8 +205,6 @@ function showWin(team, app) {
 
   const overlay = document.createElement('div')
   overlay.className = 'win-overlay'
-  overlay.innerHTML = `
-    <div class="win-text" style="color:${color}">${label} GANA!</div>
-  `
+  overlay.innerHTML = `<div class="win-text" style="color:${color}">${label} GANA!</div>`
   app.appendChild(overlay)
 }
