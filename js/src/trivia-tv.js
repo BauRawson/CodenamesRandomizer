@@ -1,11 +1,17 @@
 import * as Conn from './connection.js'
 import { questions as allQuestions } from './questions.js'
+import { showConfetti } from './vfx.js'
+import {
+  playTick, playTimerEnd, playCorrect, playTriviaWin,
+  playCountdownTick, playJoin, playQuestionStart,
+} from './sounds.js'
 
 const QUESTION_TIME = 10
 const QUESTIONS_PER_GAME = Math.min(10, allQuestions.length)
 const LABELS = ['A', 'B', 'C', 'D']
 
-let _app = null
+let _app    = null
+let _onMenu = null
 let players = new Map()   // conn → { name, score, answered }
 let currentQ = -1
 let timerInterval = null
@@ -20,8 +26,9 @@ function shuffle(arr) {
   return a
 }
 
-export function renderTriviaTV(app) {
-  _app = app
+export function renderTriviaTV(app, onMenu) {
+  _app    = app
+  _onMenu = onMenu
   players = new Map()
   currentQ = -1
   if (timerInterval) { clearInterval(timerInterval); timerInterval = null }
@@ -39,6 +46,8 @@ export function renderTriviaTV(app) {
     </div>
   `
 
+  document.getElementById('start-btn').focus()
+
   Conn.on('connected', () => {})
 
   Conn.on('peer-left', (c) => {
@@ -50,6 +59,7 @@ export function renderTriviaTV(app) {
     if (data.type === 'trivia-join') {
       players.set(c, { name: data.name, score: 0, answered: false })
       Conn.sendTo(c, { type: 'trivia-waiting' })
+      playJoin()
       updateWaitingRoom()
     }
     if (data.type === 'trivia-answer') handleAnswer(c, data)
@@ -83,6 +93,7 @@ function nextQuestion() {
   players.forEach(p => { p.answered = false })
 
   const q = gameQuestions[currentQ]
+  playQuestionStart()
   renderQuestionTV(q, currentQ)
 
   Conn.broadcast({
@@ -128,9 +139,11 @@ function startTimer() {
       el.textContent = remaining
       el.className = 'trivia-tv-timer' + (remaining <= 3 ? ' timer-urgent' : '')
     }
+    if (remaining > 0 && remaining <= 3) playTick()
     if (remaining <= 0) {
       clearInterval(timerInterval)
       timerInterval = null
+      playTimerEnd()
       revealAnswer()
     }
   }, 1000)
@@ -169,6 +182,8 @@ function revealAnswer() {
     el.classList.add(i === correctIndex ? 'opt-correct' : 'opt-wrong')
   })
 
+  playCorrect()
+
   const scores = [...players.values()].map(p => ({ name: p.name, score: p.score }))
   Conn.broadcast({ type: 'trivia-reveal', correctIndex, scores })
 
@@ -191,17 +206,35 @@ function showScoreInterlude(scores) {
           </div>
         `).join('')}
       </div>
-      ${hasMore ? '<p class="label" style="margin-top:12px;opacity:0.5">Siguiente pregunta en 3s…</p>' : ''}
+      ${hasMore ? '<p class="label" style="margin-top:16px;opacity:0.6">Siguiente en <span id="interlude-count">3</span>…</p>' : ''}
     </div>
   `
 
-  setTimeout(hasMore ? nextQuestion : endGame, 3000)
+  if (hasMore) {
+    let t = 3
+    timerInterval = setInterval(() => {
+      t--
+      playCountdownTick()
+      const el = document.getElementById('interlude-count')
+      if (el) el.textContent = t
+      if (t <= 0) {
+        clearInterval(timerInterval)
+        timerInterval = null
+        nextQuestion()
+      }
+    }, 1000)
+  } else {
+    setTimeout(endGame, 1500)
+  }
 }
 
 function endGame() {
   const scores = [...players.values()]
     .map(p => ({ name: p.name, score: p.score }))
     .sort((a, b) => b.score - a.score)
+
+  playTriviaWin()
+  showConfetti('#a78bfa')
 
   _app.innerHTML = `
     <div class="scene">
@@ -216,8 +249,13 @@ function endGame() {
           </div>
         `).join('')}
       </div>
+      <button class="btn" id="menu-btn" style="margin-top:24px">MENÚ PRINCIPAL</button>
     </div>
   `
 
   Conn.broadcast({ type: 'trivia-end', scores })
+
+  const menuBtn = document.getElementById('menu-btn')
+  menuBtn.focus()
+  menuBtn.onclick = () => _onMenu?.()
 }

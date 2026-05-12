@@ -1,8 +1,10 @@
 import * as Conn from './connection.js'
+import { playTap, playCorrect, playWrong } from './sounds.js'
 
 const OPTION_COLORS = ['#8c3232', '#2e5fa8', '#2d7a4f', '#7a4fa8']
 
-let _app = null
+let _app    = null
+let _onMenu = null
 let playerName = ''
 let currentShuffle = []
 let answered = false
@@ -10,8 +12,9 @@ let myScore = 0
 let totalQuestions = 0
 let phoneTimer = null
 
-export function renderTriviaPhone(app) {
-  _app = app
+export function renderTriviaPhone(app, onMenu) {
+  _app    = app
+  _onMenu = onMenu
   myScore = 0
   totalQuestions = 0
   answered = false
@@ -115,6 +118,7 @@ function renderQuestion(app, data) {
     btn.addEventListener('click', () => {
       if (answered) return
       answered = true
+      playTap()
       if (phoneTimer) { clearInterval(phoneTimer); phoneTimer = null }
       const displayIndex = parseInt(btn.dataset.display)
       const originalIndex = currentShuffle[displayIndex]
@@ -151,6 +155,7 @@ function showFeedback(correct) {
   }
   const scoreEl = document.getElementById('phone-score')
   if (scoreEl) scoreEl.textContent = `${myScore} pts`
+  if (correct) playCorrect(); else playWrong()
 }
 
 function renderEnd(app, scores) {
@@ -175,6 +180,9 @@ function renderEnd(app, scores) {
           </div>
         `).join('')}
       </div>
+      <button class="btn" id="menu-btn" style="margin-top:16px">MENÚ PRINCIPAL</button>
     </div>
   `
+
+  document.getElementById('menu-btn').onclick = () => _onMenu?.()
 }

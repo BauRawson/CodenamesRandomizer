@@ -42,7 +42,7 @@ export const questions = [
     {
         "q": "¿Qué gas respiramos principalmente?",
         "options": ["Oxígeno", "Hidrógeno", "Nitrógeno", "Helio"],
-        "answer": 2
+        "answer": 0
     },
     {
         "q": "¿Quién escribió Don Quijote de la Mancha?",

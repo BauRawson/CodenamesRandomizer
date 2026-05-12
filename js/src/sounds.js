@@ -40,3 +40,44 @@ export function playWin(team) {
 export function playNewBoard() {
   tone({ freq: 660, end: 220, dur: 0.22, vol: 0.18, type: 'triangle' })
 }
+
+// ── Trivia sounds ─────────────────────────────────────────────
+
+export function playTick() {
+  tone({ freq: 900, end: 750, dur: 0.06, vol: 0.14, type: 'square' })
+}
+
+export function playTimerEnd() {
+  tone({ freq: 260, end: 140, dur: 0.35, vol: 0.28, type: 'sawtooth' })
+}
+
+export function playCorrect() {
+  tone({ freq: 440, end: 523, dur: 0.13, vol: 0.22 })
+  tone({ freq: 660, end: 784, dur: 0.22, vol: 0.3, at: 0.11 })
+}
+
+export function playWrong() {
+  tone({ freq: 260, end: 140, dur: 0.3, vol: 0.22, type: 'sawtooth' })
+}
+
+export function playTap() {
+  tone({ freq: 620, end: 520, dur: 0.04, vol: 0.09 })
+}
+
+export function playTriviaWin() {
+  ;[523, 659, 784, 1047, 784, 1047, 1319].forEach((freq, i) =>
+    tone({ freq, end: freq * 0.96, dur: 0.22, vol: 0.3, at: i * 0.1 })
+  )
+}
+
+export function playCountdownTick() {
+  tone({ freq: 480, end: 450, dur: 0.09, vol: 0.1 })
+}
+
+export function playJoin() {
+  tone({ freq: 440, end: 560, dur: 0.12, vol: 0.14 })
+}
+
+export function playQuestionStart() {
+  tone({ freq: 330, end: 660, dur: 0.2, vol: 0.13, type: 'triangle' })
+}
