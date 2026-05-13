@@ -220,6 +220,7 @@ function showScoreInterlude(scores) {
   `
 
   if (hasMore) {
+    Conn.broadcast({ type: 'trivia-interlude', scores: sorted })
     let t = 3
     timerInterval = setInterval(() => {
       t--
@@ -243,7 +244,7 @@ function endGame() {
     .sort((a, b) => b.score - a.score)
 
   playTriviaWin()
-  showConfetti('#a78bfa')
+  showConfetti(scores[0] ? '#2e5fa8' : '#a78bfa')
 
   _app.innerHTML = `
     <div class="scene">
@@ -258,13 +259,26 @@ function endGame() {
           </div>
         `).join('')}
       </div>
-      <button class="btn" id="menu-btn" style="margin-top:24px">MENÚ PRINCIPAL</button>
+      <div class="end-btn-row">
+        <button class="btn" id="again-btn">JUGAR DE NUEVO</button>
+        <button class="btn" id="menu-btn">MENÚ PRINCIPAL</button>
+      </div>
     </div>
   `
 
   Conn.broadcast({ type: 'trivia-end', scores })
 
-  const menuBtn = document.getElementById('menu-btn')
-  menuBtn.focus()
-  menuBtn.onclick = () => _onMenu?.()
+  document.getElementById('again-btn').focus()
+  document.getElementById('again-btn').onclick = () => restartGame()
+  document.getElementById('menu-btn').onclick  = () => _onMenu?.()
+}
+
+function restartGame() {
+  revealing = false
+  if (timerInterval) { clearInterval(timerInterval); timerInterval = null }
+  gameQuestions = shuffle(allQuestions).slice(0, QUESTIONS_PER_GAME)
+  players.forEach(p => { p.score = 0 })
+  Conn.broadcast({ type: 'trivia-start', total: gameQuestions.length })
+  currentQ = -1
+  nextQuestion()
 }

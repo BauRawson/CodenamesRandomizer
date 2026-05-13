@@ -1,15 +1,15 @@
 import * as Conn from './connection.js'
-import { playTap, playCorrect, playWrong } from './sounds.js'
-
+import { playTap, playCorrect, playWrong, playCountdownTick } from './sounds.js'
+import { showConfetti } from './vfx.js'
 
 let _app    = null
 let _onMenu = null
 let playerName = ''
-let currentShuffle = []
 let answered = false
 let myScore = 0
 let totalQuestions = 0
 let phoneTimer = null
+let interludeTimer = null
 
 export function renderTriviaPhone(app, onMenu) {
   _app    = app
@@ -17,8 +17,13 @@ export function renderTriviaPhone(app, onMenu) {
   myScore = 0
   totalQuestions = 0
   answered = false
-  if (phoneTimer) { clearInterval(phoneTimer); phoneTimer = null }
+  clearTimers()
   renderJoin(app)
+}
+
+function clearTimers() {
+  if (phoneTimer)    { clearInterval(phoneTimer);    phoneTimer = null }
+  if (interludeTimer){ clearInterval(interludeTimer); interludeTimer = null }
 }
 
 function renderJoin(app) {
@@ -49,11 +54,12 @@ function renderJoin(app) {
     })
 
     Conn.on('message', (data) => {
-      if (data.type === 'trivia-waiting')  renderWaiting(app)
-      if (data.type === 'trivia-start')    { totalQuestions = data.total; myScore = 0 }
-      if (data.type === 'trivia-question') renderQuestion(app, data)
-      if (data.type === 'trivia-feedback') showFeedback(data.correct)
-      if (data.type === 'trivia-end')      renderEnd(app, data.scores)
+      if (data.type === 'trivia-waiting')   renderWaiting(app)
+      if (data.type === 'trivia-start')     { totalQuestions = data.total; myScore = 0; renderWaiting(app) }
+      if (data.type === 'trivia-question')  renderQuestion(app, data)
+      if (data.type === 'trivia-feedback')  showFeedback(data.correct)
+      if (data.type === 'trivia-interlude') renderPhoneInterlude(app, data)
+      if (data.type === 'trivia-end')       renderEnd(app, data.scores)
     })
 
     Conn.on('error', (e) => {
@@ -73,6 +79,7 @@ function renderJoin(app) {
 }
 
 function renderWaiting(app) {
+  clearTimers()
   app.innerHTML = `
     <div class="scene">
       <h1 class="title">TRIVIA</h1>
@@ -84,20 +91,12 @@ function renderWaiting(app) {
 
 function renderQuestion(app, data) {
   answered = false
-  if (phoneTimer) { clearInterval(phoneTimer); phoneTimer = null }
-
-  const indices = [0, 1, 2, 3]
-  for (let i = 3; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [indices[i], indices[j]] = [indices[j], indices[i]]
-  }
-  currentShuffle = indices
-  const shuffledOptions = indices.map(i => data.options[i])
+  clearTimers()
 
   const bar = `background:rgba(46,95,168,0.12);`
   app.innerHTML = `
     <div class="scene board-scene">
-      <div class="team-banner" style="${bar}border-bottom:3px solid var(--accent);justify-content:space-between">
+      <div class="team-banner trivia-safe-top" style="${bar}border-bottom:3px solid var(--accent);justify-content:space-between">
         <span class="trivia-phone-progress">${data.index + 1} / ${data.total}</span>
         <span class="trivia-phone-score" id="phone-score">${myScore} pts</span>
         <span class="trivia-phone-timer" id="phone-timer">10</span>
@@ -105,10 +104,8 @@ function renderQuestion(app, data) {
       <div class="trivia-phone-body">
         <div class="trivia-phone-question">${data.q}</div>
         <div class="trivia-phone-options">
-          ${shuffledOptions.map((opt, i) => `
-            <button class="trivia-phone-option" data-display="${i}">
-              ${opt}
-            </button>
+          ${data.options.map((opt, i) => `
+            <button class="trivia-phone-option" data-idx="${i}">${opt}</button>
           `).join('')}
         </div>
         <div id="phone-status" class="trivia-phone-status"></div>
@@ -121,9 +118,8 @@ function renderQuestion(app, data) {
       if (answered) return
       answered = true
       playTap()
-      if (phoneTimer) { clearInterval(phoneTimer); phoneTimer = null }
-      const displayIndex = parseInt(btn.dataset.display)
-      const originalIndex = currentShuffle[displayIndex]
+      clearTimers()
+      const originalIndex = parseInt(btn.dataset.idx)
       Conn.send({ type: 'trivia-answer', answerIndex: originalIndex, questionIndex: data.index })
       document.querySelectorAll('.trivia-phone-option').forEach(b => {
         b.disabled = true
@@ -160,14 +156,47 @@ function showFeedback(correct) {
   if (correct) playCorrect(); else playWrong()
 }
 
-function renderEnd(app, scores) {
-  if (phoneTimer) { clearInterval(phoneTimer); phoneTimer = null }
-  const myEntry = scores.find(s => s.name === playerName)
-  const rank = scores.findIndex(s => s.name === playerName) + 1
+function renderPhoneInterlude(app, data) {
+  clearTimers()
+  const sorted = data.scores  // already sorted by TV
 
   app.innerHTML = `
     <div class="scene">
-      <h1 class="title" style="font-size:2rem">FIN</h1>
+      <h2 class="trivia-interlude-title">PUNTAJES</h2>
+      <div class="trivia-scoreboard">
+        ${sorted.map((p, i) => `
+          <div class="score-row ${p.name === playerName ? 'score-row-me' : ''}">
+            <span class="score-rank">${i + 1}</span>
+            <span class="score-name">${p.name}</span>
+            <span class="score-pts">${p.score}</span>
+          </div>
+        `).join('')}
+      </div>
+      <p class="label" style="margin-top:16px;opacity:0.6">Siguiente en <span id="phone-interlude-count">3</span>…</p>
+    </div>
+  `
+
+  let t = 3
+  interludeTimer = setInterval(() => {
+    t--
+    playCountdownTick()
+    const el = document.getElementById('phone-interlude-count')
+    if (el) el.textContent = t
+    if (t <= 0) { clearInterval(interludeTimer); interludeTimer = null }
+  }, 1000)
+}
+
+function renderEnd(app, scores) {
+  clearTimers()
+  const myEntry = scores.find(s => s.name === playerName)
+  const rank = scores.findIndex(s => s.name === playerName) + 1
+  const iWon = scores[0]?.name === playerName
+
+  if (iWon) showConfetti('#2e5fa8')
+
+  app.innerHTML = `
+    <div class="scene">
+      <h1 class="title" style="font-size:2rem">${iWon ? '🏆 ¡GANASTE!' : 'FIN'}</h1>
       <div class="trivia-my-score">
         <div class="trivia-my-score-num">${myEntry?.score ?? 0}</div>
         <div class="trivia-my-score-label">de ${totalQuestions} correctas</div>

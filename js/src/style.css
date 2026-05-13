@@ -52,15 +52,19 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
   font-size: clamp(1.2rem, 4vw, 1.8rem);
   font-weight: 900;
   letter-spacing: 0.05em;
-  color: #fff;
-  background: var(--accent);
+  color: rgba(35, 22, 10, 0.88);
+  background: var(--neutral-tile);
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  transition: opacity 0.1s;
+  transition: background 0.15s, color 0.15s;
 }
+.btn:hover,
+.btn:focus   { background: var(--accent); color: #fff; outline: none; }
 .btn:active  { opacity: 0.75; }
 .btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn:disabled:hover,
+.btn:disabled:focus { background: var(--neutral-tile); color: rgba(35,22,10,0.88); }
 
 /* ── Room code (TV) ── */
 .room-code {
@@ -347,6 +351,7 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 
 .trivia-tv-option {
   flex: 1;
+  max-height: clamp(70px, 16vh, 120px);
   background: var(--neutral-tile);
   border-radius: clamp(8px, 1vw, 14px);
   display: flex;
@@ -407,6 +412,21 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 .player-dot.dot-answered {
   background: rgba(74, 222, 128, 0.18);
   color: #4ade80;
+}
+
+/* Safe area for phone top banner (notch / dynamic island) */
+.trivia-safe-top {
+  padding-top: max(10px, env(safe-area-inset-top, 10px));
+}
+
+/* Two-button row on end screen */
+.end-btn-row {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 24px;
 }
 
 /* ── Trivia: phone question layout ── */
