@@ -21,6 +21,7 @@ let phase = 'lobby'         // 'lobby' | 'question' | 'interlude' | 'end'
 let lastInterludeScores = []
 let lastEndScores = []
 let questionStartedAt = 0
+let roomCode = ''
 const QUESTION_MS = QUESTION_TIME * 1000
 
 function shuffle(arr) {
@@ -42,6 +43,7 @@ export function renderTriviaTV(app, onMenu) {
   gameQuestions = shuffle(allQuestions).slice(0, QUESTIONS_PER_GAME)
 
   const code = Conn.generateCode()
+  roomCode = code
 
   app.innerHTML = `
     <div class="scene">
@@ -154,7 +156,10 @@ function updateWaitingRoom() {
     .map(p => `<span class="player-chip">${p.name}</span>`)
     .join('')
   const btn = document.getElementById('start-btn')
-  if (btn) btn.disabled = players.size === 0
+  if (!btn) return
+  const wasDisabled = btn.disabled
+  btn.disabled = players.size === 0
+  if (wasDisabled && !btn.disabled) btn.focus()
 }
 
 function startGame() {
@@ -349,6 +354,10 @@ function endGame() {
             <span class="score-pts">${p.score} / ${gameQuestions.length}</span>
           </div>
         `).join('')}
+      </div>
+      <div class="end-join-block">
+        <span class="end-join-label">¿Quieres jugar? Únete con</span>
+        <span class="end-join-code">${roomCode}</span>
       </div>
       <div class="end-btn-row">
         <button class="btn" id="again-btn">JUGAR DE NUEVO</button>

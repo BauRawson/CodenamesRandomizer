@@ -14,7 +14,7 @@ export function renderMapa(app, goMenu) {
         <div class="team-banner" style="background:${startColor}22; border-bottom:3px solid ${startColor}">
           <button class="btn-back" id="back-btn">← VOLVER</button>
         </div>
-        <div class="board phone-board" id="board"></div>
+        <div class="board phone-board mapa-board" id="board"></div>
         <div class="team-banner" style="background:${startColor}22; border-top:3px solid ${startColor}">
           <button class="new-board-btn" id="new-map-btn">NUEVO MAPA</button>
         </div>
