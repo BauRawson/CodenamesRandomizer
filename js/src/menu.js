@@ -2,6 +2,7 @@ import { renderTV } from './tv.js'
 import { renderEnterCode } from './phone.js'
 import { renderTriviaTV } from './trivia-tv.js'
 import { renderTriviaPhone } from './trivia-phone.js'
+import { renderMapa } from './mapa.js'
 import { disconnect } from './connection.js'
 
 let arrowNavInstalled = false
@@ -29,12 +30,14 @@ export function renderMenu(app) {
       <h1 class="title">CÓDIGO</h1>
       <button class="btn" id="cs-btn">CÓDIGO SECRETO</button>
       <button class="btn" id="trivia-btn">TRIVIA</button>
+      <button class="btn" id="mapa-btn">MAPA</button>
     </div>
   `
 
   document.getElementById('cs-btn').focus()
   document.getElementById('cs-btn').onclick    = () => renderGameMenu(app, 'cs')
   document.getElementById('trivia-btn').onclick = () => renderGameMenu(app, 'trivia')
+  document.getElementById('mapa-btn').onclick  = () => renderMapa(app, () => renderMenu(app))
 }
 
 function renderGameMenu(app, game) {
