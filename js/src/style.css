@@ -111,6 +111,10 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
   padding: 10px 20px;
 }
 
+.team-banner[style*="border-bottom"] {
+  padding-top: max(10px, env(safe-area-inset-top, 10px));
+}
+
 .team-banner-text {
   font-size: clamp(1rem, 2.5vw, 1.6rem);
   font-weight: 900;
