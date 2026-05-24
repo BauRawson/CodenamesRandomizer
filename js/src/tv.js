@@ -9,6 +9,7 @@ let totals   = [0, 0]
 
 // Multi-connection state
 let captainConn    = null
+let captainId      = null                    // clientId of the captain (preserved across reconnects)
 let spectatorConns = []
 let boardData      = null                    // last received board message
 let revealedState  = new Array(25).fill(null) // null | {color, tileType}
@@ -18,6 +19,7 @@ let _app = null
 export function renderTV(app) {
   _app = app
   captainConn    = null
+  captainId      = null
   spectatorConns = []
   boardData      = null
   revealedState  = new Array(25).fill(null)
@@ -33,33 +35,20 @@ export function renderTV(app) {
     </div>
   `
 
-  // Assign role and sync state whenever a phone connects
-  Conn.on('connected', (c) => {
-    if (!captainConn) {
-      captainConn = c
-      if (boardData) {
-        Conn.sendTo(c, { type: 'sync', role: 'captain', board: boardData, revealed: revealedState })
-      } else {
-        Conn.sendTo(c, { type: 'role', role: 'captain' })
-      }
-    } else {
-      spectatorConns.push(c)
-      if (boardData) {
-        Conn.sendTo(c, { type: 'sync', role: 'spectator', board: boardData, revealed: revealedState })
-      } else {
-        Conn.sendTo(c, { type: 'role', role: 'spectator' })
-      }
-    }
-    updateStatus()
-  })
+  // Wait for cs-hello before assigning role (so we can recognize returning captain by clientId)
+  Conn.on('connected', () => {})
 
   Conn.on('peer-left', (c) => {
-    if (c === captainConn) captainConn = null
+    if (c === captainConn) captainConn = null   // keep captainId so they can rejoin
     spectatorConns = spectatorConns.filter(s => s !== c)
     updateStatus()
   })
 
-  Conn.on('message', (data) => {
+  Conn.on('message', (data, c) => {
+    if (data.type === 'cs-hello') {
+      assignRole(c, data.clientId)
+      return
+    }
     if (data.type === 'board') {
       boardData     = { ...data }
       revealedState = new Array(25).fill(null)
@@ -96,6 +85,28 @@ export function renderTV(app) {
   })
 
   Conn.hostRoom(code)
+}
+
+function assignRole(c, clientId) {
+  const isReturningCaptain = clientId && clientId === captainId
+  const captainSlotOpen    = !captainConn?.open
+
+  if (isReturningCaptain || captainSlotOpen) {
+    if (captainConn && captainConn !== c) {
+      spectatorConns.push(captainConn)
+      if (boardData) Conn.sendTo(captainConn, { type: 'sync', role: 'spectator', board: boardData, revealed: revealedState })
+      else           Conn.sendTo(captainConn, { type: 'role', role: 'spectator' })
+    }
+    captainConn = c
+    captainId   = clientId || captainId
+    if (boardData) Conn.sendTo(c, { type: 'sync', role: 'captain', board: boardData, revealed: revealedState })
+    else           Conn.sendTo(c, { type: 'role', role: 'captain' })
+  } else {
+    if (!spectatorConns.includes(c)) spectatorConns.push(c)
+    if (boardData) Conn.sendTo(c, { type: 'sync', role: 'spectator', board: boardData, revealed: revealedState })
+    else           Conn.sendTo(c, { type: 'role', role: 'spectator' })
+  }
+  updateStatus()
 }
 
 function updateStatus() {

@@ -7,13 +7,14 @@
   --neutral-tile: #d8c9a8;
 }
 
-html, body { height: 100%; background: var(--bg); color: #fff; font-family: system-ui, sans-serif; }
+html, body { height: 100%; background: var(--bg); color: #fff; font-family: system-ui, sans-serif; overscroll-behavior: none; }
 
-#app { min-height: 100vh; }
+#app { min-height: 100vh; min-height: 100dvh; }
 
 /* ── Scenes ── */
 .scene {
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,6 +99,10 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
   gap: 0;
   padding: 0;
   justify-content: space-between;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
 }
 
 /* ── Team banner (replaces thin color-bar) ── */
@@ -113,6 +118,10 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 
 .team-banner[style*="border-bottom"] {
   padding-top: max(10px, env(safe-area-inset-top, 10px));
+}
+
+.team-banner[style*="border-top"] {
+  padding-bottom: max(10px, env(safe-area-inset-bottom, 10px));
 }
 
 .team-banner-text {
@@ -142,8 +151,8 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 .board {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: clamp(6px, 1.2vw, 12px);
-  padding: clamp(8px, 1.5vw, 18px);
+  gap: clamp(4px, 1vw, 12px);
+  padding: clamp(6px, 1.2vw, 18px);
   width: min(97vw, 1100px);
   margin: 0 auto;
 }
@@ -163,9 +172,19 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
   font-size: clamp(15px, 2.4vw, 28px);
 }
 
-/* ── Phone board: vw-based height for proportional tiles ── */
+/* ── Phone board: flex-fills space between banners ── */
+.phone-board {
+  grid-template-rows: repeat(5, 1fr);
+  align-content: stretch;
+  flex: 1 1 0;
+  min-height: 0;
+  max-height: 100%;
+  max-width: calc(100dvh - 120px);
+}
+
 .phone-board .tile {
-  height: clamp(44px, 12vw, 72px);
+  height: auto;
+  min-height: 0;
   border-radius: clamp(4px, 0.8vw, 8px);
 }
 
@@ -438,9 +457,11 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 12px 16px 16px;
+  gap: clamp(6px, 1.2vh, 12px);
+  padding: clamp(8px, 1.5vh, 14px) 14px max(10px, env(safe-area-inset-bottom, 10px));
   width: 100%;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .trivia-phone-progress,
@@ -479,6 +500,8 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
   display: flex;
   flex-direction: column;
   gap: 8px;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 .trivia-phone-option {
@@ -491,13 +514,28 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
   letter-spacing: 0.02em;
   line-height: 1.25;
   cursor: pointer;
-  padding: 16px 18px;
+  padding: clamp(10px, 1.6vh, 18px) 18px;
   text-align: left;
   box-shadow: 0 2px 8px rgba(0,0,0,0.45);
-  transition: transform 0.1s, opacity 0.2s;
+  transition: transform 0.1s, opacity 0.2s, background 0.25s;
   width: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 .trivia-phone-option:active { transform: scale(0.97); }
+
+.trivia-phone-option.opt-correct {
+  background: #1a5c2e;
+  color: rgba(255,255,255,0.95);
+  box-shadow: 0 0 0 3px #4ade80, 0 2px 8px rgba(0,0,0,0.45);
+}
+.trivia-phone-option.opt-wrong { opacity: 0.28; }
+.trivia-phone-option.opt-mine-wrong {
+  background: #5c1a1a;
+  color: rgba(255,255,255,0.9);
+  box-shadow: 0 0 0 3px #f87171, 0 2px 8px rgba(0,0,0,0.45);
+  opacity: 1;
+}
 
 .trivia-phone-status {
   font-size: 1.1rem;

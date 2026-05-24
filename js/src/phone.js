@@ -2,6 +2,7 @@ import * as Conn from './connection.js'
 import { generateBoard, COLORS } from './game.js'
 import { animateReveal, showConfetti } from './vfx.js'
 import { playReveal, playHide, playWin, playNewBoard } from './sounds.js'
+import { getClientId, saveSession, loadSession } from './session.js'
 
 // Captain state
 let board    = null
@@ -15,8 +16,13 @@ let _app     = null
 // Spectator state
 let specTileEls = []
 
+// Reconnect state
+let roomCode = ''
+let visListenerInstalled = false
+
 export function renderEnterCode(app) {
   _app = app
+  installVisibilityListener()
   app.innerHTML = `
     <div class="scene">
       <h1 class="title">CODIGO</h1>
@@ -35,43 +41,67 @@ export function renderEnterCode(app) {
   const connect = () => {
     const code = input.value.trim()
     if (code.length !== 4) { status.textContent = 'Ingresa el código de 4 dígitos completo'; return }
-
     btn.disabled = true
     status.textContent = 'Conectando…'
-
-    Conn.on('connected', () => {
-      status.textContent = 'Conectado, esperando…'
-    })
-
-    // TV assigns our role — we render based on what it tells us
-    Conn.on('message', (data) => {
-      if (data.type === 'role') {
-        if (data.role === 'captain')   renderSpymaster(app)
-        if (data.role === 'spectator') renderSpectator(app, null, [])
-      }
-      if (data.type === 'sync') {
-        if (data.role === 'captain')   renderSpymaster(app, data.board, data.revealed)
-        if (data.role === 'spectator') renderSpectator(app, data.board, data.revealed)
-      }
-      // Spectator live updates
-      if (data.type === 'board-update') renderSpectator(app, data, new Array(25).fill(null))
-      if (data.type === 'reveal')       specRevealTile(data.index, data.color)
-      if (data.type === 'hide')         specHideTile(data.index)
-      if (data.type === 'win')          specShowWin(data.team, app)
-    })
-
-    Conn.on('error', (e) => {
-      status.textContent = e.type === 'peer-unavailable'
-        ? '❌ Código incorrecto — revisa el televisor'
-        : `❌ ${e.type}`
-      btn.disabled = false
-    })
-
-    Conn.joinRoom(code)
+    connectToRoom(code)
   }
 
   btn.onclick = connect
   input.addEventListener('keydown', (e) => { if (e.key === 'Enter') connect() })
+}
+
+function connectToRoom(code) {
+  roomCode = code
+  saveSession({ mode: 'cs', code })
+  Conn.disconnect()
+
+  Conn.on('connected', () => {
+    const st = document.getElementById('status')
+    if (st) st.textContent = 'Conectado, esperando…'
+    Conn.send({ type: 'cs-hello', clientId: getClientId() })
+  })
+
+  Conn.on('message', (data) => {
+    if (data.type === 'role') {
+      if (data.role === 'captain')   renderSpymaster(_app)
+      if (data.role === 'spectator') renderSpectator(_app, null, [])
+    }
+    if (data.type === 'sync') {
+      if (data.role === 'captain')   renderSpymaster(_app, data.board, data.revealed)
+      if (data.role === 'spectator') renderSpectator(_app, data.board, data.revealed)
+    }
+    if (data.type === 'board-update') renderSpectator(_app, data, new Array(25).fill(null))
+    if (data.type === 'reveal')       specRevealTile(data.index, data.color)
+    if (data.type === 'hide')         specHideTile(data.index)
+    if (data.type === 'win')          specShowWin(data.team, _app)
+  })
+
+  Conn.on('error', (e) => {
+    const st  = document.getElementById('status')
+    const btn = document.getElementById('connect-btn')
+    if (st) st.textContent = e.type === 'peer-unavailable'
+      ? '❌ Código incorrecto — revisa el televisor'
+      : `❌ ${e.type}`
+    if (btn) btn.disabled = false
+  })
+
+  Conn.joinRoom(code)
+}
+
+function installVisibilityListener() {
+  if (visListenerInstalled) return
+  visListenerInstalled = true
+  const tryRejoin = () => {
+    if (document.visibilityState !== 'visible') return
+    if (!roomCode) return
+    const sess = loadSession()
+    if (sess?.mode !== 'cs') return
+    if (Conn.isConnected()) return
+    connectToRoom(roomCode)
+  }
+  document.addEventListener('visibilitychange', tryRejoin)
+  window.addEventListener('focus', tryRejoin)
+  window.addEventListener('online', tryRejoin)
 }
 
 // ── Captain (spymaster) view ──────────────────────────────────────────────────

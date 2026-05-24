@@ -4,6 +4,7 @@ import { renderTriviaTV } from './trivia-tv.js'
 import { renderTriviaPhone } from './trivia-phone.js'
 import { renderMapa } from './mapa.js'
 import { disconnect } from './connection.js'
+import { clearSession } from './session.js'
 
 let arrowNavInstalled = false
 
@@ -23,6 +24,7 @@ function installArrowNav() {
 
 export function renderMenu(app) {
   disconnect()
+  clearSession()
   installArrowNav()
 
   app.innerHTML = `

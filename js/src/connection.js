@@ -40,9 +40,10 @@ export function joinRoom(code) {
   peer.on('error', (e) => emit('error', e))
 }
 
-export const send      = (data)    => conn?.open && conn.send(data)
-export const sendTo    = (c, data) => c?.open && c.send(data)
-export const broadcast = (data)    => connections.filter(c => c.open).forEach(c => c.send(data))
+export const send       = (data)    => conn?.open && conn.send(data)
+export const sendTo     = (c, data) => c?.open && c.send(data)
+export const broadcast  = (data)    => connections.filter(c => c.open).forEach(c => c.send(data))
+export const isConnected = ()       => !!conn?.open
 
 export function disconnect() {
   if (peer) { peer.destroy(); peer = null }

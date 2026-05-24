@@ -12,11 +12,16 @@ const LABELS = ['A', 'B', 'C', 'D']
 
 let _app      = null
 let _onMenu   = null
-let players   = new Map()   // conn → { name, score, answered }
+let players   = new Map()   // clientId → { name, score, answered, conn }
 let currentQ  = -1
 let revealing = false
 let timerInterval = null
 let gameQuestions = []
+let phase = 'lobby'         // 'lobby' | 'question' | 'interlude' | 'end'
+let lastInterludeScores = []
+let lastEndScores = []
+let questionStartedAt = 0
+const QUESTION_MS = QUESTION_TIME * 1000
 
 function shuffle(arr) {
   const a = [...arr]
@@ -32,6 +37,7 @@ export function renderTriviaTV(app, onMenu) {
   _onMenu = onMenu
   players = new Map()
   currentQ = -1
+  phase   = 'lobby'
   if (timerInterval) { clearInterval(timerInterval); timerInterval = null }
   gameQuestions = shuffle(allQuestions).slice(0, QUESTIONS_PER_GAME)
 
@@ -52,23 +58,93 @@ export function renderTriviaTV(app, onMenu) {
   Conn.on('connected', () => {})
 
   Conn.on('peer-left', (c) => {
-    players.delete(c)
-    updateWaitingRoom()
+    if (phase === 'lobby') {
+      for (const [cid, p] of players) {
+        if (p.conn === c) { players.delete(cid); break }
+      }
+      updateWaitingRoom()
+    } else {
+      for (const p of players.values()) {
+        if (p.conn === c) { p.conn = null; break }
+      }
+      updatePlayerDots()
+    }
   })
 
   Conn.on('message', (data, c) => {
-    if (data.type === 'trivia-join') {
-      players.set(c, { name: data.name, score: 0, answered: false })
-      Conn.sendTo(c, { type: 'trivia-waiting' })
-      playJoin()
-      updateWaitingRoom()
-    }
-    if (data.type === 'trivia-answer') handleAnswer(c, data)
+    if (data.type === 'trivia-join') handleJoin(c, data)
+    if (data.type === 'trivia-answer') handleAnswer(data)
   })
 
   document.getElementById('start-btn').addEventListener('click', startGame)
 
   Conn.hostRoom(code)
+}
+
+function handleJoin(conn, data) {
+  const cid = data.clientId
+  if (!cid) return
+  const existing = players.get(cid)
+
+  if (existing) {
+    existing.conn = conn
+    existing.name = data.name || existing.name
+    sendRejoinState(conn, existing)
+    return
+  }
+
+  if (phase !== 'lobby') {
+    players.set(cid, { name: data.name, score: 0, answered: false, conn })
+    sendRejoinState(conn, players.get(cid))
+    playJoin()
+    return
+  }
+
+  players.set(cid, { name: data.name, score: 0, answered: false, conn })
+  Conn.sendTo(conn, { type: 'trivia-waiting' })
+  playJoin()
+  updateWaitingRoom()
+}
+
+function sendRejoinState(conn, player) {
+  if (phase === 'lobby') {
+    Conn.sendTo(conn, { type: 'trivia-waiting' })
+    updateWaitingRoom()
+    return
+  }
+  if (phase === 'question') {
+    const q = gameQuestions[currentQ]
+    const elapsed = Date.now() - questionStartedAt
+    const remainingMs = Math.max(0, QUESTION_MS - elapsed)
+    Conn.sendTo(conn, {
+      type: 'trivia-question',
+      index: currentQ,
+      total: gameQuestions.length,
+      q: q.q,
+      options: q.options,
+      answer: q.answer,
+      remainingMs,
+      myScore: player.score,
+      alreadyAnswered: player.answered,
+    })
+    if (revealing) {
+      Conn.sendTo(conn, { type: 'trivia-reveal', correctIndex: q.answer, scores: snapshotScores() })
+    }
+    updatePlayerDots()
+    return
+  }
+  if (phase === 'interlude') {
+    Conn.sendTo(conn, { type: 'trivia-interlude', scores: lastInterludeScores, myScore: player.score })
+    return
+  }
+  if (phase === 'end') {
+    Conn.sendTo(conn, { type: 'trivia-end', scores: lastEndScores })
+    return
+  }
+}
+
+function snapshotScores() {
+  return [...players.values()].map(p => ({ name: p.name, score: p.score }))
 }
 
 function updateWaitingRoom() {
@@ -93,6 +169,8 @@ function nextQuestion() {
   revealing = false
   if (currentQ >= gameQuestions.length) { endGame(); return }
   players.forEach(p => { p.answered = false })
+  phase = 'question'
+  questionStartedAt = Date.now()
 
   const q = gameQuestions[currentQ]
   playQuestionStart()
@@ -105,6 +183,7 @@ function nextQuestion() {
     q: q.q,
     options: q.options,
     answer: q.answer,
+    remainingMs: QUESTION_MS,
   })
 
   startTimer()
@@ -156,15 +235,15 @@ function startTimer() {
   }, 1000)
 }
 
-function handleAnswer(conn, data) {
-  const player = players.get(conn)
+function handleAnswer(data) {
+  const player = players.get(data.clientId)
   if (!player || player.answered || data.questionIndex !== currentQ) return
   player.answered = true
 
   const correct = data.answerIndex === gameQuestions[currentQ].answer
   if (correct) player.score++
 
-  Conn.sendTo(conn, { type: 'trivia-feedback', correct })
+  if (player.conn) Conn.sendTo(player.conn, { type: 'trivia-feedback', correct })
   updatePlayerDots()
 
   if ([...players.values()].every(p => p.answered)) {
@@ -202,6 +281,8 @@ function revealAnswer() {
 function showScoreInterlude(scores) {
   const hasMore = currentQ < gameQuestions.length - 1
   const sorted = [...scores].sort((a, b) => b.score - a.score)
+  phase = 'interlude'
+  lastInterludeScores = sorted
 
   _app.innerHTML = `
     <div class="scene">
@@ -243,13 +324,23 @@ function endGame() {
     .map(p => ({ name: p.name, score: p.score }))
     .sort((a, b) => b.score - a.score)
 
+  phase = 'end'
+  lastEndScores = scores
+
+  const topScore = scores[0]?.score ?? 0
+  const winners  = scores.filter(s => s.score === topScore && topScore > 0)
+  const isTie    = winners.length > 1
+  const heading  = isTie ? 'EMPATE' : (winners.length ? 'GANADOR' : 'FIN')
+
   playTriviaWin()
   showConfetti(scores[0] ? '#2e5fa8' : '#a78bfa')
 
   _app.innerHTML = `
     <div class="scene">
-      <h1 class="title" style="font-size:2rem;margin-bottom:4px">GANADOR</h1>
-      <div class="winner-name">${scores[0]?.name ?? '—'}</div>
+      <h1 class="title" style="font-size:2rem;margin-bottom:4px">${heading}</h1>
+      ${winners.length
+        ? winners.map(w => `<div class="winner-name">${w.name}</div>`).join('')
+        : `<div class="winner-name">—</div>`}
       <div class="trivia-scoreboard" style="margin-top:24px">
         ${scores.map((p, i) => `
           <div class="score-row">
@@ -277,7 +368,7 @@ function restartGame() {
   revealing = false
   if (timerInterval) { clearInterval(timerInterval); timerInterval = null }
   gameQuestions = shuffle(allQuestions).slice(0, QUESTIONS_PER_GAME)
-  players.forEach(p => { p.score = 0 })
+  players.forEach(p => { p.score = 0; p.answered = false })
   Conn.broadcast({ type: 'trivia-start', total: gameQuestions.length })
   currentQ = -1
   nextQuestion()
