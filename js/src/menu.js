@@ -2,6 +2,8 @@ import { renderTV } from './tv.js'
 import { renderEnterCode } from './phone.js'
 import { renderTriviaTV } from './trivia-tv.js'
 import { renderTriviaPhone } from './trivia-phone.js'
+import { renderCharadesTV } from './charades-tv.js'
+import { renderCharadesPhone } from './charades-phone.js'
 import { renderMapa } from './mapa.js'
 import { disconnect } from './connection.js'
 import { clearSession } from './session.js'
@@ -32,19 +34,22 @@ export function renderMenu(app) {
       <h1 class="title">CÓDIGO</h1>
       <button class="btn" id="cs-btn">CÓDIGO SECRETO</button>
       <button class="btn" id="trivia-btn">TRIVIA</button>
+      <button class="btn" id="mimica-btn">MÍMICA</button>
       <button class="btn" id="mapa-btn">MAPA</button>
     </div>
   `
 
   document.getElementById('cs-btn').focus()
-  document.getElementById('cs-btn').onclick    = () => renderGameMenu(app, 'cs')
+  document.getElementById('cs-btn').onclick     = () => renderGameMenu(app, 'cs')
   document.getElementById('trivia-btn').onclick = () => renderGameMenu(app, 'trivia')
-  document.getElementById('mapa-btn').onclick  = () => renderMapa(app, () => renderMenu(app))
+  document.getElementById('mimica-btn').onclick = () => renderGameMenu(app, 'mimica')
+  document.getElementById('mapa-btn').onclick   = () => renderMapa(app, () => renderMenu(app))
 }
 
 function renderGameMenu(app, game) {
   disconnect()
-  const title = game === 'cs' ? 'CÓDIGO SECRETO' : 'TRIVIA'
+  const titles = { cs: 'CÓDIGO SECRETO', trivia: 'TRIVIA', mimica: 'MÍMICA' }
+  const title = titles[game]
 
   app.innerHTML = `
     <div class="scene">
@@ -59,9 +64,15 @@ function renderGameMenu(app, game) {
 
   const goMenu = () => renderMenu(app)
 
-  document.getElementById('tv-btn').onclick    = () =>
-    game === 'cs' ? renderTV(app) : renderTriviaTV(app, goMenu)
-  document.getElementById('phone-btn').onclick = () =>
-    game === 'cs' ? renderEnterCode(app) : renderTriviaPhone(app, goMenu)
+  document.getElementById('tv-btn').onclick    = () => {
+    if (game === 'cs')     return renderTV(app)
+    if (game === 'trivia') return renderTriviaTV(app, goMenu)
+    if (game === 'mimica') return renderCharadesTV(app, goMenu)
+  }
+  document.getElementById('phone-btn').onclick = () => {
+    if (game === 'cs')     return renderEnterCode(app)
+    if (game === 'trivia') return renderTriviaPhone(app, goMenu)
+    if (game === 'mimica') return renderCharadesPhone(app, goMenu)
+  }
   document.getElementById('back-btn').onclick  = goMenu
 }
