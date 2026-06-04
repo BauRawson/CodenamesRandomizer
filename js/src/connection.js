@@ -1,53 +1,126 @@
-import Peer from 'peerjs'
+/**
+ * WebSocket relay transport.
+ * Configure the relay server URL by setting window.CODIGO_WS_URL in index.html.
+ * See server/index.js and the README for deployment instructions.
+ */
 
-const PREFIX = 'codigo-'
+const WS_URL = (typeof window !== 'undefined' && window.CODIGO_WS_URL)
+  || 'wss://codigo-relay.onrender.com'
 
-let peer = null
-let conn = null          // phone side: single outgoing connection
-let connections = []     // TV side: all incoming connections
 const handlers = new Map()
-
 const emit = (event, ...args) => handlers.get(event)?.(...args)
 export const on = (event, cb) => handlers.set(event, cb)
+
+let ws    = null
+let _role = null   // 'tv' | 'phone'
+
+// TV side: virtual connection objects keyed by peerId, passed to event handlers
+// so callers can do sendTo(conn, data) using the same conn reference.
+const peerConns = new Map()   // peerId -> { id, open }
 
 export const generateCode = () =>
   String(Math.floor(1000 + Math.random() * 9000))
 
-export function hostRoom(code) {
-  peer = new Peer(PREFIX + code)
-  peer.on('open', () => emit('ready'))
-  peer.on('connection', (c) => {
-    connections.push(c)
-    c.on('open',  ()     => emit('connected', c))
-    c.on('data',  (data) => emit('message', data, c))
-    c.on('close', ()     => {
-      connections = connections.filter(x => x !== c)
-      emit('peer-left', c)
-    })
+function openWS(onOpen) {
+  ws = new WebSocket(WS_URL)
+  ws.addEventListener('open', onOpen)
+  ws.addEventListener('error', () => emit('error', { type: 'network' }))
+  ws.addEventListener('close', () => {
+    if (_role === 'phone') emit('disconnected')
   })
-  peer.on('error', (e) => emit('error', e))
+  ws.addEventListener('message', (event) => {
+    let msg
+    try { msg = JSON.parse(event.data) } catch { return }
+    handleMessage(msg)
+  })
+}
+
+function handleMessage(msg) {
+  switch (msg.type) {
+    case 'ready':
+      // TV successfully registered its room – nothing more to do here
+      break
+
+    case 'peer-joined': {
+      // TV side: a new phone connected
+      const conn = { id: msg.peerId, open: true }
+      peerConns.set(msg.peerId, conn)
+      emit('connected', conn)
+      break
+    }
+
+    case 'from-peer': {
+      // TV side: a phone sent a message
+      const conn = peerConns.get(msg.peerId)
+      if (conn) emit('message', msg.payload, conn)
+      break
+    }
+
+    case 'peer-left': {
+      // TV side: a phone disconnected
+      const conn = peerConns.get(msg.peerId)
+      if (conn) {
+        conn.open = false
+        peerConns.delete(msg.peerId)
+        emit('peer-left', conn)
+      }
+      break
+    }
+
+    case 'joined':
+      // Phone side: successfully joined room
+      emit('connected')
+      break
+
+    case 'from-host':
+      // Phone side: TV sent a message
+      emit('message', msg.payload)
+      break
+
+    case 'host-left':
+      // Phone side: TV disconnected
+      emit('disconnected')
+      break
+
+    case 'error':
+      emit('error', { type: msg.error })
+      break
+  }
+}
+
+export function hostRoom(code) {
+  _role = 'tv'
+  openWS(() => ws.send(JSON.stringify({ type: 'host', code })))
 }
 
 export function joinRoom(code) {
-  peer = new Peer()
-  peer.on('open', () => {
-    conn = peer.connect(PREFIX + code, { reliable: true })
-    conn.on('open',  ()     => emit('connected'))
-    conn.on('data',  (data) => emit('message', data))
-    conn.on('close', ()     => emit('disconnected'))
-    conn.on('error', (e)    => emit('error', e))
-  })
-  peer.on('error', (e) => emit('error', e))
+  _role = 'phone'
+  openWS(() => ws.send(JSON.stringify({ type: 'join', code })))
 }
 
-export const send       = (data)    => conn?.open && conn.send(data)
-export const sendTo     = (c, data) => c?.open && c.send(data)
-export const broadcast  = (data)    => connections.filter(c => c.open).forEach(c => c.send(data))
-export const isConnected = ()       => !!conn?.open
+export const send = (data) => {
+  if (ws?.readyState === WebSocket.OPEN) {
+    ws.send(JSON.stringify({ type: 'to-host', payload: data }))
+  }
+}
+
+export const sendTo = (conn, data) => {
+  if (ws?.readyState === WebSocket.OPEN) {
+    ws.send(JSON.stringify({ type: 'to-peer', peerId: conn.id, payload: data }))
+  }
+}
+
+export const broadcast = (data) => {
+  if (ws?.readyState === WebSocket.OPEN) {
+    ws.send(JSON.stringify({ type: 'broadcast', payload: data }))
+  }
+}
+
+export const isConnected = () => ws?.readyState === WebSocket.OPEN && _role === 'phone'
 
 export function disconnect() {
-  if (peer) { peer.destroy(); peer = null }
-  conn = null
-  connections = []
+  if (ws) { ws.close(); ws = null }
+  _role = null
+  peerConns.clear()
   handlers.clear()
 }
