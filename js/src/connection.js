@@ -1,7 +1,6 @@
-import Peer from 'peerjs'
-
 const PREFIX = 'codigo-'
 
+let PeerClass = null     // PeerJS constructor, loaded lazily (see loadPeer)
 let peer = null
 let conn = null          // phone side: single outgoing connection
 let connections = []     // TV side: all incoming connections
@@ -13,7 +12,25 @@ export const on = (event, cb) => handlers.set(event, cb)
 export const generateCode = () =>
   String(Math.floor(1000 + Math.random() * 9000))
 
-export function hostRoom(code) {
+// Load PeerJS only when a game actually starts. Keeping it out of the startup
+// bundle means the menus and single-device modes still render even on browsers
+// where PeerJS (WebRTC) fails to load — instead of blanking the whole app.
+async function loadPeer() {
+  if (!PeerClass) {
+    const mod = await import('peerjs')
+    PeerClass = mod.default
+  }
+  return PeerClass
+}
+
+export async function hostRoom(code) {
+  let Peer
+  try {
+    Peer = await loadPeer()
+  } catch (e) {
+    emit('error', { type: 'peerjs-unavailable' })
+    return
+  }
   peer = new Peer(PREFIX + code)
   peer.on('open', () => emit('ready'))
   peer.on('connection', (c) => {
@@ -28,7 +45,14 @@ export function hostRoom(code) {
   peer.on('error', (e) => emit('error', e))
 }
 
-export function joinRoom(code) {
+export async function joinRoom(code) {
+  let Peer
+  try {
+    Peer = await loadPeer()
+  } catch (e) {
+    emit('error', { type: 'peerjs-unavailable' })
+    return
+  }
   peer = new Peer()
   peer.on('open', () => {
     conn = peer.connect(PREFIX + code, { reliable: true })

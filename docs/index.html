@@ -4,6 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Código Secreto</title>
+
+  <!-- Blank-screen diagnostics. Pure ES5, runs BEFORE the app bundle so it
+       still shows the error even if the bundle itself fails to parse on an old
+       engine. Prints any uncaught error onto the page instead of going blank. -->
+  <script>
+  (function () {
+    function show(msg) {
+      try {
+        var app = document.getElementById('app');
+        if (app) app.innerHTML =
+          '<pre style="color:#fff;white-space:pre-wrap;padding:24px;font-size:18px;font-weight:400">'
+          + String(msg).replace(/[<&]/g, ' ') + '</pre>';
+      } catch (e) {}
+    }
+    window.onerror = function (message, source, lineno, colno, error) {
+      show(message + ' @ ' + (source || '') + ':' + (lineno || '')
+        + '\n' + ((error && error.stack) || ''));
+    };
+    window.addEventListener('unhandledrejection', function (ev) {
+      var r = ev && ev.reason;
+      show('unhandledrejection: ' + ((r && r.stack) || r));
+    });
+  })();
+  </script>
   <link rel="icon" href="/icon.png">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -35,7 +59,7 @@
 </head>
 <body>
   <div id="app"></div>
-  <script crossorigin id="vite-legacy-polyfill" src="/assets/polyfills-legacy-DNII008p.js"></script>
-  <script crossorigin id="vite-legacy-entry" data-src="/assets/index-legacy-CTorgang.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  <script crossorigin id="vite-legacy-polyfill" src="/assets/polyfills-legacy-DXJmDetK.js"></script>
+  <script crossorigin id="vite-legacy-entry" data-src="/assets/index-legacy-BlT_GqiU.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
 </body>
 </html>
