@@ -6,7 +6,7 @@ import {
   playCountdownTick, playJoin, playQuestionStart,
 } from './sounds.js'
 
-const QUESTION_TIME = 10
+const QUESTION_TIME = 15
 const QUESTIONS_PER_GAME = Math.min(10, allQuestions.length)
 const LABELS = ['A', 'B', 'C', 'D']
 

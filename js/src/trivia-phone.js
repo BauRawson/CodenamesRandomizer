@@ -134,7 +134,7 @@ function renderQuestion(app, data) {
       <div class="team-banner trivia-safe-top" style="${bar}border-bottom:3px solid var(--accent);justify-content:space-between">
         <span class="trivia-phone-progress">${data.index + 1} / ${data.total}</span>
         <span class="trivia-phone-score" id="phone-score">${myScore} pts</span>
-        <span class="trivia-phone-timer" id="phone-timer">10</span>
+        <span class="trivia-phone-timer" id="phone-timer">15</span>
       </div>
       <div class="trivia-phone-body">
         <div class="trivia-phone-question">${data.q}</div>
@@ -177,7 +177,7 @@ function renderQuestion(app, data) {
     document.getElementById('phone-status').textContent = '¡Respuesta enviada!'
   }
 
-  const initialMs = typeof data.remainingMs === 'number' ? data.remainingMs : 10000
+  const initialMs = typeof data.remainingMs === 'number' ? data.remainingMs : 15000
   let remaining = Math.max(0, Math.ceil(initialMs / 1000))
   const timerEl = document.getElementById('phone-timer')
   if (timerEl) timerEl.textContent = remaining
