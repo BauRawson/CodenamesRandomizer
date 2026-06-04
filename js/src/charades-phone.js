@@ -2,6 +2,12 @@ import * as Conn from './connection.js'
 import { playTap, playCorrect, playWrong, playTick } from './sounds.js'
 import { getClientId, saveSession, clearSession, loadSession } from './session.js'
 
+function esc(str) {
+  return String(str)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;')
+}
+
 const TEAM_COLORS = ['#ed8099', '#4d65b4', '#fbb954', '#7ad36b', '#b774e0', '#5fd6c8']
 
 let _app = null
@@ -124,14 +130,14 @@ function renderTurnReady(data) {
   _app.innerHTML = `
     <div class="scene">
       <p class="mimica-ready-label" style="font-size:clamp(0.9rem,3vw,1.1rem);color:rgba(255,255,255,0.55)">TURNO DEL</p>
-      <h1 class="title" style="font-size:clamp(2.4rem,10vw,4rem);color:${teamColor(currentTeamIdx)};margin:8px 0 16px">${t.name}</h1>
+      <h1 class="title" style="font-size:clamp(2.4rem,10vw,4rem);color:${teamColor(currentTeamIdx)};margin:8px 0 16px">${esc(t.name)}</h1>
       <p class="label">Cuando estés listo, presiona EMPEZAR. Tendrás 90 segundos.</p>
       <button class="btn" id="begin-btn" style="margin-top:24px;background:${teamColor(currentTeamIdx)};color:#fff">EMPEZAR</button>
       <div class="mimica-mini-scoreboard">
         ${teams.map((tt, i) => `
           <div class="mimica-mini-row ${i === currentTeamIdx ? 'mimica-mini-row-current' : ''}" style="--team-color:${teamColor(i)}">
             <span class="mimica-score-dot"></span>
-            <span class="mimica-score-name">${tt.name}</span>
+            <span class="mimica-score-name">${esc(tt.name)}</span>
             <span class="mimica-score-pts">${tt.score}</span>
           </div>
         `).join('')}
@@ -161,7 +167,7 @@ function drawPlaying() {
   _app.innerHTML = `
     <div class="scene mimica-phone-scene">
       <div class="mimica-phone-top" style="border-bottom-color:${teamColor(currentTeamIdx)}55">
-        <span class="mimica-team-tag" style="background:${teamColor(currentTeamIdx)}22;color:${teamColor(currentTeamIdx)}">${t.name}</span>
+        <span class="mimica-team-tag" style="background:${teamColor(currentTeamIdx)}22;color:${teamColor(currentTeamIdx)}">${esc(t.name)}</span>
         <span class="mimica-phone-aciertos">Aciertos: <strong id="phone-aciertos">${aciertosThisTurn}</strong></span>
         <span class="mimica-phone-timer${timeLeft <= 5 ? ' timer-urgent' : ''}" id="mimica-phone-timer">${timeLeft}s</span>
       </div>
@@ -215,14 +221,14 @@ function renderTurnEnd(data) {
   _app.innerHTML = `
     <div class="scene">
       <div class="mimica-timeup-label" style="margin-top:0">¡TIEMPO!</div>
-      <h1 class="title" style="font-size:clamp(1.6rem,6vw,2.4rem);color:${teamColor(currentTeamIdx)};margin:8px 0">${t.name}</h1>
+      <h1 class="title" style="font-size:clamp(1.6rem,6vw,2.4rem);color:${teamColor(currentTeamIdx)};margin:8px 0">${esc(t.name)}</h1>
       <div class="mimica-turnend-stat" style="font-size:clamp(2.8rem,12vw,5rem);font-weight:900;line-height:1">+${aciertosThisTurn}</div>
       <p class="label" style="margin-top:-4px;opacity:0.55">aciertos esta ronda</p>
       <div class="mimica-mini-scoreboard">
         ${teams.map((tt, i) => `
           <div class="mimica-mini-row ${i === currentTeamIdx ? 'mimica-mini-row-current' : ''}" style="--team-color:${teamColor(i)}">
             <span class="mimica-score-dot"></span>
-            <span class="mimica-score-name">${tt.name}</span>
+            <span class="mimica-score-name">${esc(tt.name)}</span>
             <span class="mimica-score-pts">${tt.score}</span>
           </div>
         `).join('')}
@@ -251,7 +257,7 @@ function renderGameEnd(data) {
     <div class="scene">
       <h1 class="title" style="font-size:2rem;margin-bottom:8px">${heading}</h1>
       ${winners.length
-        ? winners.map(w => `<div class="winner-name" style="color:${teamColor(teams.indexOf(w))}">${w.name}</div>`).join('')
+        ? winners.map(w => `<div class="winner-name" style="color:${teamColor(teams.indexOf(w))}">${esc(w.name)}</div>`).join('')
         : `<div class="winner-name">—</div>`}
       <div class="mimica-mini-scoreboard" style="margin-top:24px">
         ${sorted.map(t => {
@@ -259,7 +265,7 @@ function renderGameEnd(data) {
           return `
           <div class="mimica-mini-row" style="--team-color:${teamColor(origIdx)}">
             <span class="mimica-score-dot"></span>
-            <span class="mimica-score-name">${t.name}</span>
+            <span class="mimica-score-name">${esc(t.name)}</span>
             <span class="mimica-score-pts">${t.score}</span>
           </div>`
         }).join('')}

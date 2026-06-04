@@ -3,6 +3,12 @@ import { playTap, playCorrect, playWrong, playCountdownTick } from './sounds.js'
 import { showConfetti } from './vfx.js'
 import { getClientId, saveSession, clearSession, loadSession } from './session.js'
 
+function esc(str) {
+  return String(str)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;')
+}
+
 let _app    = null
 let _onMenu = null
 let playerName = ''
@@ -115,7 +121,7 @@ function renderWaiting(app) {
   app.innerHTML = `
     <div class="scene">
       <h1 class="title">TRIVIA</h1>
-      <p class="label">¡Conectado como <strong style="color:#fff">${playerName}</strong>!</p>
+      <p class="label">¡Conectado como <strong style="color:#fff">${esc(playerName)}</strong>!</p>
       <p class="label" style="opacity:0.45;margin-top:4px">Esperando que el televisor empiece…</p>
     </div>
   `
@@ -241,7 +247,7 @@ function renderPhoneInterlude(app, data) {
         ${sorted.map((p, i) => `
           <div class="score-row ${p.name === playerName ? 'score-row-me' : ''}">
             <span class="score-rank">${i + 1}</span>
-            <span class="score-name">${p.name}</span>
+            <span class="score-name">${esc(p.name)}</span>
             <span class="score-pts">${p.score}</span>
           </div>
         `).join('')}
@@ -284,7 +290,7 @@ function renderEnd(app, scores) {
       <div style="text-align:center;margin-top:-4px">
         <div style="font-size:0.85rem;letter-spacing:0.1em;color:rgba(255,255,255,0.45);font-weight:700">${label}</div>
         <div class="winner-name" style="font-size:clamp(1.4rem,5vw,2.4rem);margin-top:2px">
-          ${winners.map(w => w.name).join(' · ')}
+          ${winners.map(w => esc(w.name)).join(' · ')}
         </div>
       </div>
     `
@@ -303,7 +309,7 @@ function renderEnd(app, scores) {
         ${scores.map((p, i) => `
           <div class="score-row ${p.name === playerName ? 'score-row-me' : ''}">
             <span class="score-rank">${i + 1}</span>
-            <span class="score-name">${p.name}</span>
+            <span class="score-name">${esc(p.name)}</span>
             <span class="score-pts">${p.score}</span>
           </div>
         `).join('')}
