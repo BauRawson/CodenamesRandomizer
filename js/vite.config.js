@@ -7,6 +7,7 @@ export default {
     basicSsl(),
     legacy({
       targets: ['defaults', 'not IE 11', 'chrome >= 56', 'safari >= 10'],
+      renderModernChunks: false,
     }),
   ],
   server: {
