@@ -3,6 +3,12 @@ import { movies } from './charades-words.js'
 import { playTick, playTimerEnd, playCorrect, playJoin, playTriviaWin } from './sounds.js'
 import { showConfetti } from './vfx.js'
 
+function esc(str) {
+  return String(str)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;')
+}
+
 const TURN_TIME = 90
 
 const TEAM_COLORS = ['#ed8099', '#4d65b4', '#fbb954', '#7ad36b', '#b774e0', '#5fd6c8']
@@ -213,7 +219,7 @@ function scoreboardHTML(highlightIdx = -1) {
         <div class="mimica-score-row ${i === highlightIdx ? 'mimica-score-row-current' : ''}"
              style="--team-color:${teamColor(i)}">
           <span class="mimica-score-dot"></span>
-          <span class="mimica-score-name">${t.name}</span>
+          <span class="mimica-score-name">${esc(t.name)}</span>
           <span class="mimica-score-pts">${t.score}</span>
         </div>
       `).join('')}
@@ -258,7 +264,7 @@ function renderTurnReady() {
       </div>
       <div class="mimica-ready-center">
         <div class="mimica-ready-label">TURNO DEL</div>
-        <div class="mimica-ready-team" style="color:${teamColor(currentTeamIdx)}">${t.name}</div>
+        <div class="mimica-ready-team" style="color:${teamColor(currentTeamIdx)}">${esc(t.name)}</div>
         <div class="mimica-ready-help">Pasa el móvil al capitán de este equipo</div>
       </div>
       <div class="mimica-foot">${scoreboardHTML(currentTeamIdx)}</div>
@@ -271,7 +277,7 @@ function renderPlaying() {
   _app.innerHTML = `
     <div class="scene mimica-scene">
       <div class="mimica-top">
-        <span class="mimica-team-tag" style="background:${teamColor(currentTeamIdx)}22;color:${teamColor(currentTeamIdx)}">${t.name}</span>
+        <span class="mimica-team-tag" style="background:${teamColor(currentTeamIdx)}22;color:${teamColor(currentTeamIdx)}">${esc(t.name)}</span>
         <span class="mimica-aciertos">Aciertos: <strong id="mimica-aciertos">${aciertosThisTurn}</strong></span>
       </div>
       <div class="mimica-timer-wrap">
@@ -299,7 +305,7 @@ function renderTurnEnd() {
       </div>
       <div class="mimica-turnend-center">
         <div class="mimica-timeup-flash">¡TIEMPO!</div>
-        <div class="mimica-turnend-team" style="color:${teamColor(currentTeamIdx)}">${t.name}</div>
+        <div class="mimica-turnend-team" style="color:${teamColor(currentTeamIdx)}">${esc(t.name)}</div>
         <div class="mimica-turnend-stat">+${aciertosThisTurn} <span style="opacity:0.55;font-size:0.5em">aciertos</span></div>
       </div>
       <div class="mimica-foot">
@@ -321,7 +327,7 @@ function renderGameEnd() {
     <div class="scene">
       <h1 class="title" style="font-size:2rem;margin-bottom:4px">${heading}</h1>
       ${winners.length
-        ? winners.map(w => `<div class="winner-name" style="color:${teamColor(teams.indexOf(w))}">${w.name}</div>`).join('')
+        ? winners.map(w => `<div class="winner-name" style="color:${teamColor(teams.indexOf(w))}">${esc(w.name)}</div>`).join('')
         : `<div class="winner-name">—</div>`}
       <div class="mimica-scoreboard" style="margin-top:24px;max-width:520px;width:100%">
         ${sorted.map((t) => {
@@ -329,7 +335,7 @@ function renderGameEnd() {
           return `
           <div class="mimica-score-row" style="--team-color:${teamColor(origIdx)}">
             <span class="mimica-score-dot"></span>
-            <span class="mimica-score-name">${t.name}</span>
+            <span class="mimica-score-name">${esc(t.name)}</span>
             <span class="mimica-score-pts">${t.score}</span>
           </div>`
         }).join('')}
@@ -354,7 +360,7 @@ function renderCaptainLost() {
         ${teams.map((t, i) => `
           <div class="mimica-score-row" style="--team-color:${teamColor(i)}">
             <span class="mimica-score-dot"></span>
-            <span class="mimica-score-name">${t.name}</span>
+            <span class="mimica-score-name">${esc(t.name)}</span>
             <span class="mimica-score-pts">${t.score}</span>
           </div>
         `).join('')}

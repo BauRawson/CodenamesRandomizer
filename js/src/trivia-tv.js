@@ -6,6 +6,12 @@ import {
   playCountdownTick, playJoin, playQuestionStart,
 } from './sounds.js'
 
+function esc(str) {
+  return String(str)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;')
+}
+
 const QUESTION_TIME = 15
 const QUESTIONS_PER_GAME = Math.min(10, allQuestions.length)
 const LABELS = ['A', 'B', 'C', 'D']
@@ -153,7 +159,7 @@ function updateWaitingRoom() {
   const el = document.getElementById('player-list')
   if (!el) return
   el.innerHTML = [...players.values()]
-    .map(p => `<span class="player-chip">${p.name}</span>`)
+    .map(p => `<span class="player-chip">${esc(p.name)}</span>`)
     .join('')
   const btn = document.getElementById('start-btn')
   if (!btn) return
@@ -262,7 +268,7 @@ function updatePlayerDots() {
   const el = document.getElementById('tv-players')
   if (!el) return
   el.innerHTML = [...players.values()]
-    .map(p => `<span class="player-dot ${p.answered ? 'dot-answered' : ''}">${p.name}</span>`)
+    .map(p => `<span class="player-dot ${p.answered ? 'dot-answered' : ''}">${esc(p.name)}</span>`)
     .join('')
 }
 
@@ -296,7 +302,7 @@ function showScoreInterlude(scores) {
         ${sorted.map((p, i) => `
           <div class="score-row">
             <span class="score-rank">${i + 1}</span>
-            <span class="score-name">${p.name}</span>
+            <span class="score-name">${esc(p.name)}</span>
             <span class="score-pts">${p.score}</span>
           </div>
         `).join('')}
@@ -344,13 +350,13 @@ function endGame() {
     <div class="scene">
       <h1 class="title" style="font-size:2rem;margin-bottom:4px">${heading}</h1>
       ${winners.length
-        ? winners.map(w => `<div class="winner-name">${w.name}</div>`).join('')
+        ? winners.map(w => `<div class="winner-name">${esc(w.name)}</div>`).join('')
         : `<div class="winner-name">—</div>`}
       <div class="trivia-scoreboard" style="margin-top:24px">
         ${scores.map((p, i) => `
           <div class="score-row">
             <span class="score-rank">${i + 1}</span>
-            <span class="score-name">${p.name}</span>
+            <span class="score-name">${esc(p.name)}</span>
             <span class="score-pts">${p.score} / ${gameQuestions.length}</span>
           </div>
         `).join('')}

@@ -4,8 +4,7 @@
  * See server/index.js and the README for deployment instructions.
  */
 
-const WS_URL = (typeof window !== 'undefined' && window.CODIGO_WS_URL)
-  || 'wss://codigo-relay.onrender.com'
+const WS_URL = (typeof window !== 'undefined' && window.CODIGO_WS_URL) || ''
 
 const handlers = new Map()
 const emit = (event, ...args) => handlers.get(event)?.(...args)
