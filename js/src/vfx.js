@@ -1,5 +1,4 @@
 export function animateReveal(el) {
-  if (!el.animate) return
   el.animate(
     [
       { transform: 'scale(0.88)', opacity: 0.6 },
@@ -13,7 +12,7 @@ export function animateReveal(el) {
 export function showConfetti(teamColor) {
   const canvas = document.createElement('canvas')
   canvas.style.cssText =
-    'position:fixed;top:0;right:0;bottom:0;left:0;inset:0;width:100%;height:100%;pointer-events:none;z-index:999'
+    'position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:999'
   document.body.appendChild(canvas)
 
   const ctx = canvas.getContext('2d')
