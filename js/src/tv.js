@@ -2,6 +2,7 @@ import * as Conn from './connection.js'
 import { COLORS } from './game.js'
 import { animateReveal, showConfetti } from './vfx.js'
 import { playReveal, playHide, playWin } from './sounds.js'
+import { fitBoard, watchBoardResize } from './fit-board.js'
 
 let tileEls  = []
 let counts   = [0, 0]
@@ -152,7 +153,12 @@ function renderBoard(app, data) {
     boardEl.appendChild(tile)
     tileEls.push(tile)
   })
-  requestAnimationFrame(() => tileEls.forEach(fitText))
+  fitBoard(boardEl)
+  watchBoardResize()
+  requestAnimationFrame(() => {
+    fitBoard(boardEl)
+    tileEls.forEach(fitText)
+  })
 }
 
 function fitText(tileEl) {

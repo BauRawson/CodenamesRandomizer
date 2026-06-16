@@ -1,6 +1,7 @@
 import { generateBoard, COLORS } from './game.js'
 import { playReveal, playHide, playNewBoard } from './sounds.js'
 import { animateReveal } from './vfx.js'
+import { fitBoard, watchBoardResize } from './fit-board.js'
 
 export function renderMapa(app, goMenu) {
   drawMapa()
@@ -39,6 +40,9 @@ export function renderMapa(app, goMenu) {
       })
       boardEl.appendChild(tile)
     })
+    fitBoard(boardEl)
+    watchBoardResize()
+    requestAnimationFrame(() => fitBoard(boardEl))
 
     document.getElementById('back-btn').onclick = goMenu
     document.getElementById('new-map-btn').onclick = () => {
