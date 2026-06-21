@@ -8,6 +8,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "@vitejs/plugin-legacy": "^5.4.3",
+    "terser": "^5.48.0",
     "vite": "^5.0.0"
   },
   "dependencies": {
