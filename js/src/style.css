@@ -126,7 +126,7 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 }
 
 .team-banner-text {
-  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  font-size: clamp(1rem, 2.5vw, 2.2rem);
   font-weight: 900;
   letter-spacing: 0.08em;
   color: rgba(255,255,255,0.92);
@@ -140,7 +140,7 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 }
 
 .counter {
-  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
   font-weight: 900;
   padding: 4px 14px;
   border-radius: 8px;
@@ -156,7 +156,7 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
   aspect-ratio: 4 / 3;
   gap: clamp(4px, 1vw, 12px);
   padding: clamp(6px, 1.2vw, 18px);
-  width: min(97vw, 1100px);
+  width: min(97vw, 2000px);
   max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
@@ -170,7 +170,7 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
   border-radius: clamp(8px, 1vw, 16px);
 }
 .tv-board .tile-word {
-  font-size: clamp(15px, 2.4vw, 28px);
+  font-size: clamp(15px, 2.4vw, 52px);
 }
 
 /* Phone-specific: smaller text */
