@@ -14,8 +14,10 @@ export function fitBoard(boardEl) {
   let bannerH = 0
   scene.querySelectorAll('.team-banner').forEach((b) => { bannerH += b.offsetHeight })
 
-  const availW = scene.clientWidth - MARGIN * 2
-  const availH = scene.clientHeight - bannerH - MARGIN * 2
+  // Use window dimensions for reliable sizing on older browsers (e.g. Samsung Tizen)
+  // where the scene element's clientWidth/clientHeight may not reflect the full viewport.
+  const availW = window.innerWidth - MARGIN * 2
+  const availH = window.innerHeight - bannerH - MARGIN * 2
   if (availW <= 0 || availH <= 0) return
 
   // Largest 4:3 box that fits within both dimensions.
