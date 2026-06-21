@@ -28,7 +28,7 @@ export function renderTV(app) {
   const code = Conn.generateCode()
 
   app.innerHTML = `
-    <div class="scene">
+    <div class="scene tv-sync-scene">
       <h1 class="title">CODIGO</h1>
       <p class="label">Abre la app en tu móvil e ingresa este código:</p>
       <div class="room-code">${code}</div>
