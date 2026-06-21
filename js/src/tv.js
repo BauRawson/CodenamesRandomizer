@@ -131,7 +131,7 @@ function renderBoard(app, data) {
   counts = [...totals]
 
   app.innerHTML = `
-    <div class="scene board-scene">
+    <div class="scene board-scene tv-scene">
       <div class="team-banner" style="background:${startColor}22; border-bottom:3px solid ${startColor}">
         <div class="counters">
           <span class="counter" id="c0" style="color:${COLORS[0]}">${counts[0]}</span>
