@@ -30,6 +30,40 @@
     h1 { font-size: 3rem; color: white; }
     p  { color: rgba(255,255,255,0.7); margin-top: 12px; font-size: 1rem; }
   </style>
+  <script>
+    (function() {
+      var msgs = [];
+      function showErrors() {
+        var box = document.getElementById('error-overlay');
+        if (!box) {
+          box = document.createElement('div');
+          box.id = 'error-overlay';
+          box.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.85);color:#ff6b6b;font-family:monospace;font-size:1rem;padding:24px;overflow:auto;z-index:99999;white-space:pre-wrap;word-break:break-all;';
+          document.documentElement.appendChild(box);
+        }
+        box.textContent = msgs.join('\n\n');
+      }
+      function addError(msg) {
+        msgs.push(msg);
+        showErrors();
+      }
+      window.onerror = function(msg, src, line, col, err) {
+        addError('[JS ERROR]\n' + msg + '\n' + src + ':' + line + ':' + col + (err && err.stack ? '\n' + err.stack : ''));
+        return false;
+      };
+      window.addEventListener('unhandledrejection', function(e) {
+        var r = e.reason;
+        addError('[UNHANDLED PROMISE]\n' + (r && r.stack ? r.stack : String(r)));
+      });
+      window.addEventListener('error', function(e) {
+        var tag = e.target && e.target.tagName && e.target.tagName.toUpperCase();
+        if (tag === 'SCRIPT' || tag === 'LINK') {
+          var url = (tag === 'SCRIPT' ? e.target.src : tag === 'LINK' ? e.target.href : '') || '(unknown)';
+          addError('[LOAD ERROR]\n' + e.target.tagName + ' failed to load: ' + url);
+        }
+      }, true);
+    })();
+  </script>
   <script type="module" crossorigin src="/assets/index-CiNF-5HQ.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-DSxL1VVh.css">
 </head>
