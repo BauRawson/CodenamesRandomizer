@@ -167,13 +167,14 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
 /* TV-specific: bigger text, spacing */
 .tv-board .tile {
   height: auto;
-  border-radius: clamp(8px, 1vw, 16px);
+  border-radius: clamp(12px, 1.5vw, 28px);
 }
 .tv-board .tile-word {
-  font-size: clamp(18px, 2.8vw, 60px);
+  font-size: clamp(28px, 5vw, 100px);
+  font-weight: 900;
 }
 .tv-board {
-  gap: clamp(6px, 1.2vw, 16px);
+  gap: clamp(10px, 1.8vw, 28px);
 }
 
 /* TV scene: larger team banner and counters */
@@ -187,8 +188,20 @@ html, body { height: 100%; background: var(--bg); color: #fff; font-family: syst
   padding-bottom: max(16px, env(safe-area-inset-bottom, 16px));
 }
 .tv-scene .counter {
-  font-size: clamp(2.2rem, 5vw, 4.5rem);
-  padding: 6px 20px;
+  font-size: clamp(3rem, 7vw, 8rem);
+  padding: 8px 28px;
+}
+
+/* TV sync screen: much larger text for the room code and surrounding labels */
+.tv-sync-scene .label {
+  font-size: clamp(1.5rem, 3.5vw, 3.5rem);
+  max-width: 90vw;
+}
+.tv-sync-scene .room-code {
+  font-size: clamp(10rem, 25vw, 22rem);
+}
+.tv-sync-scene .status {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 /* Phone-specific: smaller text */
