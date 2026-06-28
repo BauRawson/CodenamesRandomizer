@@ -7,7 +7,6 @@ export const CATEGORIES = [
   { slug: 'idle', label: 'Idle', icon: '⏱️' },
   { slug: 'multiplayer', label: 'Multiplayer', icon: '👥' },
   { slug: 'racing', label: 'Racing', icon: '🏎️' },
-  { slug: 'family', label: 'Family', icon: '🏠' },
 ]
 
 export const MOCK_GAMES = [

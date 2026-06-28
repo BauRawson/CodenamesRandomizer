@@ -64,8 +64,27 @@ export default function FamiliaPage() {
         </div>
       </section>
 
+      {/* Tools */}
+      <section className="mt-12">
+        <h2 className="font-black text-2xl text-brand-navy mb-5">Herramientas</h2>
+        <a
+          href="/play/codigo-secreto.html?mode=mapa"
+          className="flex items-center gap-5 bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow max-w-md"
+        >
+          <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0" style={{ background: '#7C3AED22' }}>
+            🗺️
+          </div>
+          <div>
+            <p className="font-black text-brand-navy text-lg">Mapa · Código Secreto</p>
+            <p className="text-gray-500 text-sm font-medium mt-0.5">
+              Genera el tablero de colores para la versión física del juego.
+            </p>
+          </div>
+        </a>
+      </section>
+
       {/* Tech note */}
-      <div className="mt-12 bg-brand-cream rounded-2xl p-6 border border-brand-peach">
+      <div className="mt-8 bg-brand-cream rounded-2xl p-6 border border-brand-peach">
         <p className="font-black text-brand-navy mb-1">🔧 Tecnología</p>
         <p className="text-gray-500 text-sm font-medium">
           Los juegos Familia usan WebRTC para conectar dispositivos en tiempo real sin servidores.

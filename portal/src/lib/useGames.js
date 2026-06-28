@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import { supabase } from './supabase.js'
 import { MOCK_GAMES, getGameBySlug as mockGetBySlug } from '../data/mockGames.js'
 
-const PUBLIC_MOCK = MOCK_GAMES.filter(g => !g.is_family)
+const isFamily = g => g.is_family || g.category === 'family'
+const PUBLIC_MOCK = MOCK_GAMES.filter(g => !isFamily(g))
 
 export function useGames() {
   const [games, setGames] = useState(PUBLIC_MOCK)
@@ -13,7 +14,7 @@ export function useGames() {
     setLoading(true)
     supabase.from('games').select('*').order('player_count', { ascending: false })
       .then(({ data, error }) => {
-        if (!error && data?.length) setGames(data.filter(g => !g.is_family))
+        if (!error && data?.length) setGames(data.filter(g => !isFamily(g)))
         setLoading(false)
       })
   }, [])
