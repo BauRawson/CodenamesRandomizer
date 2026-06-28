@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
 import MascotSVG from './MascotSVG.jsx'
+import { useAuth } from '../lib/useGames.js'
 
 export default function Hero() {
+  const user = useAuth()
+
   return (
     <div className="relative overflow-hidden bg-gradient-to-br from-brand-cream via-brand-peach to-orange-100 rounded-3xl mx-4 md:mx-0 mb-10 px-8 py-10 md:py-14 flex items-center justify-between gap-8">
       {/* Decorative blobs */}
@@ -36,8 +39,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Sign-up card */}
-      <div className="hidden lg:flex flex-col bg-white rounded-2xl shadow-xl p-5 w-60 flex-shrink-0 relative z-10">
+      {/* Sign-up card — hidden once logged in */}
+      {!user && <div className="hidden lg:flex flex-col bg-white rounded-2xl shadow-xl p-5 w-60 flex-shrink-0 relative z-10">
         <p className="font-black text-brand-navy text-base mb-1">Save your progress!</p>
         <p className="text-gray-500 text-xs mb-4">Create a free account to earn rewards, unlock achievements and play anywhere.</p>
         <Link
@@ -47,7 +50,7 @@ export default function Hero() {
           Sign up for free 🐾
         </Link>
         <p className="text-center text-xs text-gray-400 mt-3">Already have an account? <Link to="/login" className="text-brand-orange font-bold">Log in</Link></p>
-      </div>
+      </div>}
     </div>
   )
 }
