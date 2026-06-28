@@ -1,0 +1,12 @@
+{
+  "name": "michicho",
+  "private": true,
+  "scripts": {
+    "install:all": "cd portal && npm install --legacy-peer-deps && cd ../js && npm install --legacy-peer-deps",
+    "dev": "cd portal && npm run dev",
+    "dev:games": "cd js && npm run dev",
+    "build": "cd portal && npm run build && cd ../js && npm run build",
+    "build:portal": "cd portal && npm run build",
+    "build:games": "cd js && npm run build"
+  }
+}

@@ -1,3 +1,12 @@
+# Dependencies
+node_modules/
+
+# Local env files (anon key is public, but don't commit the file itself)
+.env
+.env.local
+portal/.env
+portal/.env.local
+
 # Godot 4+ specific ignores
 .godot/
 
