@@ -61,26 +61,33 @@ export default function FamiliaPage() {
               )}
             </div>
           ))}
-        </div>
-      </section>
 
-      {/* Tools */}
-      <section className="mt-12">
-        <h2 className="font-black text-2xl text-brand-navy mb-5">Herramientas</h2>
-        <a
-          href="/play/codigo-secreto.html?mode=mapa"
-          className="flex items-center gap-5 bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow max-w-md"
-        >
-          <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0" style={{ background: '#7C3AED22' }}>
-            🗺️
+          {/* Mapa — color-only board for physical Codenames */}
+          <div className="flex flex-col gap-3">
+            <a
+              href="/play/codigo-secreto.html?mode=mapa"
+              className="group block flex-shrink-0 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-lg transition-all duration-200 hover:-translate-y-1"
+              style={{ width: 200 }}
+            >
+              <div
+                className="relative flex items-center justify-center"
+                style={{ background: 'linear-gradient(135deg, #7C3AEDcc, #7C3AED)', height: 160 }}
+              >
+                <span style={{ fontSize: 64 }}>🗺️</span>
+              </div>
+              <div className="p-3">
+                <p className="font-bold text-brand-navy text-sm leading-tight truncate">Mapa</p>
+                <p className="text-xs text-gray-400 mt-0.5">herramienta</p>
+              </div>
+            </a>
+            <a
+              href="/play/codigo-secreto.html?mode=mapa"
+              className="text-center bg-brand-orange text-white font-black py-2.5 rounded-xl hover:bg-brand-orange-light transition-colors text-sm shadow-md shadow-brand-orange/20"
+            >
+              ▶ Abrir
+            </a>
           </div>
-          <div>
-            <p className="font-black text-brand-navy text-lg">Mapa · Código Secreto</p>
-            <p className="text-gray-500 text-sm font-medium mt-0.5">
-              Genera el tablero de colores para la versión física del juego.
-            </p>
-          </div>
-        </a>
+        </div>
       </section>
 
       {/* Tech note */}
