@@ -23,7 +23,6 @@ const NAV_LINKS = [
   { to: '/', label: 'Home', exact: true },
   { to: '/games', label: 'Games' },
   { to: '/categories', label: 'Categories' },
-  { to: '/familia', label: 'Familia 🏠' },
 ]
 
 export default function Navbar() {

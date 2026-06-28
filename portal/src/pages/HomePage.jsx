@@ -8,7 +8,6 @@ export default function HomePage() {
 
   const featured = games.filter(g => g.is_featured)
   const newest = games.filter(g => g.is_new || g.coming_soon)
-  const family = games.filter(g => g.category === 'family')
 
   return (
     <main className="max-w-7xl mx-auto py-6">
@@ -33,14 +32,6 @@ export default function HomePage() {
       )}
 
       <CategoryGrid />
-
-      <GameSection
-        title="Familia 🏠"
-        icon=""
-        games={family}
-        viewAllHref="/familia"
-        cardSize="md"
-      />
 
       {/* Features strip */}
       <section className="mx-4 md:mx-0 mb-10 grid grid-cols-2 md:grid-cols-4 gap-4">

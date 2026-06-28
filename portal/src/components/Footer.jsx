@@ -12,8 +12,7 @@ export default function Footer() {
           <p className="font-black text-sm mb-3 text-gray-300">Games</p>
           <div className="flex flex-col gap-2 text-sm text-gray-400">
             <Link to="/games" className="hover:text-white transition-colors">All games</Link>
-            <Link to="/familia" className="hover:text-white transition-colors">Familia</Link>
-            <Link to="/categories" className="hover:text-white transition-colors">Categories</Link>
+<Link to="/categories" className="hover:text-white transition-colors">Categories</Link>
           </div>
         </div>
         <div>

@@ -25,12 +25,6 @@ export default function Hero() {
           >
             Explore games →
           </Link>
-          <Link
-            to="/familia"
-            className="inline-flex items-center gap-2 bg-white text-brand-navy font-black px-7 py-3.5 rounded-2xl hover:bg-gray-50 transition-colors border-2 border-gray-200 text-base"
-          >
-            🏠 Familia
-          </Link>
         </div>
       </div>
 

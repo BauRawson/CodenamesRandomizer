@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom'
-import { useGames } from '../lib/useGames.js'
+import { getFamilyGames } from '../data/mockGames.js'
 import GameCard from '../components/GameCard.jsx'
 
 export default function FamiliaPage() {
-  const { games } = useGames()
-  const familyGames = games.filter(g => g.category === 'family')
+  const familyGames = getFamilyGames()
 
   return (
     <main className="max-w-7xl mx-auto py-8 px-4">
