@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { VERSION } from '../version.js'
 
 export default function Footer() {
   return (
@@ -32,7 +33,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 text-center text-xs text-gray-500 py-4">
-        © {new Date().getFullYear()} Michicho. Made with 🧡
+        © {new Date().getFullYear()} Michicho. Made with 🧡 · v{VERSION}
       </div>
     </footer>
   )
