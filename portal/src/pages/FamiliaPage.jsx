@@ -49,7 +49,7 @@ export default function FamiliaPage() {
         <h2 className="font-black text-2xl text-brand-navy mb-5">Juegos disponibles</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
           {familyGames.map(game => (
-            <div key={game.id} className="flex flex-col gap-3">
+            <div key={game.id} className="flex flex-col gap-3 w-fit">
               <GameCard game={game} size="lg" />
               {!game.coming_soon && (
                 <Link
@@ -63,7 +63,7 @@ export default function FamiliaPage() {
           ))}
 
           {/* Mapa — color-only board for physical Codenames */}
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 w-fit">
             <a
               href="/play/codigo-secreto.html?mode=mapa"
               className="group block flex-shrink-0 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-lg transition-all duration-200 hover:-translate-y-1"
