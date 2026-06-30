@@ -1,4 +1,3 @@
-import Hero from '../components/Hero.jsx'
 import GameSection from '../components/GameSection.jsx'
 import CategoryGrid from '../components/CategoryGrid.jsx'
 import { useGames } from '../lib/useGames.js'
@@ -11,7 +10,6 @@ export default function HomePage() {
 
   return (
     <main className="max-w-7xl mx-auto py-6">
-      <Hero />
 
       <GameSection
         title="Trending games"
