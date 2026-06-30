@@ -58,21 +58,6 @@ export const MOCK_GAMES = [
     tags: ['family', 'acting', 'multiplayer', 'party'],
     color: '#059669',
   },
-  {
-    id: '4',
-    slug: 'star-dash',
-    title: 'Star Dash',
-    description: 'Race through the galaxy collecting stars and dodging asteroids. How far can you go?',
-    category: 'action',
-    thumbnail_url: null,
-    play_url: '/play/star-dash/',
-    is_featured: false,
-    is_new: true,
-    player_count: 0,
-    tags: ['action', 'arcade', 'coming-soon'],
-    color: '#DC2626',
-    coming_soon: true,
-  },
   // Playgama games — clid in play_url links plays to the Michicho publisher account
   {
     id: 'pg-59',

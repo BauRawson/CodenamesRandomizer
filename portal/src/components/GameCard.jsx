@@ -4,7 +4,6 @@ const GAME_EMOJIS = {
   'codigo-secreto': '🔐',
   trivia: '🧠',
   mimica: '🎭',
-  'star-dash': '🚀',
 }
 
 function formatCount(n) {
@@ -14,24 +13,37 @@ function formatCount(n) {
 
 export default function GameCard({ game, size = 'md' }) {
   const isLarge = size === 'lg'
+  const w = isLarge ? 200 : 160
+  const h = isLarge ? 160 : 120
   const emoji = GAME_EMOJIS[game.slug] ?? '🎮'
   const count = formatCount(game.player_count)
 
   return (
     <Link
-      to={`/games/${game.slug}`}
+      to={`/play/${game.slug}`}
       className="group block flex-shrink-0 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-lg transition-all duration-200 hover:-translate-y-1"
-      style={{ width: isLarge ? 200 : 160 }}
+      style={{ width: w }}
     >
       {/* Thumbnail */}
       <div
-        className="relative flex items-center justify-center"
+        className="relative flex items-center justify-center overflow-hidden"
         style={{
           background: `linear-gradient(135deg, ${game.color}cc, ${game.color})`,
-          height: isLarge ? 160 : 120,
+          height: h,
         }}
       >
-        <span style={{ fontSize: isLarge ? 64 : 52 }}>{emoji}</span>
+        {game.thumbnail_url ? (
+          <img
+            src={game.thumbnail_url}
+            alt={game.title}
+            width={w}
+            height={h}
+            loading="lazy"
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <span style={{ fontSize: isLarge ? 64 : 52 }}>{emoji}</span>
+        )}
         {game.is_new && (
           <span className="absolute top-2 left-2 bg-brand-pink text-white text-xs font-bold px-2 py-0.5 rounded-full">
             NEW
