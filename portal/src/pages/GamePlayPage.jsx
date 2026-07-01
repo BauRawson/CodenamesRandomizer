@@ -40,17 +40,32 @@ function AdOverlay({ onDone }) {
   )
 }
 
+function trackEvent(name, params) {
+  if (typeof window.gtag === 'function') window.gtag('event', name, params)
+}
+
 export default function GamePlayPage() {
   const { slug } = useParams()
   const { game } = useGame(slug)
   const [fullscreen, setFullscreen] = useState(false)
   const [adVisible, setAdVisible] = useState(false)
   const iframeRef = useRef(null)
+  const startTime = useRef(Date.now())
 
   const dismissAd = useCallback(() => {
     setAdVisible(false)
     iframeRef.current?.contentWindow?.postMessage({ type: 'michi_ad_done' }, '*')
   }, [])
+
+  useEffect(() => {
+    if (!game) return
+    startTime.current = Date.now()
+    trackEvent('game_start', { game_slug: game.slug, game_title: game.title, game_category: game.category })
+    return () => {
+      const seconds = Math.round((Date.now() - startTime.current) / 1000)
+      trackEvent('game_end', { game_slug: game.slug, game_title: game.title, seconds_played: seconds })
+    }
+  }, [game?.slug])
 
   useEffect(() => {
     function handleMessage(e) {
