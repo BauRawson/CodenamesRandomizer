@@ -6,7 +6,10 @@ export default function Footer() {
     <footer className="mt-16 bg-brand-navy text-white">
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="col-span-2 md:col-span-1">
-          <p className="font-black text-xl mb-2">🐱 michicho</p>
+          <p className="font-black text-xl mb-2 flex items-center gap-2">
+            <img src="/icon-96.png" alt="" width="24" height="24" />
+            michicho
+          </p>
           <p className="text-gray-400 text-sm">Play fun games online. No downloads. All free.</p>
         </div>
         <div>

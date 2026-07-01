@@ -5,17 +5,7 @@ import AuthModal from './AuthModal.jsx'
 
 function LogoIcon() {
   return (
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-      <circle cx="16" cy="16" r="16" fill="#FF6B35" />
-      <ellipse cx="16" cy="17" rx="9" ry="8" fill="#FF8C5A" />
-      <polygon points="9,12 6,4 13,10" fill="#FF8C5A" />
-      <polygon points="23,12 26,4 19,10" fill="#FF8C5A" />
-      <ellipse cx="12" cy="15" rx="3" ry="3.5" fill="white" />
-      <ellipse cx="20" cy="15" rx="3" ry="3.5" fill="white" />
-      <ellipse cx="13" cy="16" rx="2" ry="2.2" fill="#1A1A2E" />
-      <ellipse cx="21" cy="16" rx="2" ry="2.2" fill="#1A1A2E" />
-      <ellipse cx="16" cy="20" rx="2" ry="1.5" fill="#FF4D8D" />
-    </svg>
+    <img src="/icon-96.png" alt="Michicho cat mascot" width="32" height="32" />
   )
 }
 
