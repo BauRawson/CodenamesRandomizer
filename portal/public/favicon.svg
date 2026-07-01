@@ -1,3 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <text y=".9em" font-size="90">🐱</text>
+  <!-- Left ear outer -->
+  <polygon points="14,52 23,10 42,40" fill="#1C1C1C"/>
+  <!-- Left ear inner (pink) -->
+  <polygon points="21,47 27,18 38,39" fill="#F4A0AE"/>
+
+  <!-- Right ear outer -->
+  <polygon points="86,52 77,10 58,40" fill="#1C1C1C"/>
+  <!-- Right ear inner (pink) -->
+  <polygon points="79,47 73,18 62,39" fill="#F4A0AE"/>
+
+  <!-- Head -->
+  <circle cx="50" cy="57" r="41" fill="#1C1C1C"/>
+
+  <!-- White muzzle -->
+  <ellipse cx="50" cy="74" rx="19" ry="15" fill="#E8E8E8"/>
+
+  <!-- Left eye — white sclera -->
+  <ellipse cx="33" cy="53" rx="9.5" ry="10.5" fill="#FFFFFF"/>
+  <!-- Left eye — yellow-green iris -->
+  <ellipse cx="33" cy="53" rx="7" ry="8" fill="#C8C84A"/>
+  <!-- Left eye — pupil -->
+  <ellipse cx="33" cy="53" rx="4.5" ry="6" fill="#1C1C1C"/>
+  <!-- Left eye — highlight -->
+  <circle cx="36" cy="49.5" r="2.2" fill="#FFFFFF"/>
+
+  <!-- Right eye — white sclera -->
+  <ellipse cx="67" cy="53" rx="9.5" ry="10.5" fill="#FFFFFF"/>
+  <!-- Right eye — yellow-green iris -->
+  <ellipse cx="67" cy="53" rx="7" ry="8" fill="#C8C84A"/>
+  <!-- Right eye — pupil -->
+  <ellipse cx="67" cy="53" rx="4.5" ry="6" fill="#1C1C1C"/>
+  <!-- Right eye — highlight -->
+  <circle cx="70" cy="49.5" r="2.2" fill="#FFFFFF"/>
+
+  <!-- Nose -->
+  <polygon points="50,66.5 47,70.5 53,70.5" fill="#1C1C1C"/>
 </svg>
