@@ -4,17 +4,14 @@ export default {
     extend: {
       colors: {
         brand: {
-          // Accent (was orange, now a cool blue)
-          orange: '#4D7EFF',
-          'orange-light': '#6B92FF',
-          // Dark surfaces
-          cream: '#0B1120',      // page background
-          peach: '#1A2340',      // elevated surface / highlights
-          surface: '#111827',    // card background
-          // Keep navy dark for nav/footer/gameplay bars
-          navy: '#1A1A2E',
-          // Badges
-          pink: '#FF4D8D',
+          // Neutral B&W palette — colour comes from game cards and the logo
+          orange: '#111111',           // CTA / interactive (was orange, now near-black)
+          'orange-light': '#333333',   // hover
+          cream: '#F8F9FA',            // page background
+          peach: '#F1F3F5',            // subtle highlight / elevated bg
+          surface: '#FFFFFF',          // card background
+          navy: '#111111',             // dark text / footer
+          pink: '#FF4D8D',             // keep for NEW badges only
         },
       },
       fontFamily: {

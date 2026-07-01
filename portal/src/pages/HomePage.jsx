@@ -10,7 +10,6 @@ export default function HomePage() {
 
   return (
     <main className="max-w-7xl mx-auto py-6">
-
       <GameSection
         title="Trending games"
         icon="🔥"
@@ -39,9 +38,9 @@ export default function HomePage() {
           { icon: '🏆', title: 'Earn achievements', desc: 'Collect, compete, be the best.' },
           { icon: '👥', title: 'Play with friends', desc: 'Multiplayer games & more!' },
         ].map(f => (
-          <div key={f.title} className="bg-brand-surface rounded-2xl p-5 flex flex-col gap-2 border border-white/10">
+          <div key={f.title} className="bg-white rounded-2xl p-5 flex flex-col gap-2 border border-gray-100 shadow-sm">
             <span className="text-2xl">{f.icon}</span>
-            <p className="font-black text-white text-sm">{f.title}</p>
+            <p className="font-black text-gray-900 text-sm">{f.title}</p>
             <p className="text-gray-400 text-xs">{f.desc}</p>
           </div>
         ))}

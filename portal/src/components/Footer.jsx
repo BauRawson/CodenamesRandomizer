@@ -3,7 +3,7 @@ import { VERSION } from '../version.js'
 
 export default function Footer() {
   return (
-    <footer className="mt-16 bg-brand-navy text-white">
+    <footer className="mt-16 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="col-span-2 md:col-span-1">
           <p className="font-black text-xl mb-2 flex items-center gap-2">
@@ -16,7 +16,7 @@ export default function Footer() {
           <p className="font-black text-sm mb-3 text-gray-300">Games</p>
           <div className="flex flex-col gap-2 text-sm text-gray-400">
             <Link to="/games" className="hover:text-white transition-colors">All games</Link>
-<Link to="/categories" className="hover:text-white transition-colors">Categories</Link>
+            <Link to="/categories" className="hover:text-white transition-colors">Categories</Link>
           </div>
         </div>
         <div>

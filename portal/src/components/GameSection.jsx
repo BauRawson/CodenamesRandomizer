@@ -5,11 +5,11 @@ export default function GameSection({ title, icon, games, viewAllHref, cardSize 
   return (
     <section className="mb-10">
       <div className="flex items-center justify-between mb-4 px-4 md:px-0">
-        <h2 className="font-black text-xl text-white flex items-center gap-2">
+        <h2 className="font-black text-xl text-gray-900 flex items-center gap-2">
           {icon && <span>{icon}</span>} {title}
         </h2>
         {viewAllHref && (
-          <Link to={viewAllHref} className="text-brand-orange font-bold text-sm hover:underline flex items-center gap-1">
+          <Link to={viewAllHref} className="text-gray-500 font-bold text-sm hover:text-gray-900 transition-colors flex items-center gap-1">
             View all <span>→</span>
           </Link>
         )}

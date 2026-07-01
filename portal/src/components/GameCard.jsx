@@ -21,7 +21,7 @@ export default function GameCard({ game, size = 'md' }) {
   return (
     <Link
       to={`/play/${game.slug}`}
-      className="group block flex-shrink-0 rounded-2xl overflow-hidden bg-brand-surface shadow-sm hover:shadow-lg hover:shadow-black/30 transition-all duration-200 hover:-translate-y-1"
+      className="group block flex-shrink-0 rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-1"
       style={{ width: w }}
     >
       {/* Thumbnail */}
@@ -62,8 +62,8 @@ export default function GameCard({ game, size = 'md' }) {
       </div>
       {/* Info */}
       <div className="p-3">
-        <p className="font-bold text-white text-sm leading-tight truncate">{game.title}</p>
-        <p className="text-xs text-gray-500 mt-0.5 capitalize">{game.category}</p>
+        <p className="font-bold text-gray-900 text-sm leading-tight truncate">{game.title}</p>
+        <p className="text-xs text-gray-400 mt-0.5 capitalize">{game.category}</p>
       </div>
     </Link>
   )
