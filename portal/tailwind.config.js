@@ -4,11 +4,16 @@ export default {
     extend: {
       colors: {
         brand: {
-          orange: '#FF6B35',
-          'orange-light': '#FF8C5A',
-          peach: '#FFE5D0',
-          cream: '#FFF8F5',
+          // Accent (was orange, now a cool blue)
+          orange: '#4D7EFF',
+          'orange-light': '#6B92FF',
+          // Dark surfaces
+          cream: '#0B1120',      // page background
+          peach: '#1A2340',      // elevated surface / highlights
+          surface: '#111827',    // card background
+          // Keep navy dark for nav/footer/gameplay bars
           navy: '#1A1A2E',
+          // Badges
           pink: '#FF4D8D',
         },
       },

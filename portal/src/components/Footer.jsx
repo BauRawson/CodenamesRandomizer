@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 text-center text-xs text-gray-500 py-4">
-        © {new Date().getFullYear()} Michicho. Made with 🧡 · v{VERSION}
+        © {new Date().getFullYear()} Michicho. Made with 🐾 · v{VERSION}
       </div>
     </footer>
   )

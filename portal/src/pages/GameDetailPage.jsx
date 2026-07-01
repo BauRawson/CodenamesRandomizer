@@ -5,7 +5,6 @@ const GAME_EMOJIS = {
   'codigo-secreto': '🔐',
   trivia: '🧠',
   mimica: '🎭',
-  'star-dash': '🚀',
 }
 
 export default function GameDetailPage() {
@@ -25,7 +24,7 @@ export default function GameDetailPage() {
     return (
       <main className="max-w-7xl mx-auto py-20 px-4 text-center">
         <div className="text-5xl mb-4">😿</div>
-        <h1 className="font-black text-3xl text-brand-navy mb-2">Game not found</h1>
+        <h1 className="font-black text-3xl text-white mb-2">Game not found</h1>
         <Link to="/games" className="text-brand-orange font-bold hover:underline">← Back to games</Link>
       </main>
     )
@@ -37,18 +36,17 @@ export default function GameDetailPage() {
   return (
     <main className="max-w-7xl mx-auto py-8 px-4">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm font-semibold text-gray-400 mb-6">
+      <div className="flex items-center gap-2 text-sm font-semibold text-gray-500 mb-6">
         <Link to="/" className="hover:text-brand-orange">Home</Link>
         <span>›</span>
         <Link to="/games" className="hover:text-brand-orange">Games</Link>
         <span>›</span>
-        <span className="text-brand-navy">{game.title}</span>
+        <span className="text-gray-300">{game.title}</span>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Left: game preview + play */}
         <div className="lg:col-span-2">
-          {/* Thumbnail / preview */}
           <div
             className="w-full rounded-3xl flex items-center justify-center relative overflow-hidden"
             style={{
@@ -66,14 +64,13 @@ export default function GameDetailPage() {
             {!game.coming_soon && (
               <Link
                 to={`/play/${game.slug}`}
-                className="absolute bottom-6 right-6 bg-white text-brand-orange font-black px-6 py-3 rounded-2xl shadow-lg hover:bg-brand-peach transition-colors flex items-center gap-2 text-lg"
+                className="absolute bottom-6 right-6 bg-white text-brand-orange font-black px-6 py-3 rounded-2xl shadow-lg hover:bg-gray-100 transition-colors flex items-center gap-2 text-lg"
               >
                 ▶ Play Now
               </Link>
             )}
           </div>
 
-          {/* Play button (mobile) */}
           {!game.coming_soon && (
             <Link
               to={`/play/${game.slug}`}
@@ -83,22 +80,20 @@ export default function GameDetailPage() {
             </Link>
           )}
 
-          {/* Description */}
           <div className="mt-6">
-            <h2 className="font-black text-xl text-brand-navy mb-2">About this game</h2>
-            <p className="text-gray-600 font-medium leading-relaxed">{game.description}</p>
+            <h2 className="font-black text-xl text-white mb-2">About this game</h2>
+            <p className="text-gray-400 font-medium leading-relaxed">{game.description}</p>
             {isFamilyGame && (
               <p className="mt-3 text-gray-500 text-sm font-medium">
-                🏠 This is a <strong>Familia</strong> game — designed for families and groups. Works on TV + mobile devices.
+                🏠 This is a <strong className="text-gray-300">Familia</strong> game — designed for families and groups. Works on TV + mobile devices.
               </p>
             )}
           </div>
 
-          {/* Tags */}
           {game.tags?.length > 0 && (
             <div className="mt-4 flex flex-wrap gap-2">
               {game.tags.map(tag => (
-                <span key={tag} className="px-3 py-1 bg-gray-100 rounded-full text-xs font-bold text-gray-500 capitalize">
+                <span key={tag} className="px-3 py-1 bg-white/10 rounded-full text-xs font-bold text-gray-400 capitalize">
                   #{tag}
                 </span>
               ))}
@@ -108,8 +103,8 @@ export default function GameDetailPage() {
 
         {/* Right: info card */}
         <div className="flex flex-col gap-4">
-          <div className="bg-white rounded-3xl p-6 border border-gray-100 shadow-sm">
-            <h1 className="font-black text-2xl text-brand-navy mb-1">{game.title}</h1>
+          <div className="bg-brand-surface rounded-3xl p-6 border border-white/10">
+            <h1 className="font-black text-2xl text-white mb-1">{game.title}</h1>
             <p className="text-brand-orange font-bold capitalize text-sm mb-4">{game.category}</p>
 
             {!game.coming_soon ? (
@@ -120,34 +115,33 @@ export default function GameDetailPage() {
                 ▶ Play Now
               </Link>
             ) : (
-              <button disabled className="w-full bg-gray-200 text-gray-400 font-black py-3.5 rounded-2xl cursor-not-allowed">
+              <button disabled className="w-full bg-white/10 text-gray-600 font-black py-3.5 rounded-2xl cursor-not-allowed">
                 Coming Soon
               </button>
             )}
 
             <div className="mt-5 grid grid-cols-2 gap-3 text-center">
-              <div className="bg-brand-cream rounded-xl p-3">
-                <p className="font-black text-brand-navy text-lg">{game.player_count > 0 ? (game.player_count / 1000).toFixed(1) + 'K' : '—'}</p>
-                <p className="text-gray-400 text-xs font-semibold">Players</p>
+              <div className="bg-white/10 rounded-xl p-3">
+                <p className="font-black text-white text-lg">{game.player_count > 0 ? (game.player_count / 1000).toFixed(1) + 'K' : '—'}</p>
+                <p className="text-gray-500 text-xs font-semibold">Players</p>
               </div>
-              <div className="bg-brand-cream rounded-xl p-3">
-                <p className="font-black text-brand-navy text-lg capitalize">{game.category}</p>
-                <p className="text-gray-400 text-xs font-semibold">Category</p>
+              <div className="bg-white/10 rounded-xl p-3">
+                <p className="font-black text-white text-lg capitalize">{game.category}</p>
+                <p className="text-gray-500 text-xs font-semibold">Category</p>
               </div>
             </div>
           </div>
 
-          {/* Multiplayer callout for family games */}
           {isFamilyGame && (
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 border border-purple-200 rounded-2xl p-5">
-              <p className="font-black text-purple-800 mb-1">👥 Multiplayer</p>
-              <p className="text-purple-600 text-sm font-medium">Play on a TV screen while friends use their phones as controllers!</p>
+            <div className="bg-purple-900/30 border border-purple-700/40 rounded-2xl p-5">
+              <p className="font-black text-purple-300 mb-1">👥 Multiplayer</p>
+              <p className="text-purple-400 text-sm font-medium">Play on a TV screen while friends use their phones as controllers!</p>
             </div>
           )}
 
-          <div className="bg-white rounded-2xl p-5 border border-gray-100">
-            <p className="font-black text-brand-navy text-sm mb-3">Features</p>
-            <ul className="flex flex-col gap-2 text-sm text-gray-500 font-medium">
+          <div className="bg-brand-surface rounded-2xl p-5 border border-white/10">
+            <p className="font-black text-white text-sm mb-3">Features</p>
+            <ul className="flex flex-col gap-2 text-sm text-gray-400 font-medium">
               <li>⚡ No download required</li>
               <li>📱 Works on all devices</li>
               {isFamilyGame && <li>🖥️ TV + phone controller</li>}
