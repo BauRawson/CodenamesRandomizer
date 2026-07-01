@@ -106,10 +106,10 @@ export default function GamePlayPage() {
       <div className={`flex items-center justify-between px-4 py-2 ${fullscreen ? 'bg-black/80' : 'bg-brand-navy'}`}>
         <div className="flex items-center gap-3">
           <Link
-            to={`/games/${slug}`}
+            to="/"
             className="text-gray-400 hover:text-white font-bold text-sm transition-colors"
           >
-            ← {game.title}
+            ← Home
           </Link>
         </div>
         <div className="flex items-center gap-2">
