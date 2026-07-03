@@ -1,0 +1,3 @@
+# Playgama
+inventorypartnerdomain=playgama.com
+playgama.com, p_77ef8e1c-c1e4-457d-8452-2aa9421b65ed, DIRECT
