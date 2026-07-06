@@ -8,6 +8,20 @@
 	<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 	<title>TowerDefense 1.0</title>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X1C2JD7GC3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-X1C2JD7GC3');
+
+		var michiGameStart = Date.now();
+		gtag('event', 'game_start', { game_slug: 'tower-defense', game_title: 'Tower Defense', game_category: 'unlisted' });
+		window.addEventListener('pagehide', function() {
+			var secondsPlayed = Math.round((Date.now() - michiGameStart) / 1000);
+			gtag('event', 'game_end', { game_slug: 'tower-defense', game_title: 'Tower Defense', seconds_played: secondsPlayed, transport_type: 'beacon' });
+		});
+	</script>
 	<style type='text/css'>
 	/* Disable user selection to avoid strange bug in Chrome on Windows:
 	* Selecting a text outside the canvas, then clicking+draging would
