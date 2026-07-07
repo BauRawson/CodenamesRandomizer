@@ -86,9 +86,9 @@ gain = 1
 use_linear_gain = 1
 max_sound_data = 128
 max_sound_buffers = 32
-max_sound_sources = 16
+max_sound_sources = 32
 max_sound_instances = 256
-max_component_count = 32
+max_component_count = 128
 sample_frame_count = 0
 use_thread = 1
 stream_enabled = 0
@@ -133,7 +133,7 @@ max_particlefx_count = 64
 safe_area_mode = none
 
 [collection]
-max_instances = 1024
+max_instances = 4096
 max_input_stack_entries = 16
 
 [collection_proxy]
@@ -215,10 +215,10 @@ scale_mode = downscale_fit
 transparent_graphics_context = 0
 
 [particle_fx]
-max_particle_count = 1024
+max_particle_count = 2048
 max_particle_buffer_count = 1024
-max_count = 64
-max_emitter_count = 64
+max_count = 256
+max_emitter_count = 256
 
 [network]
 http_timeout = 0
@@ -261,7 +261,4 @@ max_time_step = 0.033333
 [font]
 
 [native_extension]
-
-[gameobject]
-max_instances = 2048
 
