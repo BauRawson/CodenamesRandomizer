@@ -3,7 +3,8 @@ import { supabase } from './supabase.js'
 import { MOCK_GAMES, getGameBySlug as mockGetBySlug } from '../data/mockGames.js'
 
 const isFamily = g => g.is_family || g.category === 'family'
-const PUBLIC_MOCK = MOCK_GAMES.filter(g => !isFamily(g))
+const isListed = g => !isFamily(g) && !g.is_unlisted
+const PUBLIC_MOCK = MOCK_GAMES.filter(isListed)
 
 export function useGames() {
   const [games, setGames] = useState(PUBLIC_MOCK)
@@ -14,7 +15,7 @@ export function useGames() {
     setLoading(true)
     supabase.from('games').select('*').order('player_count', { ascending: false })
       .then(({ data, error }) => {
-        if (!error && data?.length) setGames(data.filter(g => !isFamily(g)))
+        if (!error && data?.length) setGames(data.filter(isListed))
         setLoading(false)
       })
   }, [])

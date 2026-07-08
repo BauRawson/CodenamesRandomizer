@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom'
 import { useState, useRef, useEffect, useCallback } from 'react'
-import { useGame } from '../lib/useGames.js'
+import { useGame, useGames } from '../lib/useGames.js'
+import GameSection from '../components/GameSection.jsx'
 
 function AdOverlay({ onDone }) {
   const [countdown, setCountdown] = useState(5)
@@ -47,6 +48,8 @@ function trackEvent(name, params) {
 export default function GamePlayPage() {
   const { slug } = useParams()
   const { game } = useGame(slug)
+  const { games } = useGames()
+  const moreGames = games.filter(g => g.slug !== slug).slice(0, 8)
   const [fullscreen, setFullscreen] = useState(false)
   const [adVisible, setAdVisible] = useState(false)
   const iframeRef = useRef(null)
@@ -149,6 +152,20 @@ export default function GamePlayPage() {
         />
         {adVisible && <AdOverlay onDone={dismissAd} />}
       </div>
+
+      {/* Below-the-fold: future ad slot + more games */}
+      {!fullscreen && (
+        <div className="bg-brand-cream py-8">
+          <div className="max-w-5xl mx-auto px-4">
+            <div className="mb-8 rounded-2xl bg-gray-100 border border-gray-200 flex items-center justify-center h-24">
+              <p className="text-gray-400 font-black text-sm tracking-widest">AD SPACE</p>
+            </div>
+            {moreGames.length > 0 && (
+              <GameSection title="More games" icon="🎮" games={moreGames} viewAllHref="/games" />
+            )}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

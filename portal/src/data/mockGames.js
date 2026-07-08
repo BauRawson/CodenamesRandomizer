@@ -164,6 +164,33 @@ export const MOCK_GAMES = [
     tags: ['action', 'casual', 'endless', 'dodge'],
     color: '#B91C1C',
   },
+  // Unlisted — no card, not in any listing/sitemap, reachable only via direct /play/:slug link
+  {
+    id: 'unlisted-tower-defense',
+    slug: 'tower-defense',
+    title: 'Tower Defense',
+    description: 'Defold-built tower defense game.',
+    category: 'strategy',
+    thumbnail_url: null,
+    play_url: '/play/tower-defense/embed/index.html',
+    is_unlisted: true,
+    player_count: 0,
+    tags: ['strategy', 'tower-defense'],
+    color: '#334155',
+  },
+  {
+    id: 'unlisted-anulo-mufa',
+    slug: 'anulo-mufa',
+    title: 'AnuloMufa',
+    description: 'Unity debug build.',
+    category: 'action',
+    thumbnail_url: null,
+    play_url: '/play/anulo-mufa/embed/index.html',
+    is_unlisted: true,
+    player_count: 0,
+    tags: ['debug'],
+    color: '#334155',
+  },
 ]
 
 export function getGameBySlug(slug) {

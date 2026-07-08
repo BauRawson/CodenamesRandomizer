@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "cp -r tower-defense ../docs/play/tower-defense && cp -r anulo-mufa ../docs/play/anulo-mufa",
+    "postbuild": "mkdir -p ../docs/play/tower-defense ../docs/play/anulo-mufa && cp -r tower-defense/. ../docs/play/tower-defense/embed && cp -r anulo-mufa/. ../docs/play/anulo-mufa/embed",
     "preview": "vite preview"
   },
   "devDependencies": {
