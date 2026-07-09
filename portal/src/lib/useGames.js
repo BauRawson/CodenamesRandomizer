@@ -13,7 +13,7 @@ export function useGames() {
   useEffect(() => {
     if (!supabase) return
     setLoading(true)
-    supabase.from('games').select('*').order('player_count', { ascending: false })
+    supabase.from('games').select('*').order('created_at', { ascending: false })
       .then(({ data, error }) => {
         if (!error && data?.length) setGames(data.filter(isListed))
         setLoading(false)
