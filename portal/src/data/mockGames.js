@@ -10,6 +10,7 @@ export const CATEGORIES = [
   { slug: 'sports', label: 'Sports', icon: '⚽' },
   { slug: 'words', label: 'Words', icon: '🔤' },
   { slug: 'casual', label: 'Casual', icon: '🎲' },
+  { slug: 'meme', label: 'Meme', icon: '😂' },
 ]
 
 export const MOCK_GAMES = [
@@ -179,17 +180,18 @@ export const MOCK_GAMES = [
     color: '#334155',
   },
   {
-    id: 'unlisted-anulo-mufa',
+    id: 'anulo-mufa',
     slug: 'anulo-mufa',
     title: 'AnuloMufa',
-    description: 'Unity debug build.',
-    category: 'action',
-    thumbnail_url: null,
+    description: 'A Counter-Strike 1.6-style FPS where you gun down cardboard cutouts of Argentina\'s most legendary "mufa" (jinx) icons — Mick Jagger, Carlos Menem, and El Colorado Liberman.',
+    how_to_play: 'Hold TAB in-game to see the full controls. Move with WASD, aim and shoot with the mouse, and reload before the clock runs out — rack up the highest score before time\'s up.',
+    category: 'meme',
+    thumbnail_url: '/thumbnails/anulo-mufa.webp',
     play_url: '/play/anulo-mufa/embed/index.html',
-    is_unlisted: true,
+    is_new: true,
     player_count: 0,
-    tags: ['debug'],
-    color: '#334155',
+    tags: ['fps', 'shooter', 'meme', 'arcade'],
+    color: '#1E3A8A',
   },
 ]
 
