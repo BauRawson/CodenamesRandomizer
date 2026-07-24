@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "mkdir -p ../docs/play/tower-defense ../docs/play/anulo-mufa && cp -r tower-defense/. ../docs/play/tower-defense/embed && cp -r anulo-mufa/. ../docs/play/anulo-mufa/embed",
+    "postbuild": "mkdir -p ../docs/play/tower-defense ../docs/play/anulo-mufa ../docs/play/dream-room && cp -r tower-defense/. ../docs/play/tower-defense/embed && cp -r anulo-mufa/. ../docs/play/anulo-mufa/embed && cp -r dream-room/. ../docs/play/dream-room/embed",
     "preview": "vite preview"
   },
   "devDependencies": {

@@ -193,6 +193,19 @@ export const MOCK_GAMES = [
     tags: ['fps', 'shooter', 'meme', 'arcade'],
     color: '#1E3A8A',
   },
+  {
+    id: 'unlisted-dream-room',
+    slug: 'dream-room',
+    title: 'Dream Room',
+    description: 'Unity test build.',
+    category: 'action',
+    thumbnail_url: null,
+    play_url: '/play/dream-room/embed/index.html',
+    is_unlisted: true,
+    player_count: 0,
+    tags: ['debug'],
+    color: '#334155',
+  },
 ]
 
 export function getGameBySlug(slug) {
