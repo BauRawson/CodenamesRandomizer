@@ -1,0 +1,34 @@
+{
+	"poki_template_version": 1,
+	"extra_html": {
+	  "head": [
+		"<!-- will be copied to the resulting head //-->"
+	  ],
+	  "body": [
+		"<!-- will be copied to the resulting body //-->",
+		"<!-- will also be copied to the resulting body //-->"
+	  ]
+	},
+	"background_color": "#231F20",
+	"background_filename": "",
+	"code_filename": "376c48fed3292df141da6a73576697de.wasm.unityweb",
+	"company_name": "DefaultCompany",
+	"data_filename": "7b92eef19f58e548685dddfd3f4b126a.data.unityweb",
+	"decompression_fallback": "Brotli",
+	"development_player": "false",
+	"framework_filename": "03308d27baee129bab817612b51161d1.framework.js.unityweb",
+	"height": "720",
+	"loader_filename": "fa98c9f63718fbc60b619f5290fec906.loader.js",
+	"memory_filename": "",
+	"product_name": "Tiny Spaces",
+	"product_version": "0.1.0",
+	"splash_screen_style": "Dark",
+	"symbols_filename": "",
+	"unity_version": "6000.5.2f1",
+	"use_data_caching": "true",
+	"use_threads": "false",
+	"use_wasm": "true",
+	"use_webgl_1_0": "false",
+	"use_webgl_2_0": "true",
+	"width": "1280"
+  }
