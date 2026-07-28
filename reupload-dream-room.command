@@ -18,9 +18,23 @@ fi
 echo "-- Copying build into the repo --"
 rm -rf "$REPO/js/dream-room"
 mkdir -p "$REPO/js/dream-room"
-cp -r "$SRC/Build" "$REPO/js/dream-room/"
-cp -r "$SRC/TemplateData" "$REPO/js/dream-room/"
-cp "$SRC/index.html" "$REPO/js/dream-room/"
+cp -r "$SRC/." "$REPO/js/dream-room/"
+rm -rf "$REPO"/js/dream-room/*_BurstDebugInformation_DoNotShip
+rm -f "$REPO/js/dream-room/.DS_Store"
+
+if grep -qo "game-cdn\.poki\.com\|master-loader\.js" "$REPO/js/dream-room/index.html" 2>/dev/null; then
+  echo "WARNING: this looks like Unity's Poki WebGL template — index.html loads an"
+  echo "external script from game-cdn.poki.com instead of being self-contained."
+  echo "It may not run reliably (or at all) outside Poki's own platform. If you want"
+  echo "a build that definitely self-hosts, switch back to the Default WebGL template"
+  echo "in Unity: Player Settings > Resolution and Presentation > WebGL Template."
+  read -p "Continue uploading anyway? (y/N) " CONTINUE
+  if [[ ! "$CONTINUE" =~ ^[Yy]$ ]]; then
+    echo "Aborted."
+    read -p "Press Enter to close..."
+    exit 1
+  fi
+fi
 
 BUILD_KB=$(du -sk "$REPO/js/dream-room/Build" | cut -f1)
 BUILD_MB=$(awk "BEGIN { printf \"%.1f\", $BUILD_KB/1024 }")
