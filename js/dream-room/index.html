@@ -1,86 +1,69 @@
+<!-- Play on Poki -->
+<!-- NOTE:
+	this HTML will not be used on Poki.com, the HTML will be auto generated from the index.json.
+	If you wish to add custom HTML you can add this in the "extra_html" part of the JSON.
+-->
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Tiny Spaces</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-  </head>
-  <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-loading-label">Tiny Spaces</div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
-      </div>
-      <div id="unity-warning"> </div>
-    </div>
-    <script>
-      var canvas = document.querySelector("#unity-canvas");
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-      function unityShowBanner(msg, type) {
-        var warningBanner = document.querySelector("#unity-warning");
-        function updateBannerVisibility() {
-          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
-        }
-        var div = document.createElement('div');
-        div.innerHTML = msg;
-        warningBanner.appendChild(div);
-        if (type == 'error') div.style = 'background: red; padding: 10px;';
-        else {
-          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
-          setTimeout(function() {
-            warningBanner.removeChild(div);
-            updateBannerVisibility();
-          }, 5000);
-        }
-        updateBannerVisibility();
-      }
+	<title>Tiny Spaces - Play on Poki</title>
 
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/fa8fdaa58269a1986df25f4ee6c3a158.loader.js";
-      var config = {
-        arguments: [],
-        dataUrl: buildUrl + "/d6bb3430d31eb687cb9a9294e5f066ab.data.unityweb",
-        frameworkUrl: buildUrl + "/7921e3f6f560766ebe92b4d02dc1f682.framework.js.unityweb",
-        codeUrl: buildUrl + "/618544bed9c35bfa8ad9b6cac814f083.wasm.unityweb",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Tiny Spaces",
-        productVersion: "0.1.0",
-        showBanner: unityShowBanner,
-      };
+	<script>
+	var buildUrl = 'Build';
+	window.config = {
+		loader: 'unity-2020',
+		debug: false,
+		maxRatio: 16 / 9,
+		minRatio: 9 / 16,
 
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
-      }
+		title: 'Tiny Spaces',
 
-      // Fill whatever space the page gives us (Poki resizes its game container based on the
-      // visitor's device) instead of assuming a fixed desktop resolution or a mobile-only rule.
-      document.querySelector("#unity-container").className = "unity-fill";
-      canvas.className = "unity-fill";
+		thumbnail: 'https://img.poki-cdn.com/cdn-cgi/image/quality=80,width=100,height=100,fit=cover,g=0.5x0.5,f=auto/a398cd4e645b76810031bd97f8697414.png',
+		numScreenshots: 4,
 
-      document.querySelector("#unity-loading-bar").style.display = "block";
-
-      var script = document.createElement("script");
-      script.src = loaderUrl;
-      script.onload = () => {
-        createUnityInstance(canvas, config, (progress) => {
-          document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
-          document.querySelector("#unity-loading-bar").style.display = "none";
-        }).catch((message) => {
-          alert(message);
-        });
-      };
-
-      document.body.appendChild(script);
-    </script>
-  </body>
+		metadata:{
+			"poki_template_version": 1,
+			"extra_html": {
+				"head": [
+					"<!-- will be copied to the resulting head //-->"
+				],
+				"body": [
+					"<!-- will be copied to the resulting body //-->",
+					"<!-- will also be copied to the resulting body //-->"
+				]
+			},
+			"background_color": "#231F20",
+			"background_filename": "",
+			"code_filename": "376c48fed3292df141da6a73576697de.wasm.unityweb",
+			"company_name": "DefaultCompany",
+			"data_filename": "7b92eef19f58e548685dddfd3f4b126a.data.unityweb",
+			"decompression_fallback": "Brotli",
+			"development_player": "false",
+			"framework_filename": "03308d27baee129bab817612b51161d1.framework.js.unityweb",
+			"height": "720",
+			"loader_filename": "fa98c9f63718fbc60b619f5290fec906.loader.js",
+			"memory_filename": "",
+			"product_name": "Tiny Spaces",
+			"product_version": "0.1.0",
+			"splash_screen_style": "Dark",
+			"symbols_filename": "",
+			"unity_version": "6000.5.2f1",
+			"use_data_caching": "true",
+			"use_threads": "false",
+			"use_wasm": "true",
+			"use_webgl_1_0": "false",
+			"use_webgl_2_0": "true",
+			"width": "1280"
+		}
+	};
+	</script>
+</head>
+<body>
+	<script src="https://game-cdn.poki.com/loaders/v3/master-loader.js"></script>
+	<div style="position:absolute;top:0px;left:0px;z-index:9999;margin:10px">
+		This HTML will not be used on Poki.com. A new HTML will be auto generated from the JSON.
+	</div>
+</body>
 </html>
