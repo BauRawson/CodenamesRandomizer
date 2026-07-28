@@ -22,6 +22,12 @@ cp -r "$SRC/Build" "$REPO/js/dream-room/"
 cp -r "$SRC/TemplateData" "$REPO/js/dream-room/"
 cp "$SRC/index.html" "$REPO/js/dream-room/"
 
+BUILD_KB=$(du -sk "$REPO/js/dream-room/Build" | cut -f1)
+BUILD_MB=$(awk "BEGIN { printf \"%.1f\", $BUILD_KB/1024 }")
+echo "-- Build size --"
+echo "Users will download ~${BUILD_MB} MB (compressed) to play this build."
+echo ""
+
 echo "-- Checking for a decompression fallback in the loader --"
 if grep -qo "BrotliDecompressBuffer\|pako\|inflate" "$REPO"/js/dream-room/Build/*.loader.js; then
   echo "OK: found a client-side decompressor, this build should load fine on GitHub Pages."
