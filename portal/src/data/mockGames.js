@@ -206,6 +206,19 @@ export const MOCK_GAMES = [
     tags: ['debug'],
     color: '#334155',
   },
+  {
+    id: 'unlisted-cube-shooter',
+    slug: 'cube-shooter',
+    title: 'Cube Shooter',
+    description: 'PlayCanvas test build.',
+    category: 'action',
+    thumbnail_url: null,
+    play_url: '/play/cube-shooter/embed/index.html',
+    is_unlisted: true,
+    player_count: 0,
+    tags: ['debug'],
+    color: '#334155',
+  },
 ]
 
 export function getGameBySlug(slug) {
