@@ -1,0 +1,5 @@
+# Audio sources
+
+- `level_win.opus` and `level_win.m4a` were converted from the user-provided `Documents/Casual Fx Shot/wind up 4.wav`. The 48 kHz, 16-bit stereo WAV was downmixed to mono and encoded as 48 kbps variable-bitrate Opus plus 64 kbps AAC for browser compatibility.
+- `landmark_reveal.opus` / `.m4a`, `landmark_check.opus` / `.m4a`, and `sticker_fanfare.opus` / `.m4a` were converted from `landmark_reveal.wav`, `happy_sound.wav`, and `fanfare.wav` in the user-provided `Documents/Casual Game Sounds U6/CasualGameSounds` folder. They are downmixed to mono and encoded as compact Opus plus AAC fallbacks.
+- `praise_pizzicato_1`, `praise_pizzicato_2`, `praise_orchestra_1`, and `praise_orchestra_2` (`.opus` plus `.m4a`) were converted from the corresponding WAV files in the user-provided `Documents/Casual Fx Shot` folder. They are downmixed from 48 kHz stereo to mono and encoded as 32 kbps variable-bitrate Opus with 48 kbps AAC fallbacks. They load during idle gameplay warm-up rather than the initial critical load.

@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "id": "city-paris-level",
+  "title": "City Paris",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Cat",
+      "x": 936,
+      "y": 482,
+      "width": 114,
+      "height": 70,
+      "hitX": 52,
+      "hitY": 35.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1332,
+        0,
+        154,
+        110
+      ],
+      "frame": [
+        358,
+        254,
+        114,
+        70
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "Cat #1",
+      "x": 693,
+      "y": 645,
+      "width": 123,
+      "height": 59,
+      "hitX": 83.5,
+      "hitY": 31.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1721,
+        0,
+        163,
+        99
+      ],
+      "frame": [
+        627,
+        254,
+        123,
+        59
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "Cat #2",
+      "x": 257,
+      "y": 636,
+      "width": 158,
+      "height": 112,
+      "hitX": 88,
+      "hitY": 55,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        556,
+        0,
+        198,
+        152
+      ],
+      "frame": [
+        1172,
+        0,
+        158,
+        112
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "Cat #3",
+      "x": 1509,
+      "y": 724,
+      "width": 87,
+      "height": 87,
+      "hitX": 23.5,
+      "hitY": 35.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        891,
+        0,
+        127,
+        127
+      ],
+      "frame": [
+        269,
+        254,
+        87,
+        87
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "Cat #4",
+      "x": 981,
+      "y": 620,
+      "width": 150,
+      "height": 118,
+      "hitX": 72.5,
+      "hitY": 61,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        364,
+        0,
+        190,
+        158
+      ],
+      "frame": [
+        1020,
+        0,
+        150,
+        118
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "Cat #6",
+      "x": 948,
+      "y": 263,
+      "width": 132,
+      "height": 52,
+      "hitX": 73,
+      "hitY": 27,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        254,
+        172,
+        92
+      ],
+      "frame": [
+        867,
+        254,
+        132,
+        52
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "Cat #7",
+      "x": 485,
+      "y": 673,
+      "width": 160,
+      "height": 212,
+      "hitX": 78.5,
+      "hitY": 55,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        200,
+        252
+      ],
+      "frame": [
+        202,
+        0,
+        160,
+        212
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "Cat #8",
+      "x": 248,
+      "y": 183,
+      "width": 93,
+      "height": 91,
+      "hitX": 47.5,
+      "hitY": 44,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        756,
+        0,
+        133,
+        131
+      ],
+      "frame": [
+        174,
+        254,
+        93,
+        91
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "Cat #9",
+      "x": 1268,
+      "y": 729,
+      "width": 102,
+      "height": 70,
+      "hitX": 45.5,
+      "hitY": 34.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1488,
+        0,
+        142,
+        110
+      ],
+      "frame": [
+        474,
+        254,
+        102,
+        70
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "Cat #10",
+      "x": 996,
+      "y": 776,
+      "width": 113,
+      "height": 58,
+      "hitX": 58,
+      "hitY": 30,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1886,
+        0,
+        153,
+        98
+      ],
+      "frame": [
+        752,
+        254,
+        113,
+        58
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "Cat #5",
+      "x": 841,
+      "y": 541,
+      "width": 47,
+      "height": 63,
+      "hitX": 23.5,
+      "hitY": 31.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1632,
+        0,
+        87,
+        103
+      ],
+      "frame": [
+        578,
+        254,
+        47,
+        63
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "mkdir -p ../docs/play/tower-defense ../docs/play/anulo-mufa ../docs/play/dream-room ../docs/play/cube-shooter && cp -r tower-defense/. ../docs/play/tower-defense/embed && cp -r anulo-mufa/. ../docs/play/anulo-mufa/embed && cp -r dream-room/. ../docs/play/dream-room/embed && cp -r cube-shooter/. ../docs/play/cube-shooter/embed",
+    "postbuild": "mkdir -p ../docs/play/tower-defense ../docs/play/anulo-mufa ../docs/play/dream-room ../docs/play/pop-pop ../docs/play/where-kitty ../docs/play/ricochet-dungeon && cp -r tower-defense/. ../docs/play/tower-defense/embed && cp -r anulo-mufa/. ../docs/play/anulo-mufa/embed && cp -r dream-room/. ../docs/play/dream-room/embed && cp -r pop-pop/. ../docs/play/pop-pop/embed && cp -r where-kitty/. ../docs/play/where-kitty/embed && cp -r ricochet-dungeon/. ../docs/play/ricochet-dungeon/embed",
     "preview": "vite preview"
   },
   "devDependencies": {

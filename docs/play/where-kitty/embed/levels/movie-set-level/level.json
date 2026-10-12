@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "id": "movie-set-level",
+  "title": "Movie Set",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Movie Cat copy #1",
+      "x": 1212,
+      "y": 360,
+      "width": 43,
+      "height": 66,
+      "hitX": 19.5,
+      "hitY": 34.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1766,
+        0,
+        83,
+        106
+      ],
+      "frame": [
+        484,
+        204,
+        43,
+        66
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "Movie Cat copy",
+      "x": 590,
+      "y": 418,
+      "width": 87,
+      "height": 122,
+      "hitX": 44,
+      "hitY": 64,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        492,
+        0,
+        127,
+        162
+      ],
+      "frame": [
+        1313,
+        0,
+        87,
+        122
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "Wild West Cowboy Cat copy",
+      "x": 161,
+      "y": 426,
+      "width": 64,
+      "height": 67,
+      "hitX": 31,
+      "hitY": 33.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1535,
+        0,
+        104,
+        107
+      ],
+      "frame": [
+        333,
+        204,
+        64,
+        67
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "Normal Cat copy",
+      "x": 1550,
+      "y": 421,
+      "width": 91,
+      "height": 79,
+      "hitX": 45,
+      "hitY": 37,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1402,
+        0,
+        131,
+        119
+      ],
+      "frame": [
+        240,
+        204,
+        91,
+        79
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "Movie Cat copy #2",
+      "x": 681,
+      "y": 792,
+      "width": 149,
+      "height": 146,
+      "hitX": 68.5,
+      "hitY": 76,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        159,
+        0,
+        189,
+        186
+      ],
+      "frame": [
+        740,
+        0,
+        149,
+        146
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "Movie Cat copy #3",
+      "x": 276,
+      "y": 590,
+      "width": 100,
+      "height": 138,
+      "hitX": 39,
+      "hitY": 70,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        350,
+        0,
+        140,
+        178
+      ],
+      "frame": [
+        1211,
+        0,
+        100,
+        138
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "Space Cat copy",
+      "x": 665,
+      "y": 373,
+      "width": 76,
+      "height": 62,
+      "hitX": 36.5,
+      "hitY": 31,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1851,
+        0,
+        116,
+        102
+      ],
+      "frame": [
+        529,
+        204,
+        76,
+        62
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "Movie Cat copy #4",
+      "x": 890,
+      "y": 545,
+      "width": 116,
+      "height": 98,
+      "hitX": 55,
+      "hitY": 49,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1053,
+        0,
+        156,
+        138
+      ],
+      "frame": [
+        122,
+        204,
+        116,
+        98
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "Movie Cat copy #5",
+      "x": 1066,
+      "y": 451,
+      "width": 83,
+      "height": 66,
+      "hitX": 41,
+      "hitY": 34,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1641,
+        0,
+        123,
+        106
+      ],
+      "frame": [
+        399,
+        204,
+        83,
+        66
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "Movie Cat copy #7",
+      "x": 1328,
+      "y": 734,
+      "width": 117,
+      "height": 162,
+      "hitX": 73,
+      "hitY": 79,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        157,
+        202
+      ],
+      "frame": [
+        621,
+        0,
+        117,
+        162
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "Movie Cat copy #6",
+      "x": 419,
+      "y": 538,
+      "width": 120,
+      "height": 98,
+      "hitX": 61,
+      "hitY": 45.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        891,
+        0,
+        160,
+        138
+      ],
+      "frame": [
+        0,
+        204,
+        120,
+        98
+      ]
+    }
+  ]
+}

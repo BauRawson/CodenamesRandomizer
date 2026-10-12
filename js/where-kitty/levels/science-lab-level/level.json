@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "id": "science-lab-level",
+  "title": "Science Lab",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Science Cat copy #6",
+      "x": 1319,
+      "y": 399,
+      "width": 72,
+      "height": 80,
+      "hitX": 40,
+      "hitY": 37,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        96,
+        225,
+        112,
+        120
+      ],
+      "frame": [
+        851,
+        225,
+        72,
+        80
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "Science Cat copy #5",
+      "x": 1417,
+      "y": 549,
+      "width": 119,
+      "height": 159,
+      "hitX": 62,
+      "hitY": 79,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        206,
+        0,
+        159,
+        199
+      ],
+      "frame": [
+        874,
+        0,
+        119,
+        159
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "Science Cat copy",
+      "x": 912,
+      "y": 324,
+      "width": 54,
+      "height": 82,
+      "hitX": 26,
+      "hitY": 40.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        225,
+        94,
+        122
+      ],
+      "frame": [
+        795,
+        225,
+        54,
+        82
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "Science Cat copy #1",
+      "x": 296,
+      "y": 349,
+      "width": 90,
+      "height": 82,
+      "hitX": 49.5,
+      "hitY": 41,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1823,
+        0,
+        130,
+        122
+      ],
+      "frame": [
+        703,
+        225,
+        90,
+        82
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "Science Cat copy #2",
+      "x": 146,
+      "y": 777,
+      "width": 164,
+      "height": 183,
+      "hitX": 81,
+      "hitY": 89,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        204,
+        223
+      ],
+      "frame": [
+        515,
+        0,
+        164,
+        183
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "Science Cat copy #3",
+      "x": 613,
+      "y": 644,
+      "width": 151,
+      "height": 125,
+      "hitX": 78.5,
+      "hitY": 66,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        681,
+        0,
+        191,
+        165
+      ],
+      "frame": [
+        1670,
+        0,
+        151,
+        125
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "Science Cat copy #4",
+      "x": 1126,
+      "y": 474,
+      "width": 106,
+      "height": 146,
+      "hitX": 46.5,
+      "hitY": 70.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        367,
+        0,
+        146,
+        186
+      ],
+      "frame": [
+        1459,
+        0,
+        106,
+        146
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "Science Cat copy #7",
+      "x": 1103,
+      "y": 631,
+      "width": 142,
+      "height": 118,
+      "hitX": 68,
+      "hitY": 57,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        995,
+        0,
+        182,
+        158
+      ],
+      "frame": [
+        210,
+        225,
+        142,
+        118
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "Science Cat copy #10",
+      "x": 621,
+      "y": 443,
+      "width": 61,
+      "height": 93,
+      "hitX": 22,
+      "hitY": 43.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1567,
+        0,
+        101,
+        133
+      ],
+      "frame": [
+        640,
+        225,
+        61,
+        93
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "Science Cat copy #9",
+      "x": 103,
+      "y": 497,
+      "width": 66,
+      "height": 109,
+      "hitX": 36.5,
+      "hitY": 34,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1179,
+        0,
+        106,
+        149
+      ],
+      "frame": [
+        354,
+        225,
+        66,
+        109
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "Science Cat copy #11",
+      "x": 497,
+      "y": 266,
+      "width": 44,
+      "height": 59,
+      "hitX": 20.5,
+      "hitY": 29,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        554,
+        225,
+        84,
+        99
+      ],
+      "frame": [
+        925,
+        225,
+        44,
+        59
+      ]
+    },
+    {
+      "id": "cat_012",
+      "name": "Science Cat copy #8",
+      "x": 1154,
+      "y": 232,
+      "width": 130,
+      "height": 106,
+      "hitX": 63.5,
+      "hitY": 54,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1287,
+        0,
+        170,
+        146
+      ],
+      "frame": [
+        422,
+        225,
+        130,
+        106
+      ]
+    }
+  ]
+}

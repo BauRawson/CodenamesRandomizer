@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "id": "elementary-classroom-level",
+  "title": "Elementary Classroom",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Normal Cat copy #5",
+      "x": 530,
+      "y": 773,
+      "width": 151,
+      "height": 162,
+      "hitX": 79.5,
+      "hitY": 79,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        643,
+        0,
+        191,
+        202
+      ],
+      "frame": [
+        166,
+        212,
+        151,
+        162
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "Wizards Cat copy #2",
+      "x": 389,
+      "y": 372,
+      "width": 90,
+      "height": 128,
+      "hitX": 52,
+      "hitY": 36.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1859,
+        0,
+        130,
+        168
+      ],
+      "frame": [
+        825,
+        212,
+        90,
+        128
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "Normal Cat copy #4",
+      "x": 1171,
+      "y": 353,
+      "width": 156,
+      "height": 158,
+      "hitX": 67.5,
+      "hitY": 70.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        836,
+        0,
+        196,
+        198
+      ],
+      "frame": [
+        319,
+        212,
+        156,
+        158
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "Normal Cat copy #2",
+      "x": 89,
+      "y": 374,
+      "width": 105,
+      "height": 134,
+      "hitX": 62.5,
+      "hitY": 63.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1355,
+        0,
+        145,
+        174
+      ],
+      "frame": [
+        718,
+        212,
+        105,
+        134
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "Normal Cat copy #1",
+      "x": 1407,
+      "y": 362,
+      "width": 182,
+      "height": 170,
+      "hitX": 88.5,
+      "hitY": 69.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        222,
+        210
+      ],
+      "frame": [
+        1502,
+        0,
+        182,
+        170
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "Wizards Cat copy #1",
+      "x": 1014,
+      "y": 525,
+      "width": 140,
+      "height": 151,
+      "hitX": 71.5,
+      "hitY": 70.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1034,
+        0,
+        180,
+        191
+      ],
+      "frame": [
+        477,
+        212,
+        140,
+        151
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "Normal Cat copy",
+      "x": 1303,
+      "y": 306,
+      "width": 65,
+      "height": 41,
+      "hitX": 30.5,
+      "hitY": 20.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        917,
+        212,
+        105,
+        81
+      ],
+      "frame": [
+        1024,
+        212,
+        65,
+        41
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "Italian Cat copy",
+      "x": 314,
+      "y": 534,
+      "width": 171,
+      "height": 170,
+      "hitX": 80.5,
+      "hitY": 86,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        224,
+        0,
+        211,
+        210
+      ],
+      "frame": [
+        1686,
+        0,
+        171,
+        170
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "Wizards Cat copy",
+      "x": 823,
+      "y": 183,
+      "width": 97,
+      "height": 141,
+      "hitX": 48.5,
+      "hitY": 73,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1216,
+        0,
+        137,
+        181
+      ],
+      "frame": [
+        619,
+        212,
+        97,
+        141
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "Normal Cat copy #3",
+      "x": 661,
+      "y": 399,
+      "width": 164,
+      "height": 165,
+      "hitX": 84,
+      "hitY": 81.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        437,
+        0,
+        204,
+        205
+      ],
+      "frame": [
+        0,
+        212,
+        164,
+        165
+      ]
+    }
+  ]
+}

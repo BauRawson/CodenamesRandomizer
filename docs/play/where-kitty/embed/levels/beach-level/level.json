@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "id": "beach-level",
+  "title": "Beach",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Cat #11",
+      "x": 409,
+      "y": 317,
+      "width": 56,
+      "height": 46,
+      "hitX": 24.5,
+      "hitY": 22,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        836,
+        180,
+        96,
+        86
+      ],
+      "frame": [
+        1511,
+        180,
+        56,
+        46
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "Cat #7",
+      "x": 853,
+      "y": 712,
+      "width": 169,
+      "height": 120,
+      "hitX": 60,
+      "hitY": 60,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        443,
+        0,
+        209,
+        160
+      ],
+      "frame": [
+        1713,
+        0,
+        169,
+        120
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "Cat #4",
+      "x": 1176,
+      "y": 529,
+      "width": 104,
+      "height": 104,
+      "hitX": 54.5,
+      "hitY": 52,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        654,
+        0,
+        144,
+        144
+      ],
+      "frame": [
+        318,
+        180,
+        104,
+        104
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "Cat #3",
+      "x": 254,
+      "y": 622,
+      "width": 122,
+      "height": 135,
+      "hitX": 54,
+      "hitY": 33.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        149,
+        0,
+        162,
+        175
+      ],
+      "frame": [
+        909,
+        0,
+        122,
+        135
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "Cat #1",
+      "x": 1168,
+      "y": 348,
+      "width": 82,
+      "height": 87,
+      "hitX": 43.5,
+      "hitY": 40.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1360,
+        0,
+        122,
+        127
+      ],
+      "frame": [
+        752,
+        180,
+        82,
+        87
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "Cat #2",
+      "x": 1240,
+      "y": 181,
+      "width": 72,
+      "height": 71,
+      "hitX": 36,
+      "hitY": 34,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        112,
+        180,
+        112,
+        111
+      ],
+      "frame": [
+        1294,
+        180,
+        72,
+        71
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "Cat #5",
+      "x": 150,
+      "y": 375,
+      "width": 82,
+      "height": 83,
+      "hitX": 41.5,
+      "hitY": 35,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1589,
+        0,
+        122,
+        123
+      ],
+      "frame": [
+        1063,
+        180,
+        82,
+        83
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "Cat #6",
+      "x": 669,
+      "y": 96,
+      "width": 22,
+      "height": 44,
+      "hitX": 10.5,
+      "hitY": 19.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        999,
+        180,
+        62,
+        84
+      ],
+      "frame": [
+        1569,
+        180,
+        22,
+        44
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "Cat",
+      "x": 898,
+      "y": 441,
+      "width": 74,
+      "height": 90,
+      "hitX": 36,
+      "hitY": 40.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1244,
+        0,
+        114,
+        130
+      ],
+      "frame": [
+        676,
+        180,
+        74,
+        90
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "Cat #8",
+      "x": 1229,
+      "y": 589,
+      "width": 88,
+      "height": 135,
+      "hitX": 41.5,
+      "hitY": 63.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        313,
+        0,
+        128,
+        175
+      ],
+      "frame": [
+        1033,
+        0,
+        88,
+        135
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "Cat #9",
+      "x": 1306,
+      "y": 283,
+      "width": 50,
+      "height": 66,
+      "hitX": 25.5,
+      "hitY": 34,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        226,
+        180,
+        90,
+        106
+      ],
+      "frame": [
+        1368,
+        180,
+        50,
+        66
+      ]
+    },
+    {
+      "id": "cat_012",
+      "name": "Cat #10",
+      "x": 1069,
+      "y": 463,
+      "width": 46,
+      "height": 64,
+      "hitX": 24,
+      "hitY": 33,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        424,
+        180,
+        86,
+        104
+      ],
+      "frame": [
+        1420,
+        180,
+        46,
+        64
+      ]
+    },
+    {
+      "id": "cat_013",
+      "name": "EXPERIMENT Cat",
+      "experimental": true,
+      "x": 497,
+      "y": 723,
+      "width": 107,
+      "height": 138,
+      "hitX": 58.5,
+      "hitY": 67.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        147,
+        178
+      ],
+      "frame": [
+        800,
+        0,
+        107,
+        138
+      ]
+    },
+    {
+      "id": "cat_014",
+      "name": "EXPERIMENT Cat #2",
+      "experimental": true,
+      "x": 952,
+      "y": 243,
+      "width": 70,
+      "height": 73,
+      "hitX": 30.5,
+      "hitY": 34.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        180,
+        110,
+        113
+      ],
+      "frame": [
+        1222,
+        180,
+        70,
+        73
+      ]
+    },
+    {
+      "id": "cat_015",
+      "name": "EXPERIMENT Cat #3",
+      "experimental": true,
+      "x": 969,
+      "y": 372,
+      "width": 79,
+      "height": 90,
+      "hitX": 44,
+      "hitY": 45.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1123,
+        0,
+        119,
+        130
+      ],
+      "frame": [
+        595,
+        180,
+        79,
+        90
+      ]
+    },
+    {
+      "id": "cat_016",
+      "name": "EXPERIMENT Cat #4",
+      "experimental": true,
+      "x": 1592,
+      "y": 297,
+      "width": 73,
+      "height": 75,
+      "hitX": 36.5,
+      "hitY": 41.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1884,
+        0,
+        113,
+        115
+      ],
+      "frame": [
+        1147,
+        180,
+        73,
+        75
+      ]
+    },
+    {
+      "id": "cat_017",
+      "name": "EXPERIMENT Cat #1",
+      "experimental": true,
+      "x": 626,
+      "y": 335,
+      "width": 63,
+      "height": 84,
+      "hitX": 32,
+      "hitY": 38,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1484,
+        0,
+        103,
+        124
+      ],
+      "frame": [
+        934,
+        180,
+        63,
+        84
+      ]
+    },
+    {
+      "id": "cat_018",
+      "name": "EXPERIMENT Cat #5",
+      "experimental": true,
+      "x": 1066,
+      "y": 305,
+      "width": 41,
+      "height": 62,
+      "hitX": 25,
+      "hitY": 15.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        512,
+        180,
+        81,
+        102
+      ],
+      "frame": [
+        1468,
+        180,
+        41,
+        62
+      ]
+    }
+  ]
+}

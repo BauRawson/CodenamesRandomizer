@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "id": "japanese-festival-level",
+  "title": "Japanese Festival",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Japanese2 Cat copy #10",
+      "x": 1559,
+      "y": 337,
+      "width": 83,
+      "height": 114,
+      "hitX": 43,
+      "hitY": 55.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        469,
+        0,
+        123,
+        154
+      ],
+      "frame": [
+        1355,
+        0,
+        83,
+        114
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "Japanese2 Cat copy #7",
+      "x": 582,
+      "y": 528,
+      "width": 75,
+      "height": 54,
+      "hitX": 39,
+      "hitY": 29,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1884,
+        0,
+        115,
+        94
+      ],
+      "frame": [
+        536,
+        172,
+        75,
+        54
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "Japanese2 Cat copy #8",
+      "x": 122,
+      "y": 527,
+      "width": 43,
+      "height": 66,
+      "hitX": 20,
+      "hitY": 34.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1572,
+        0,
+        83,
+        106
+      ],
+      "frame": [
+        344,
+        172,
+        43,
+        66
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "Japanese2 Cat copy",
+      "x": 239,
+      "y": 730,
+      "width": 96,
+      "height": 122,
+      "hitX": 45.5,
+      "hitY": 62.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        331,
+        0,
+        136,
+        162
+      ],
+      "frame": [
+        1166,
+        0,
+        96,
+        122
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "Japanese2 Cat copy #1",
+      "x": 1014,
+      "y": 703,
+      "width": 96,
+      "height": 130,
+      "hitX": 50.5,
+      "hitY": 67.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        136,
+        170
+      ],
+      "frame": [
+        699,
+        0,
+        96,
+        130
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "Japanese2 Cat copy #2",
+      "x": 903,
+      "y": 466,
+      "width": 74,
+      "height": 56,
+      "hitX": 52.5,
+      "hitY": 29,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1768,
+        0,
+        114,
+        96
+      ],
+      "frame": [
+        460,
+        172,
+        74,
+        56
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "Japanese2 Cat copy #3",
+      "x": 798,
+      "y": 602,
+      "width": 59,
+      "height": 89,
+      "hitX": 29.5,
+      "hitY": 43,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        797,
+        0,
+        99,
+        129
+      ],
+      "frame": [
+        65,
+        172,
+        59,
+        89
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "Japanese2 Cat copy #5",
+      "x": 1044,
+      "y": 292,
+      "width": 63,
+      "height": 92,
+      "hitX": 32,
+      "hitY": 44.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        594,
+        0,
+        103,
+        132
+      ],
+      "frame": [
+        0,
+        172,
+        63,
+        92
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "Japanese2 Cat copy #4",
+      "x": 1391,
+      "y": 319,
+      "width": 73,
+      "height": 83,
+      "hitX": 31,
+      "hitY": 40,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1051,
+        0,
+        113,
+        123
+      ],
+      "frame": [
+        126,
+        172,
+        73,
+        83
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "Japanese2 Cat copy #9",
+      "x": 417,
+      "y": 162,
+      "width": 90,
+      "height": 71,
+      "hitX": 42,
+      "hitY": 35,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1440,
+        0,
+        130,
+        111
+      ],
+      "frame": [
+        252,
+        172,
+        90,
+        71
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "Japanese2 Cat copy #11",
+      "x": 1172,
+      "y": 706,
+      "width": 151,
+      "height": 123,
+      "hitX": 70.5,
+      "hitY": 44,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        138,
+        0,
+        191,
+        163
+      ],
+      "frame": [
+        898,
+        0,
+        151,
+        123
+      ]
+    },
+    {
+      "id": "cat_012",
+      "name": "Japanese2 Cat copy #6",
+      "x": 806,
+      "y": 498,
+      "width": 49,
+      "height": 76,
+      "hitX": 23.5,
+      "hitY": 38,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1264,
+        0,
+        89,
+        116
+      ],
+      "frame": [
+        201,
+        172,
+        49,
+        76
+      ]
+    },
+    {
+      "id": "cat_013",
+      "name": "Japanese2 Cat copy #12",
+      "x": 748,
+      "y": 184,
+      "width": 69,
+      "height": 59,
+      "hitX": 36,
+      "hitY": 29.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1657,
+        0,
+        109,
+        99
+      ],
+      "frame": [
+        389,
+        172,
+        69,
+        59
+      ]
+    }
+  ]
+}

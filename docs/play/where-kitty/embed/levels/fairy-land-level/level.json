@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "id": "fairy-land-level",
+  "title": "Fairy Land",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Fairy Cat copy #7",
+      "x": 759,
+      "y": 132,
+      "width": 48,
+      "height": 62,
+      "hitX": 23.5,
+      "hitY": 29,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1524,
+        0,
+        88,
+        102
+      ],
+      "frame": [
+        213,
+        192,
+        48,
+        62
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "Fairy Cat copy #1",
+      "x": 1038,
+      "y": 496,
+      "width": 80,
+      "height": 88,
+      "hitX": 41.5,
+      "hitY": 44,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        949,
+        0,
+        120,
+        128
+      ],
+      "frame": [
+        1772,
+        0,
+        80,
+        88
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "Fairy Cat copy",
+      "x": 355,
+      "y": 499,
+      "width": 59,
+      "height": 80,
+      "hitX": 28,
+      "hitY": 39,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1221,
+        0,
+        99,
+        120
+      ],
+      "frame": [
+        1964,
+        0,
+        59,
+        80
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "Fairy Cat copy #2",
+      "x": 1344,
+      "y": 285,
+      "width": 47,
+      "height": 66,
+      "hitX": 23,
+      "hitY": 33,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1435,
+        0,
+        87,
+        106
+      ],
+      "frame": [
+        164,
+        192,
+        47,
+        66
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "Fairy Cat copy #4",
+      "x": 733,
+      "y": 411,
+      "width": 37,
+      "height": 56,
+      "hitX": 17.5,
+      "hitY": 27.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1614,
+        0,
+        77,
+        96
+      ],
+      "frame": [
+        263,
+        192,
+        37,
+        56
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "Fairy Cat copy #5",
+      "x": 1345,
+      "y": 688,
+      "width": 108,
+      "height": 87,
+      "hitX": 54,
+      "hitY": 46.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1071,
+        0,
+        148,
+        127
+      ],
+      "frame": [
+        1854,
+        0,
+        108,
+        87
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "Fairy Cat copy #3",
+      "x": 879,
+      "y": 460,
+      "width": 71,
+      "height": 70,
+      "hitX": 36,
+      "hitY": 34.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1322,
+        0,
+        111,
+        110
+      ],
+      "frame": [
+        91,
+        192,
+        71,
+        70
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "Fairy Cat copy #6",
+      "x": 910,
+      "y": 335,
+      "width": 49,
+      "height": 38,
+      "hitX": 24,
+      "hitY": 19,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        192,
+        89,
+        78
+      ],
+      "frame": [
+        302,
+        192,
+        49,
+        38
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "Fairy Cat copy #8",
+      "x": 459,
+      "y": 674,
+      "width": 90,
+      "height": 137,
+      "hitX": 42,
+      "hitY": 64,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        212,
+        0,
+        130,
+        177
+      ],
+      "frame": [
+        647,
+        0,
+        90,
+        137
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "Fairy Cat copy #9",
+      "x": 675,
+      "y": 686,
+      "width": 170,
+      "height": 150,
+      "hitX": 72.5,
+      "hitY": 69,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        210,
+        190
+      ],
+      "frame": [
+        475,
+        0,
+        170,
+        150
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "Fairy Cat copy #10",
+      "x": 808,
+      "y": 591,
+      "width": 77,
+      "height": 93,
+      "hitX": 40.5,
+      "hitY": 44.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        830,
+        0,
+        117,
+        133
+      ],
+      "frame": [
+        1693,
+        0,
+        77,
+        93
+      ]
+    },
+    {
+      "id": "cat_012",
+      "name": "Fairy Cat copy #11",
+      "x": 924,
+      "y": 683,
+      "width": 89,
+      "height": 137,
+      "hitX": 43.5,
+      "hitY": 67.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        344,
+        0,
+        129,
+        177
+      ],
+      "frame": [
+        739,
+        0,
+        89,
+        137
+      ]
+    }
+  ]
+}

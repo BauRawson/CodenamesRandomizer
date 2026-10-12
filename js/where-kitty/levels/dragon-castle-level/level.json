@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "id": "dragon-castle-level",
+  "title": "Dragon Castle",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Medieval Knight Cat copy",
+      "x": 491,
+      "y": 782,
+      "width": 172,
+      "height": 174,
+      "hitX": 90,
+      "hitY": 76.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        212,
+        214
+      ],
+      "frame": [
+        414,
+        0,
+        172,
+        174
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "Medieval Knight Cat copy #1",
+      "x": 1117,
+      "y": 443,
+      "width": 110,
+      "height": 88,
+      "hitX": 56,
+      "hitY": 39,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1270,
+        0,
+        150,
+        128
+      ],
+      "frame": [
+        695,
+        216,
+        110,
+        88
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "Medieval Knight Cat copy #2",
+      "x": 294,
+      "y": 565,
+      "width": 139,
+      "height": 100,
+      "hitX": 66,
+      "hitY": 46.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        937,
+        0,
+        179,
+        140
+      ],
+      "frame": [
+        442,
+        216,
+        139,
+        100
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "Medieval Knight Cat copy #3",
+      "x": 942,
+      "y": 260,
+      "width": 110,
+      "height": 94,
+      "hitX": 48.5,
+      "hitY": 45,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1118,
+        0,
+        150,
+        134
+      ],
+      "frame": [
+        583,
+        216,
+        110,
+        94
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "Medieval Knight Cat copy #4",
+      "x": 648,
+      "y": 249,
+      "width": 99,
+      "height": 64,
+      "hitX": 50.5,
+      "hitY": 32,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        301,
+        216,
+        139,
+        104
+      ],
+      "frame": [
+        1389,
+        216,
+        99,
+        64
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "Medieval Knight Cat copy #5",
+      "x": 334,
+      "y": 362,
+      "width": 110,
+      "height": 72,
+      "hitX": 54.5,
+      "hitY": 35.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        149,
+        216,
+        150,
+        112
+      ],
+      "frame": [
+        1183,
+        216,
+        110,
+        72
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "Medieval Knight Cat copy #6",
+      "x": 208,
+      "y": 341,
+      "width": 78,
+      "height": 81,
+      "hitX": 38,
+      "hitY": 37.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1678,
+        0,
+        118,
+        121
+      ],
+      "frame": [
+        983,
+        216,
+        78,
+        81
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "Medieval Knight Cat copy #7",
+      "x": 795,
+      "y": 434,
+      "width": 118,
+      "height": 80,
+      "hitX": 58,
+      "hitY": 40,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1798,
+        0,
+        158,
+        120
+      ],
+      "frame": [
+        1063,
+        216,
+        118,
+        80
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "Medieval Knight Cat copy #8",
+      "x": 189,
+      "y": 533,
+      "width": 88,
+      "height": 84,
+      "hitX": 43.5,
+      "hitY": 40,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1548,
+        0,
+        128,
+        124
+      ],
+      "frame": [
+        893,
+        216,
+        88,
+        84
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "Medieval Knight Cat copy #9",
+      "x": 1296,
+      "y": 115,
+      "width": 52,
+      "height": 32,
+      "hitX": 25,
+      "hitY": 15.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1295,
+        216,
+        92,
+        72
+      ],
+      "frame": [
+        1490,
+        216,
+        52,
+        32
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "Medieval Knight Cat copy #10",
+      "x": 1072,
+      "y": 93,
+      "width": 84,
+      "height": 87,
+      "hitX": 41,
+      "hitY": 41,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1422,
+        0,
+        124,
+        127
+      ],
+      "frame": [
+        807,
+        216,
+        84,
+        87
+      ]
+    },
+    {
+      "id": "cat_012",
+      "name": "Medieval Knight Cat copy #12",
+      "x": 1541,
+      "y": 473,
+      "width": 147,
+      "height": 117,
+      "hitX": 76.5,
+      "hitY": 57,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        588,
+        0,
+        187,
+        157
+      ],
+      "frame": [
+        0,
+        216,
+        147,
+        117
+      ]
+    },
+    {
+      "id": "cat_013",
+      "name": "Medieval Knight Cat copy #15",
+      "x": 928,
+      "y": 558,
+      "width": 158,
+      "height": 142,
+      "hitX": 89.5,
+      "hitY": 65,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        214,
+        0,
+        198,
+        182
+      ],
+      "frame": [
+        777,
+        0,
+        158,
+        142
+      ]
+    }
+  ]
+}

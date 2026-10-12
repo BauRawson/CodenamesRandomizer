@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>CubeLand Clone</title>
+  <style>
+    /* Google's standard "latin" subset (all English letters/digits/common
+       punctuation, no accented latin-ext glyphs) — still just ~10KB, so this
+       covers any future UI text, not just the cannon ammo-count digits, at
+       negligible build-size cost. See public/fonts/lilita-one-latin.woff2. */
+    @font-face {
+      font-family: 'Lilita One';
+      font-style: normal;
+      font-weight: 400;
+      src: url('fonts/lilita-one-latin.woff2') format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      font-display: swap;
+    }
+    /* Exposes the OS safe-area insets (notch/status bar, home indicator) as
+       plain custom properties so TS can read resolved px values via
+       getComputedStyle (see Core/Layout.ts's getSafeAreaInsetPx) — env()
+       itself only works inside CSS, not from JS. viewport-fit=cover above is
+       what makes these non-zero on iOS; other platforms default to 0px. */
+    :root {
+      --safe-area-inset-top: env(safe-area-inset-top, 0px);
+      --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+      --safe-area-inset-left: env(safe-area-inset-left, 0px);
+      --safe-area-inset-right: env(safe-area-inset-right, 0px);
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      /* The real backdrop, painted here in plain CSS rather than left flat,
+         so #boot-loader below has something more alive than a dark rectangle
+         to sit on top of. This is LevelManager.load()'s
+         ColorUtil.buildPageBackground('#270046') hand-expanded to static
+         values — '#270046' is level 1's configured backgroundColor
+         (Levels/levels.ts, currently the 'cow' entry). LevelManager
+         overwrites this inline with the same computed background the instant
+         the real level loads, so as long as that hex matches, the swap is
+         invisible; if level 1's colour ever changes, update the three stops
+         below to match or this becomes a one-frame pop instead of a seam.
+         '/ui/background.webp' is the same 21KB painted backdrop the game
+         itself uses, so this costs one extra request, not a new asset. */
+      background:
+        url('ui/background.webp') center / cover no-repeat,
+        linear-gradient(180deg, #3e2c6f 0%, #270046 45%, #491177 100%);
+      overscroll-behavior: none;
+      touch-action: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    #app-canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    #ui-root {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+    }
+    /* Covers the gap between page-open and the first playable frame — see
+       main.ts's bootstrap(), which can legitimately take several seconds on a
+       cold/slow connection. Without this the player stares at a flat rectangle
+       with zero feedback, which reads as broken rather than loading; the
+       body's own backdrop (above) plus this spinner make it read as the game
+       already starting up instead of a stalled page.
+       Pure CSS/HTML so it paints before any JS (or the platform SDK) runs;
+       main.ts removes it once the first level is actually on screen.
+       Sized in vmin rather than px on purpose — this exists before
+       --cs-ui-scale is published (that needs the PlayCanvas app's canvas
+       size), so it can't use uiPx() yet, and vmin is itself already a
+       proportion of the viewport rather than a fixed count. */
+    #boot-loader {
+      position: fixed;
+      inset: 0;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4vmin;
+      /* No background of its own — body's backdrop above shows straight
+         through, so loading looks like standing in the game rather than a
+         modal over it. */
+      pointer-events: none;
+      opacity: 1;
+      transition: opacity 0.25s ease-out;
+    }
+    #boot-loader.boot-loader--hidden {
+      opacity: 0;
+    }
+    /* Key art (publishing/thumbnail_chicken.png, exported to WebP — see public/ui/) rather than
+       any in-game render: this paints before PlayCanvas/the level has loaded,
+       so there is no sculpture to show yet. Square and self-contained (it
+       carries its own purple backdrop), so it reads as a splash card sitting on
+       top of body's purple background rather than needing to match it.
+       Sized/rounded in vmin for the same reason as the rest of this block —
+       see the comment above #boot-loader. The gentle breathing scale is just
+       enough to read as "alive" during a long load without being distracting. */
+    #boot-loader__art {
+      width: 46vmin;
+      height: 46vmin;
+      border-radius: 6%;
+      box-shadow: 0 1.5vmin 4vmin rgba(0, 0, 0, 0.45);
+      animation: boot-loader-breathe 2.4s ease-in-out infinite;
+    }
+    #boot-loader__spinner {
+      width: 10vmin;
+      height: 10vmin;
+      border-radius: 50%;
+      border: 0.9vmin solid rgba(140, 92, 240, 0.25);
+      border-top-color: #8c5cf0;
+      animation: boot-loader-spin 0.9s linear infinite;
+    }
+    @keyframes boot-loader-spin {
+      to { transform: rotate(360deg); }
+    }
+    @keyframes boot-loader-breathe {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.035); }
+    }
+  </style>
+  <!-- Platform SDK, picked per build by mode — see the .env.* files and vite.config.ts (Poki,
+       CrazyGames and GamePix load through this tag; GameDistribution and GameMonetize are injected
+       by vite.config.ts instead). Kept as the first script in <head>, which GamePix requires. -->
+  <script type="module" crossorigin src="./assets/index-CyMP7_4g.js"></script>
+</head>
+<body>
+  <canvas id="app-canvas"></canvas>
+  <div id="ui-root"></div>
+  <div id="boot-loader">
+    <img id="boot-loader__art" src="./ui/loading-hero.webp" alt="" width="700" height="700" />
+    <div id="boot-loader__spinner"></div>
+  </div>
+</body>
+</html>

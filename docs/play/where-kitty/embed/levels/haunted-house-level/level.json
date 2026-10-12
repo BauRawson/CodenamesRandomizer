@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "id": "haunted-house-level",
+  "title": "Haunted House",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Haunted Mansion Cat copy #9",
+      "x": 1397,
+      "y": 597,
+      "width": 93,
+      "height": 78,
+      "hitX": 46,
+      "hitY": 37.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1338,
+        0,
+        133,
+        118
+      ],
+      "frame": [
+        438,
+        175,
+        93,
+        78
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "Haunted Mansion Cat copy #10",
+      "x": 1418,
+      "y": 182,
+      "width": 127,
+      "height": 95,
+      "hitX": 61,
+      "hitY": 44,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        410,
+        0,
+        167,
+        135
+      ],
+      "frame": [
+        0,
+        175,
+        127,
+        95
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "Haunted Mansion Cat copy #6",
+      "x": 469,
+      "y": 409,
+      "width": 92,
+      "height": 87,
+      "hitX": 36,
+      "hitY": 40.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1074,
+        0,
+        132,
+        127
+      ],
+      "frame": [
+        254,
+        175,
+        92,
+        87
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "Haunted Mansion Cat copy",
+      "x": 96,
+      "y": 560,
+      "width": 132,
+      "height": 129,
+      "hitX": 62.5,
+      "hitY": 60,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        236,
+        0,
+        172,
+        169
+      ],
+      "frame": [
+        940,
+        0,
+        132,
+        129
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "Haunted Mansion Cat copy #1",
+      "x": 1087,
+      "y": 610,
+      "width": 194,
+      "height": 133,
+      "hitX": 100.5,
+      "hitY": 66.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        234,
+        173
+      ],
+      "frame": [
+        579,
+        0,
+        194,
+        133
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "Haunted Mansion Cat copy #2",
+      "x": 1019,
+      "y": 373,
+      "width": 88,
+      "height": 82,
+      "hitX": 42.5,
+      "hitY": 40.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1208,
+        0,
+        128,
+        122
+      ],
+      "frame": [
+        348,
+        175,
+        88,
+        82
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "Haunted Mansion Cat copy #3",
+      "x": 407,
+      "y": 510,
+      "width": 123,
+      "height": 89,
+      "hitX": 59,
+      "hitY": 39.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        775,
+        0,
+        163,
+        129
+      ],
+      "frame": [
+        129,
+        175,
+        123,
+        89
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "Haunted Mansion Cat copy #5",
+      "x": 1521,
+      "y": 474,
+      "width": 93,
+      "height": 69,
+      "hitX": 48,
+      "hitY": 32,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1617,
+        0,
+        133,
+        109
+      ],
+      "frame": [
+        637,
+        175,
+        93,
+        69
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "Haunted Mansion Cat copy #4",
+      "x": 690,
+      "y": 185,
+      "width": 63,
+      "height": 60,
+      "hitX": 37.5,
+      "hitY": 28.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1897,
+        0,
+        103,
+        100
+      ],
+      "frame": [
+        837,
+        175,
+        63,
+        60
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "Haunted Mansion Cat copy #8",
+      "x": 841,
+      "y": 387,
+      "width": 102,
+      "height": 69,
+      "hitX": 50,
+      "hitY": 31,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1473,
+        0,
+        142,
+        109
+      ],
+      "frame": [
+        533,
+        175,
+        102,
+        69
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "Haunted Mansion Cat copy #7",
+      "x": 812,
+      "y": 724,
+      "width": 103,
+      "height": 66,
+      "hitX": 56.5,
+      "hitY": 44,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1752,
+        0,
+        143,
+        106
+      ],
+      "frame": [
+        732,
+        175,
+        103,
+        66
+      ]
+    }
+  ]
+}

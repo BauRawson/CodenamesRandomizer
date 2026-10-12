@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 1,
+  "id": "wizard-school-level",
+  "title": "Wizard School",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Normal Cat copy",
+      "x": 478,
+      "y": 412,
+      "width": 138,
+      "height": 176,
+      "hitX": 78.5,
+      "hitY": 60.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        554,
+        0,
+        178,
+        216
+      ],
+      "frame": [
+        1252,
+        0,
+        138,
+        176
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "Wizards Cat copy #6",
+      "x": 934,
+      "y": 222,
+      "width": 61,
+      "height": 94,
+      "hitX": 31.5,
+      "hitY": 50,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        922,
+        277,
+        101,
+        134
+      ],
+      "frame": [
+        1776,
+        277,
+        61,
+        94
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "Wizards Cat copy #4",
+      "x": 1198,
+      "y": 728,
+      "width": 136,
+      "height": 134,
+      "hitX": 73,
+      "hitY": 59,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1392,
+        0,
+        176,
+        174
+      ],
+      "frame": [
+        784,
+        277,
+        136,
+        134
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "Wizards Cat copy #1",
+      "x": 1344,
+      "y": 348,
+      "width": 69,
+      "height": 102,
+      "hitX": 35,
+      "hitY": 48,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        405,
+        277,
+        109,
+        142
+      ],
+      "frame": [
+        1517,
+        277,
+        69,
+        102
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "Cat #2",
+      "x": 649,
+      "y": 739,
+      "width": 150,
+      "height": 156,
+      "hitX": 84,
+      "hitY": 72.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1060,
+        0,
+        190,
+        196
+      ],
+      "frame": [
+        0,
+        277,
+        150,
+        156
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "Cat #1",
+      "x": 1064,
+      "y": 518,
+      "width": 132,
+      "height": 164,
+      "hitX": 70.5,
+      "hitY": 83.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        886,
+        0,
+        172,
+        204
+      ],
+      "frame": [
+        1570,
+        0,
+        132,
+        164
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "Wizards Cat copy",
+      "x": 187,
+      "y": 59,
+      "width": 84,
+      "height": 118,
+      "hitX": 43.5,
+      "hitY": 57.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1840,
+        0,
+        124,
+        158
+      ],
+      "frame": [
+        1121,
+        277,
+        84,
+        118
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "Wizards Cat copy #2",
+      "x": 258,
+      "y": 636,
+      "width": 159,
+      "height": 235,
+      "hitX": 80,
+      "hitY": 111,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        199,
+        275
+      ],
+      "frame": [
+        393,
+        0,
+        159,
+        235
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "Wizards Cat copy #3",
+      "x": 171,
+      "y": 355,
+      "width": 105,
+      "height": 98,
+      "hitX": 50.5,
+      "hitY": 47,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        637,
+        277,
+        145,
+        138
+      ],
+      "frame": [
+        1669,
+        277,
+        105,
+        98
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "Wizards Cat copy #5",
+      "x": 867,
+      "y": 337,
+      "width": 69,
+      "height": 103,
+      "hitX": 33.5,
+      "hitY": 56.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        294,
+        277,
+        109,
+        143
+      ],
+      "frame": [
+        1446,
+        277,
+        69,
+        103
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "Cat",
+      "x": 600,
+      "y": 234,
+      "width": 94,
+      "height": 118,
+      "hitX": 50.5,
+      "hitY": 59.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1704,
+        0,
+        134,
+        158
+      ],
+      "frame": [
+        1025,
+        277,
+        94,
+        118
+      ]
+    },
+    {
+      "id": "cat_012",
+      "name": "EXPERIMENT Cat",
+      "experimental": true,
+      "x": 81,
+      "y": 603,
+      "width": 150,
+      "height": 208,
+      "hitX": 71.5,
+      "hitY": 50.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        201,
+        0,
+        190,
+        248
+      ],
+      "frame": [
+        734,
+        0,
+        150,
+        208
+      ]
+    },
+    {
+      "id": "cat_013",
+      "name": "EXPERIMENT Cat #4",
+      "experimental": true,
+      "x": 709,
+      "y": 364,
+      "width": 109,
+      "height": 50,
+      "hitX": 76,
+      "hitY": 26.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1839,
+        277,
+        149,
+        90
+      ],
+      "frame": [
+        97,
+        435,
+        109,
+        50
+      ]
+    },
+    {
+      "id": "cat_014",
+      "name": "EXPERIMENT Cat #5",
+      "experimental": true,
+      "x": 1111,
+      "y": 377,
+      "width": 79,
+      "height": 100,
+      "hitX": 47.5,
+      "hitY": 50.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        516,
+        277,
+        119,
+        140
+      ],
+      "frame": [
+        1588,
+        277,
+        79,
+        100
+      ]
+    },
+    {
+      "id": "cat_015",
+      "name": "EXPERIMENT Cat #1",
+      "experimental": true,
+      "x": -9,
+      "y": 378,
+      "width": 95,
+      "height": 64,
+      "hitX": 44,
+      "hitY": 31.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1207,
+        277,
+        135,
+        104
+      ],
+      "frame": [
+        0,
+        435,
+        95,
+        64
+      ]
+    },
+    {
+      "id": "cat_016",
+      "name": "EXPERIMENT Cat #3",
+      "experimental": true,
+      "x": 313,
+      "y": 437,
+      "width": 100,
+      "height": 104,
+      "hitX": 49.5,
+      "hitY": 25,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        152,
+        277,
+        140,
+        144
+      ],
+      "frame": [
+        1344,
+        277,
+        100,
+        104
+      ]
+    }
+  ]
+}

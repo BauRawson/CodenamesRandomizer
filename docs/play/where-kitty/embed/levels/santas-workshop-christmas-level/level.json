@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "id": "santas-workshop-christmas-level",
+  "title": "Santa's Workshop Christmas",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Christmas Cat copy #10",
+      "x": 320,
+      "y": 310,
+      "width": 94,
+      "height": 106,
+      "hitX": 46.5,
+      "hitY": 49.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        958,
+        0,
+        134,
+        146
+      ],
+      "frame": [
+        1721,
+        0,
+        94,
+        106
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "Christmas Cat copy #7",
+      "x": 1093,
+      "y": 214,
+      "width": 81,
+      "height": 63,
+      "hitX": 41,
+      "hitY": 29.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        224,
+        121,
+        103
+      ],
+      "frame": [
+        533,
+        224,
+        81,
+        63
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "Christmas Cat copy #3",
+      "x": 254,
+      "y": 711,
+      "width": 113,
+      "height": 148,
+      "hitX": 56.5,
+      "hitY": 68,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        163,
+        0,
+        153,
+        188
+      ],
+      "frame": [
+        843,
+        0,
+        113,
+        148
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "Christmas Cat copy #1",
+      "x": 945,
+      "y": 396,
+      "width": 69,
+      "height": 64,
+      "hitX": 33.5,
+      "hitY": 32,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1817,
+        0,
+        109,
+        104
+      ],
+      "frame": [
+        462,
+        224,
+        69,
+        64
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "Christmas Cat copy #2",
+      "x": 1190,
+      "y": 625,
+      "width": 84,
+      "height": 130,
+      "hitX": 41,
+      "hitY": 66.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        441,
+        0,
+        124,
+        170
+      ],
+      "frame": [
+        1094,
+        0,
+        84,
+        130
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "Christmas Cat copy #4",
+      "x": 362,
+      "y": 436,
+      "width": 72,
+      "height": 56,
+      "hitX": 35,
+      "hitY": 30.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        123,
+        224,
+        112,
+        96
+      ],
+      "frame": [
+        616,
+        224,
+        72,
+        56
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "Normal Cat copy",
+      "x": 556,
+      "y": 153,
+      "width": 56,
+      "height": 78,
+      "hitX": 31,
+      "hitY": 39.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1427,
+        0,
+        96,
+        118
+      ],
+      "frame": [
+        404,
+        224,
+        56,
+        78
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "Christmas Cat copy #5",
+      "x": 574,
+      "y": 422,
+      "width": 93,
+      "height": 85,
+      "hitX": 46,
+      "hitY": 41.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1292,
+        0,
+        133,
+        125
+      ],
+      "frame": [
+        309,
+        224,
+        93,
+        85
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "Christmas Cat copy #9",
+      "x": 706,
+      "y": 434,
+      "width": 100,
+      "height": 111,
+      "hitX": 45,
+      "hitY": 54.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        701,
+        0,
+        140,
+        151
+      ],
+      "frame": [
+        1619,
+        0,
+        100,
+        111
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "Christmas Cat copy",
+      "x": 1293,
+      "y": 404,
+      "width": 92,
+      "height": 114,
+      "hitX": 46,
+      "hitY": 58.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        567,
+        0,
+        132,
+        154
+      ],
+      "frame": [
+        1525,
+        0,
+        92,
+        114
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "Christmas Cat copy #8",
+      "x": 1086,
+      "y": 323,
+      "width": 70,
+      "height": 89,
+      "hitX": 35,
+      "hitY": 41.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1180,
+        0,
+        110,
+        129
+      ],
+      "frame": [
+        237,
+        224,
+        70,
+        89
+      ]
+    },
+    {
+      "id": "cat_012",
+      "name": "Christmas Cat copy #6",
+      "x": 672,
+      "y": 604,
+      "width": 121,
+      "height": 182,
+      "hitX": 61.5,
+      "hitY": 43.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        161,
+        222
+      ],
+      "frame": [
+        318,
+        0,
+        121,
+        182
+      ]
+    }
+  ]
+}

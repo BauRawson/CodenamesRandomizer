@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "id": "amusement-park-level",
+  "title": "Amusement Park",
+  "width": 1671,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Normal Cat copy",
+      "x": 1360,
+      "y": 359,
+      "width": 40,
+      "height": 57,
+      "hitX": 21,
+      "hitY": 20,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        437,
+        189,
+        80,
+        97
+      ],
+      "frame": [
+        1489,
+        189,
+        40,
+        57
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "AmusementPark Cat copy",
+      "x": 219,
+      "y": 355,
+      "width": 59,
+      "height": 88,
+      "hitX": 29.5,
+      "hitY": 44,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1557,
+        0,
+        99,
+        128
+      ],
+      "frame": [
+        869,
+        189,
+        59,
+        88
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "AmusementPark Cat copy #2",
+      "x": 730,
+      "y": 647,
+      "width": 85,
+      "height": 90,
+      "hitX": 43.5,
+      "hitY": 60,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1430,
+        0,
+        125,
+        130
+      ],
+      "frame": [
+        782,
+        189,
+        85,
+        90
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "AmusementPark Cat copy #1",
+      "x": 549,
+      "y": 493,
+      "width": 83,
+      "height": 69,
+      "hitX": 41.5,
+      "hitY": 35,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        79,
+        189,
+        123,
+        109
+      ],
+      "frame": [
+        1404,
+        189,
+        83,
+        69
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "AmusementPark Cat copy #4",
+      "x": 865,
+      "y": 294,
+      "width": 39,
+      "height": 54,
+      "hitX": 19,
+      "hitY": 29.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        519,
+        189,
+        79,
+        94
+      ],
+      "frame": [
+        1531,
+        189,
+        39,
+        54
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "AmusementPark Cat copy #5",
+      "x": 784,
+      "y": 530,
+      "width": 66,
+      "height": 53,
+      "hitX": 32.5,
+      "hitY": 29,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        600,
+        189,
+        106,
+        93
+      ],
+      "frame": [
+        1572,
+        189,
+        66,
+        53
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "AmusementPark Cat copy #3",
+      "x": 1277,
+      "y": 535,
+      "width": 72,
+      "height": 93,
+      "hitX": 37,
+      "hitY": 57,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1316,
+        0,
+        112,
+        133
+      ],
+      "frame": [
+        708,
+        189,
+        72,
+        93
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "AmusementPark Cat copy #6",
+      "x": 1433,
+      "y": 685,
+      "width": 136,
+      "height": 105,
+      "hitX": 76,
+      "hitY": 49.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        861,
+        0,
+        176,
+        145
+      ],
+      "frame": [
+        204,
+        189,
+        136,
+        105
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "AmusementPark Cat copy #8",
+      "x": 957,
+      "y": 568,
+      "width": 93,
+      "height": 100,
+      "hitX": 44,
+      "hitY": 47.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1181,
+        0,
+        133,
+        140
+      ],
+      "frame": [
+        342,
+        189,
+        93,
+        100
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "AmusementPark Cat copy #7",
+      "x": 402,
+      "y": 792,
+      "width": 83,
+      "height": 115,
+      "hitX": 44,
+      "hitY": 59,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        488,
+        0,
+        123,
+        155
+      ],
+      "frame": [
+        1925,
+        0,
+        83,
+        115
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "AmusementPark Cat copy #9",
+      "x": 1344,
+      "y": 807,
+      "width": 77,
+      "height": 112,
+      "hitX": 41.5,
+      "hitY": 56,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        613,
+        0,
+        117,
+        152
+      ],
+      "frame": [
+        0,
+        189,
+        77,
+        112
+      ]
+    },
+    {
+      "id": "cat_012",
+      "name": "AmusementPark Cat copy #10",
+      "x": 1003,
+      "y": 421,
+      "width": 42,
+      "height": 45,
+      "hitX": 21.5,
+      "hitY": 20.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1061,
+        189,
+        82,
+        85
+      ],
+      "frame": [
+        1731,
+        189,
+        42,
+        45
+      ]
+    },
+    {
+      "id": "cat_013",
+      "name": "EXPERIMENT Cat #4",
+      "experimental": true,
+      "x": 856,
+      "y": 487,
+      "width": 87,
+      "height": 43,
+      "hitX": 44,
+      "hitY": 22,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1145,
+        189,
+        127,
+        83
+      ],
+      "frame": [
+        1775,
+        189,
+        87,
+        43
+      ]
+    },
+    {
+      "id": "cat_014",
+      "name": "EXPERIMENT Cat #1",
+      "experimental": true,
+      "x": 1065,
+      "y": 815,
+      "width": 95,
+      "height": 122,
+      "hitX": 60.5,
+      "hitY": 60.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        351,
+        0,
+        135,
+        162
+      ],
+      "frame": [
+        1658,
+        0,
+        95,
+        122
+      ]
+    },
+    {
+      "id": "cat_015",
+      "name": "EXPERIMENT Cat #3",
+      "experimental": true,
+      "x": 1528,
+      "y": 289,
+      "width": 127,
+      "height": 147,
+      "hitX": 71.5,
+      "hitY": 48,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        167,
+        187
+      ],
+      "frame": [
+        732,
+        0,
+        127,
+        147
+      ]
+    },
+    {
+      "id": "cat_016",
+      "name": "EXPERIMENT Cat",
+      "experimental": true,
+      "x": 584,
+      "y": 670,
+      "width": 140,
+      "height": 140,
+      "hitX": 87,
+      "hitY": 65,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        169,
+        0,
+        180,
+        180
+      ],
+      "frame": [
+        1039,
+        0,
+        140,
+        140
+      ]
+    },
+    {
+      "id": "cat_017",
+      "name": "EXPERIMENT Cat #5",
+      "experimental": true,
+      "x": 563,
+      "y": 258,
+      "width": 89,
+      "height": 46,
+      "hitX": 44.5,
+      "hitY": 23.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        930,
+        189,
+        129,
+        86
+      ],
+      "frame": [
+        1640,
+        189,
+        89,
+        46
+      ]
+    },
+    {
+      "id": "cat_018",
+      "name": "EXPERIMENT Cat #2",
+      "experimental": true,
+      "x": 1077,
+      "y": 476,
+      "width": 128,
+      "height": 75,
+      "hitX": 64,
+      "hitY": 38.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1755,
+        0,
+        168,
+        115
+      ],
+      "frame": [
+        1274,
+        189,
+        128,
+        75
+      ]
+    }
+  ]
+}

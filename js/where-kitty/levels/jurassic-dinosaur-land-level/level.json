@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "id": "jurassic-dinosaur-land-level",
+  "title": "Jurassic Dinosaur Land",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Normal Cat copy",
+      "x": 1360,
+      "y": 336,
+      "width": 88,
+      "height": 82,
+      "hitX": 45.5,
+      "hitY": 33.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        469,
+        0,
+        128,
+        122
+      ],
+      "frame": [
+        0,
+        144,
+        88,
+        82
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "Jurassic Cat copy #9",
+      "x": 42,
+      "y": 296,
+      "width": 50,
+      "height": 67,
+      "hitX": 25.5,
+      "hitY": 32.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1212,
+        0,
+        90,
+        107
+      ],
+      "frame": [
+        618,
+        144,
+        50,
+        67
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "Jurassic Cat copy #8",
+      "x": 689,
+      "y": 660,
+      "width": 62,
+      "height": 98,
+      "hitX": 30,
+      "hitY": 29.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        134,
+        0,
+        102,
+        138
+      ],
+      "frame": [
+        1678,
+        0,
+        62,
+        98
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "Jurassic Cat copy #7",
+      "x": 163,
+      "y": 671,
+      "width": 71,
+      "height": 83,
+      "hitX": 36.5,
+      "hitY": 40.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        356,
+        0,
+        111,
+        123
+      ],
+      "frame": [
+        1911,
+        0,
+        71,
+        83
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "Jurassic Cat copy #5",
+      "x": 1257,
+      "y": 298,
+      "width": 84,
+      "height": 75,
+      "hitX": 43,
+      "hitY": 37,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        799,
+        0,
+        124,
+        115
+      ],
+      "frame": [
+        325,
+        144,
+        84,
+        75
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "Jurassic Cat copy #3",
+      "x": 915,
+      "y": 331,
+      "width": 62,
+      "height": 81,
+      "hitX": 32.5,
+      "hitY": 34,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        599,
+        0,
+        102,
+        121
+      ],
+      "frame": [
+        90,
+        144,
+        62,
+        81
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "Italian Cat copy",
+      "x": 1298,
+      "y": 738,
+      "width": 96,
+      "height": 69,
+      "hitX": 50,
+      "hitY": 37.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1074,
+        0,
+        136,
+        109
+      ],
+      "frame": [
+        520,
+        144,
+        96,
+        69
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "Jurassic Cat copy #2",
+      "x": 809,
+      "y": 344,
+      "width": 49,
+      "height": 57,
+      "hitX": 24,
+      "hitY": 28,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1742,
+        0,
+        89,
+        97
+      ],
+      "frame": [
+        870,
+        144,
+        49,
+        57
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "Jurassic Cat copy #4",
+      "x": 896,
+      "y": 811,
+      "width": 107,
+      "height": 74,
+      "hitX": 55,
+      "hitY": 37,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        925,
+        0,
+        147,
+        114
+      ],
+      "frame": [
+        411,
+        144,
+        107,
+        74
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "Jurassic Cat copy",
+      "x": 851,
+      "y": 526,
+      "width": 76,
+      "height": 90,
+      "hitX": 37,
+      "hitY": 46,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        238,
+        0,
+        116,
+        130
+      ],
+      "frame": [
+        1833,
+        0,
+        76,
+        90
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "Jurassic Cat copy #6",
+      "x": 1186,
+      "y": 386,
+      "width": 54,
+      "height": 77,
+      "hitX": 28,
+      "hitY": 35,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        703,
+        0,
+        94,
+        117
+      ],
+      "frame": [
+        269,
+        144,
+        54,
+        77
+      ]
+    },
+    {
+      "id": "cat_012",
+      "name": "Jurassic Cat copy #1",
+      "x": 341,
+      "y": 626,
+      "width": 92,
+      "height": 102,
+      "hitX": 42.5,
+      "hitY": 48.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        132,
+        142
+      ],
+      "frame": [
+        1584,
+        0,
+        92,
+        102
+      ]
+    },
+    {
+      "id": "cat_013",
+      "name": "EXPERIMENT Cat #1",
+      "experimental": true,
+      "x": 507,
+      "y": 122,
+      "width": 112,
+      "height": 63,
+      "hitX": 58.5,
+      "hitY": 33,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1430,
+        0,
+        152,
+        103
+      ],
+      "frame": [
+        756,
+        144,
+        112,
+        63
+      ]
+    },
+    {
+      "id": "cat_014",
+      "name": "EXPERIMENT Cat #4",
+      "experimental": true,
+      "x": 970,
+      "y": 130,
+      "width": 73,
+      "height": 37,
+      "hitX": 36,
+      "hitY": 19,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        154,
+        144,
+        113,
+        77
+      ],
+      "frame": [
+        921,
+        144,
+        73,
+        37
+      ]
+    },
+    {
+      "id": "cat_015",
+      "name": "EXPERIMENT Cat #2",
+      "experimental": true,
+      "x": 1491,
+      "y": 232,
+      "width": 84,
+      "height": 64,
+      "hitX": 43.5,
+      "hitY": 32,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1304,
+        0,
+        124,
+        104
+      ],
+      "frame": [
+        670,
+        144,
+        84,
+        64
+      ]
+    }
+  ]
+}

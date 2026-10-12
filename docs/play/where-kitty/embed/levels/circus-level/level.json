@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "id": "circus-level",
+  "title": "Circus",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Circus Cat copy #1",
+      "x": 819,
+      "y": 711,
+      "width": 129,
+      "height": 93,
+      "hitX": 64,
+      "hitY": 49.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        928,
+        0,
+        169,
+        133
+      ],
+      "frame": [
+        1756,
+        0,
+        129,
+        93
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "Circus Cat copy #3",
+      "x": 879,
+      "y": 400,
+      "width": 66,
+      "height": 52,
+      "hitX": 33.5,
+      "hitY": 26,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1887,
+        0,
+        106,
+        92
+      ],
+      "frame": [
+        311,
+        242,
+        66,
+        52
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "Circus Cat copy #4",
+      "x": 297,
+      "y": 730,
+      "width": 171,
+      "height": 157,
+      "hitX": 81,
+      "hitY": 72.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        316,
+        0,
+        211,
+        197
+      ],
+      "frame": [
+        529,
+        0,
+        171,
+        157
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "Circus Cat copy #2",
+      "x": 876,
+      "y": 736,
+      "width": 136,
+      "height": 200,
+      "hitX": 65.5,
+      "hitY": 98,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        176,
+        240
+      ],
+      "frame": [
+        178,
+        0,
+        136,
+        200
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "Circus Cat copy #5",
+      "x": 213,
+      "y": 519,
+      "width": 67,
+      "height": 116,
+      "hitX": 34.5,
+      "hitY": 57,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        702,
+        0,
+        107,
+        156
+      ],
+      "frame": [
+        1440,
+        0,
+        67,
+        116
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "Circus Cat copy #6",
+      "x": 718,
+      "y": 488,
+      "width": 81,
+      "height": 80,
+      "hitX": 40,
+      "hitY": 36,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1317,
+        0,
+        121,
+        120
+      ],
+      "frame": [
+        138,
+        242,
+        81,
+        80
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "Circus Cat copy #7",
+      "x": 539,
+      "y": 448,
+      "width": 49,
+      "height": 71,
+      "hitX": 24,
+      "hitY": 35.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1509,
+        0,
+        89,
+        111
+      ],
+      "frame": [
+        221,
+        242,
+        49,
+        71
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "Circus Cat copy #8",
+      "x": 1200,
+      "y": 503,
+      "width": 79,
+      "height": 85,
+      "hitX": 40.5,
+      "hitY": 41.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1099,
+        0,
+        119,
+        125
+      ],
+      "frame": [
+        0,
+        242,
+        79,
+        85
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "Circus Cat copy #9",
+      "x": 1506,
+      "y": 287,
+      "width": 55,
+      "height": 81,
+      "hitX": 28,
+      "hitY": 39.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1220,
+        0,
+        95,
+        121
+      ],
+      "frame": [
+        81,
+        242,
+        55,
+        81
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "Circus Cat copy #10",
+      "x": 662,
+      "y": 347,
+      "width": 37,
+      "height": 57,
+      "hitX": 18,
+      "hitY": 27.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1677,
+        0,
+        77,
+        97
+      ],
+      "frame": [
+        272,
+        242,
+        37,
+        57
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "Circus Cat copy",
+      "x": 801,
+      "y": 552,
+      "width": 75,
+      "height": 103,
+      "hitX": 36,
+      "hitY": 51.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        811,
+        0,
+        115,
+        143
+      ],
+      "frame": [
+        1600,
+        0,
+        75,
+        103
+      ]
+    }
+  ]
+}

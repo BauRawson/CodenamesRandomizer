@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "id": "airport-level",
+  "title": "Airport",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Airport Cat copy",
+      "x": 171,
+      "y": 234,
+      "width": 45,
+      "height": 71,
+      "hitX": 22,
+      "hitY": 37,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1085,
+        0,
+        85,
+        111
+      ],
+      "frame": [
+        0,
+        291,
+        45,
+        71
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "Movie Cat copy",
+      "x": 179,
+      "y": 703,
+      "width": 157,
+      "height": 249,
+      "hitX": 78,
+      "hitY": 130,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        197,
+        289
+      ],
+      "frame": [
+        199,
+        0,
+        157,
+        249
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "Airport Cat copy #2",
+      "x": 210,
+      "y": 476,
+      "width": 73,
+      "height": 95,
+      "hitX": 36,
+      "hitY": 49,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        742,
+        0,
+        113,
+        135
+      ],
+      "frame": [
+        1807,
+        0,
+        73,
+        95
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "Airport Cat copy #3",
+      "x": 142,
+      "y": 479,
+      "width": 71,
+      "height": 65,
+      "hitX": 37.5,
+      "hitY": 30.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1276,
+        0,
+        111,
+        105
+      ],
+      "frame": [
+        111,
+        291,
+        71,
+        65
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "Airport Cat copy #5",
+      "x": 1067,
+      "y": 419,
+      "width": 58,
+      "height": 74,
+      "hitX": 30.5,
+      "hitY": 36.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        985,
+        0,
+        98,
+        114
+      ],
+      "frame": [
+        1970,
+        0,
+        58,
+        74
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "Airport Cat copy #4",
+      "x": 698,
+      "y": 537,
+      "width": 86,
+      "height": 75,
+      "hitX": 44,
+      "hitY": 36.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        857,
+        0,
+        126,
+        115
+      ],
+      "frame": [
+        1882,
+        0,
+        86,
+        75
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "Airport Cat copy #1",
+      "x": 641,
+      "y": 724,
+      "width": 99,
+      "height": 142,
+      "hitX": 56.5,
+      "hitY": 61,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        358,
+        0,
+        139,
+        182
+      ],
+      "frame": [
+        499,
+        0,
+        99,
+        142
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "Airport Cat copy #7",
+      "x": 1259,
+      "y": 651,
+      "width": 80,
+      "height": 59,
+      "hitX": 40,
+      "hitY": 31.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1474,
+        0,
+        120,
+        99
+      ],
+      "frame": [
+        229,
+        291,
+        80,
+        59
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "Airport Cat copy #6",
+      "x": 868,
+      "y": 468,
+      "width": 67,
+      "height": 57,
+      "hitX": 34.5,
+      "hitY": 25.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1698,
+        0,
+        107,
+        97
+      ],
+      "frame": [
+        311,
+        291,
+        67,
+        57
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "Airport Cat copy #8",
+      "x": 825,
+      "y": 384,
+      "width": 43,
+      "height": 61,
+      "hitX": 22.5,
+      "hitY": 17.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1389,
+        0,
+        83,
+        101
+      ],
+      "frame": [
+        184,
+        291,
+        43,
+        61
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "Airport Cat copy #9",
+      "x": 1255,
+      "y": 185,
+      "width": 62,
+      "height": 69,
+      "hitX": 32,
+      "hitY": 34,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1172,
+        0,
+        102,
+        109
+      ],
+      "frame": [
+        47,
+        291,
+        62,
+        69
+      ]
+    },
+    {
+      "id": "cat_012",
+      "name": "Airport Cat copy #10",
+      "x": 911,
+      "y": 660,
+      "width": 100,
+      "height": 98,
+      "hitX": 46,
+      "hitY": 50,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        600,
+        0,
+        140,
+        138
+      ],
+      "frame": [
+        1596,
+        0,
+        100,
+        98
+      ]
+    }
+  ]
+}

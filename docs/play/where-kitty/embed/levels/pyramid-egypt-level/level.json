@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "id": "pyramid-egypt-level",
+  "title": "Pyramid Egypt",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Pyramid Cat copy #6",
+      "x": 143,
+      "y": 452,
+      "width": 97,
+      "height": 93,
+      "hitX": 53.5,
+      "hitY": 47,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1428,
+        0,
+        137,
+        133
+      ],
+      "frame": [
+        557,
+        185,
+        97,
+        93
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "Pyramid Cat copy",
+      "x": 683,
+      "y": 302,
+      "width": 79,
+      "height": 72,
+      "hitX": 42,
+      "hitY": 37.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        119,
+        185,
+        119,
+        112
+      ],
+      "frame": [
+        1045,
+        185,
+        79,
+        72
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "Normal Cat copy",
+      "x": 1138,
+      "y": 311,
+      "width": 58,
+      "height": 98,
+      "hitX": 31,
+      "hitY": 20,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        913,
+        0,
+        98,
+        138
+      ],
+      "frame": [
+        240,
+        185,
+        58,
+        98
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "Pyramid Cat copy #2",
+      "x": 139,
+      "y": 832,
+      "width": 188,
+      "height": 115,
+      "hitX": 96,
+      "hitY": 56,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        498,
+        0,
+        228,
+        155
+      ],
+      "frame": [
+        1706,
+        0,
+        188,
+        115
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "Pyramid Cat copy #3",
+      "x": 1223,
+      "y": 260,
+      "width": 97,
+      "height": 76,
+      "hitX": 51,
+      "hitY": 37.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1567,
+        0,
+        137,
+        116
+      ],
+      "frame": [
+        767,
+        185,
+        97,
+        76
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "Pyramid Cat copy #4",
+      "x": 1506,
+      "y": 409,
+      "width": 140,
+      "height": 97,
+      "hitX": 75,
+      "hitY": 41.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1013,
+        0,
+        180,
+        137
+      ],
+      "frame": [
+        300,
+        185,
+        140,
+        97
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "Pyramid Cat copy #5",
+      "x": 1348,
+      "y": 235,
+      "width": 69,
+      "height": 45,
+      "hitX": 31,
+      "hitY": 21,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        656,
+        185,
+        109,
+        85
+      ],
+      "frame": [
+        1201,
+        185,
+        69,
+        45
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "Pyramid Cat copy #1",
+      "x": 998,
+      "y": 603,
+      "width": 231,
+      "height": 135,
+      "hitX": 87.5,
+      "hitY": 69.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        225,
+        0,
+        271,
+        175
+      ],
+      "frame": [
+        1195,
+        0,
+        231,
+        135
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "Pyramid Cat copy #7",
+      "x": 339,
+      "y": 461,
+      "width": 98,
+      "height": 74,
+      "hitX": 48.5,
+      "hitY": 36,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1896,
+        0,
+        138,
+        114
+      ],
+      "frame": [
+        866,
+        185,
+        98,
+        74
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "Pyramid Cat copy #8",
+      "x": 908,
+      "y": 503,
+      "width": 77,
+      "height": 74,
+      "hitX": 30.5,
+      "hitY": 41.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        185,
+        117,
+        114
+      ],
+      "frame": [
+        966,
+        185,
+        77,
+        74
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "Pyramid Cat copy #9",
+      "x": 988,
+      "y": 414,
+      "width": 73,
+      "height": 56,
+      "hitX": 39.5,
+      "hitY": 27.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        442,
+        185,
+        113,
+        96
+      ],
+      "frame": [
+        1126,
+        185,
+        73,
+        56
+      ]
+    },
+    {
+      "id": "cat_012",
+      "name": "Pyramid Cat copy #10",
+      "x": 1401,
+      "y": 606,
+      "width": 183,
+      "height": 143,
+      "hitX": 87.5,
+      "hitY": 72,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        223,
+        183
+      ],
+      "frame": [
+        728,
+        0,
+        183,
+        143
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "levels": [
+    {
+      "id": "wizard-school-level",
+      "title": "Wizard School"
+    },
+    {
+      "id": "restaurant-level",
+      "title": "Restaurant"
+    },
+    {
+      "id": "beach-level",
+      "title": "Beach"
+    },
+    {
+      "id": "under-the-sea-level",
+      "title": "Under The Sea"
+    },
+    {
+      "id": "jurassic-dinosaur-land-level",
+      "title": "Jurassic Dinosaur Land"
+    },
+    {
+      "id": "elementary-classroom-level",
+      "title": "Elementary Classroom"
+    },
+    {
+      "id": "science-lab-level",
+      "title": "Science Lab"
+    },
+    {
+      "id": "santas-workshop-christmas-level",
+      "title": "Santa's Workshop Christmas"
+    },
+    {
+      "id": "dragon-castle-level",
+      "title": "Dragon Castle"
+    },
+    {
+      "id": "wild-west-level",
+      "title": "Wild West"
+    },
+    {
+      "id": "haunted-house-level",
+      "title": "Haunted House"
+    },
+    {
+      "id": "space-station-level",
+      "title": "Space Station"
+    },
+    {
+      "id": "japanese-festival-level",
+      "title": "Japanese Festival"
+    },
+    {
+      "id": "pirate-ship",
+      "title": "Pirate Ship"
+    },
+    {
+      "id": "pyramid-egypt-level",
+      "title": "Pyramid Egypt"
+    },
+    {
+      "id": "circus-level",
+      "title": "Circus"
+    },
+    {
+      "id": "airport-level",
+      "title": "Airport"
+    },
+    {
+      "id": "fairy-land-level",
+      "title": "Fairy Land"
+    },
+    {
+      "id": "ski-resort-level",
+      "title": "Ski Resort"
+    },
+    {
+      "id": "fire-station-level",
+      "title": "Fire Station"
+    },
+    {
+      "id": "farm-level",
+      "title": "Farm"
+    },
+    {
+      "id": "movie-set-level",
+      "title": "Movie Set"
+    },
+    {
+      "id": "amusement-park-level",
+      "title": "Amusement Park"
+    },
+    {
+      "id": "museum-level",
+      "title": "Museum"
+    },
+    {
+      "id": "hotel-level",
+      "title": "Hotel"
+    },
+    {
+      "id": "city-london-level",
+      "title": "City London"
+    },
+    {
+      "id": "city-paris-level",
+      "title": "City Paris"
+    }
+  ]
+}

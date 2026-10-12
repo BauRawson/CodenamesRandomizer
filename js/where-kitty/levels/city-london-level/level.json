@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "id": "city-london-level",
+  "title": "City London",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "Cat",
+      "x": 612,
+      "y": 320,
+      "width": 81,
+      "height": 117,
+      "hitX": 36.5,
+      "hitY": 61.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        960,
+        0,
+        121,
+        157
+      ],
+      "frame": [
+        0,
+        212,
+        81,
+        117
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "Cat #1",
+      "x": 345,
+      "y": 596,
+      "width": 137,
+      "height": 154,
+      "hitX": 60.5,
+      "hitY": 71.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        186,
+        0,
+        177,
+        194
+      ],
+      "frame": [
+        1083,
+        0,
+        137,
+        154
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "Cat #2",
+      "x": 686,
+      "y": 764,
+      "width": 144,
+      "height": 170,
+      "hitX": 58,
+      "hitY": 85.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        184,
+        210
+      ],
+      "frame": [
+        814,
+        0,
+        144,
+        170
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "Cat #3",
+      "x": 1297,
+      "y": 419,
+      "width": 152,
+      "height": 74,
+      "hitX": 73,
+      "hitY": 37.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        83,
+        212,
+        192,
+        114
+      ],
+      "frame": [
+        823,
+        212,
+        152,
+        74
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "Cat #4",
+      "x": 1351,
+      "y": 702,
+      "width": 178,
+      "height": 147,
+      "hitX": 80.5,
+      "hitY": 67.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        594,
+        0,
+        218,
+        187
+      ],
+      "frame": [
+        1524,
+        0,
+        178,
+        147
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "Cat #7",
+      "x": 1310,
+      "y": 221,
+      "width": 71,
+      "height": 111,
+      "hitX": 40,
+      "hitY": 53,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1222,
+        0,
+        111,
+        151
+      ],
+      "frame": [
+        277,
+        212,
+        71,
+        111
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "Cat #5",
+      "x": 969,
+      "y": 759,
+      "width": 187,
+      "height": 148,
+      "hitX": 101,
+      "hitY": 73,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        365,
+        0,
+        227,
+        188
+      ],
+      "frame": [
+        1335,
+        0,
+        187,
+        148
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "Cat #9",
+      "x": 806,
+      "y": 635,
+      "width": 64,
+      "height": 69,
+      "hitX": 37.5,
+      "hitY": 34.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        350,
+        212,
+        104,
+        109
+      ],
+      "frame": [
+        1082,
+        212,
+        64,
+        69
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "Cat #10",
+      "x": 1237,
+      "y": 191,
+      "width": 63,
+      "height": 31,
+      "hitX": 30.5,
+      "hitY": 14.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        977,
+        212,
+        103,
+        71
+      ],
+      "frame": [
+        1251,
+        212,
+        63,
+        31
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "Pasted Layer #2",
+      "x": 228,
+      "y": 405,
+      "width": 72,
+      "height": 89,
+      "hitX": 38.5,
+      "hitY": 40.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1704,
+        0,
+        112,
+        129
+      ],
+      "frame": [
+        456,
+        212,
+        72,
+        89
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "Cat #8",
+      "x": 1062,
+      "y": 597,
+      "width": 148,
+      "height": 80,
+      "hitX": 74.5,
+      "hitY": 40,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1818,
+        0,
+        188,
+        120
+      ],
+      "frame": [
+        673,
+        212,
+        148,
+        80
+      ]
+    },
+    {
+      "id": "cat_012",
+      "name": "Cat #6",
+      "x": 1493,
+      "y": 416,
+      "width": 101,
+      "height": 43,
+      "hitX": 54.5,
+      "hitY": 20,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        530,
+        212,
+        141,
+        83
+      ],
+      "frame": [
+        1148,
+        212,
+        101,
+        43
+      ]
+    }
+  ]
+}

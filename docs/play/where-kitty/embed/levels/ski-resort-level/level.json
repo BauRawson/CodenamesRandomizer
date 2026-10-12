@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "id": "ski-resort-level",
+  "title": "Ski Resort",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "SkiResort Cat copy",
+      "x": 1320,
+      "y": 397,
+      "width": 74,
+      "height": 102,
+      "hitX": 37.5,
+      "hitY": 51,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        611,
+        0,
+        114,
+        142
+      ],
+      "frame": [
+        1503,
+        0,
+        74,
+        102
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "SkiResort Cat copy #1",
+      "x": 202,
+      "y": 404,
+      "width": 74,
+      "height": 105,
+      "hitX": 44.5,
+      "hitY": 53,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        495,
+        0,
+        114,
+        145
+      ],
+      "frame": [
+        1333,
+        0,
+        74,
+        105
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "SkiResort Cat copy #2",
+      "x": 24,
+      "y": 559,
+      "width": 97,
+      "height": 85,
+      "hitX": 48.5,
+      "hitY": 45,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        850,
+        0,
+        137,
+        125
+      ],
+      "frame": [
+        1700,
+        0,
+        97,
+        85
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "SkiResort Cat copy #3",
+      "x": 462,
+      "y": 735,
+      "width": 144,
+      "height": 230,
+      "hitX": 83.5,
+      "hitY": 109,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        184,
+        270
+      ],
+      "frame": [
+        186,
+        0,
+        144,
+        230
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "SkiResort Cat copy #4",
+      "x": 479,
+      "y": 446,
+      "width": 76,
+      "height": 68,
+      "hitX": 34,
+      "hitY": 32.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1215,
+        0,
+        116,
+        108
+      ],
+      "frame": [
+        1945,
+        0,
+        76,
+        68
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "SkiResort Cat copy #5",
+      "x": 88,
+      "y": 275,
+      "width": 79,
+      "height": 61,
+      "hitX": 40.5,
+      "hitY": 31,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1579,
+        0,
+        119,
+        101
+      ],
+      "frame": [
+        54,
+        272,
+        79,
+        61
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "SkiResort Cat copy #7",
+      "x": 846,
+      "y": 452,
+      "width": 60,
+      "height": 83,
+      "hitX": 31,
+      "hitY": 42,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        989,
+        0,
+        100,
+        123
+      ],
+      "frame": [
+        1799,
+        0,
+        60,
+        83
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "SkiResort Cat copy #8",
+      "x": 1284,
+      "y": 664,
+      "width": 121,
+      "height": 131,
+      "hitX": 61,
+      "hitY": 65,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        332,
+        0,
+        161,
+        171
+      ],
+      "frame": [
+        727,
+        0,
+        121,
+        131
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "SkiResort Cat copy #9",
+      "x": 1033,
+      "y": 487,
+      "width": 82,
+      "height": 68,
+      "hitX": 23,
+      "hitY": 32,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1091,
+        0,
+        122,
+        108
+      ],
+      "frame": [
+        1861,
+        0,
+        82,
+        68
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "SkiResort Cat copy #10",
+      "x": 710,
+      "y": 340,
+      "width": 52,
+      "height": 63,
+      "hitX": 24,
+      "hitY": 31,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1409,
+        0,
+        92,
+        103
+      ],
+      "frame": [
+        0,
+        272,
+        52,
+        63
+      ]
+    }
+  ]
+}

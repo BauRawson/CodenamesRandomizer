@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "id": "museum-level",
+  "title": "Museum",
+  "width": 1672,
+  "height": 941,
+  "background": "background.webp",
+  "occlusion": "occlusion.webp",
+  "atlas": "cats.png",
+  "cats": [
+    {
+      "id": "cat_001",
+      "name": "MuseumCat copy #10",
+      "x": 496,
+      "y": 359,
+      "width": 33,
+      "height": 52,
+      "hitX": 16,
+      "hitY": 26.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1112,
+        215,
+        73,
+        92
+      ],
+      "frame": [
+        1914,
+        215,
+        33,
+        52
+      ]
+    },
+    {
+      "id": "cat_002",
+      "name": "MuseumCat copy #9",
+      "x": 1181,
+      "y": 101,
+      "width": 46,
+      "height": 54,
+      "hitX": 27,
+      "hitY": 27,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1024,
+        215,
+        86,
+        94
+      ],
+      "frame": [
+        1866,
+        215,
+        46,
+        54
+      ]
+    },
+    {
+      "id": "cat_003",
+      "name": "MuseumCat copy #8",
+      "x": 871,
+      "y": 233,
+      "width": 48,
+      "height": 70,
+      "hitX": 23,
+      "hitY": 36,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        238,
+        215,
+        88,
+        110
+      ],
+      "frame": [
+        1540,
+        215,
+        48,
+        70
+      ]
+    },
+    {
+      "id": "cat_004",
+      "name": "MuseumCat copy #11",
+      "x": 210,
+      "y": 568,
+      "width": 146,
+      "height": 173,
+      "hitX": 75.5,
+      "hitY": 85,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        0,
+        0,
+        186,
+        213
+      ],
+      "frame": [
+        656,
+        0,
+        146,
+        173
+      ]
+    },
+    {
+      "id": "cat_005",
+      "name": "MuseumCat copy",
+      "x": 1199,
+      "y": 767,
+      "width": 109,
+      "height": 151,
+      "hitX": 62.5,
+      "hitY": 78.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        381,
+        0,
+        149,
+        191
+      ],
+      "frame": [
+        1275,
+        0,
+        109,
+        151
+      ]
+    },
+    {
+      "id": "cat_006",
+      "name": "MuseumCat copy #1",
+      "x": 1490,
+      "y": 436,
+      "width": 151,
+      "height": 156,
+      "hitX": 78.5,
+      "hitY": 84,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        188,
+        0,
+        191,
+        196
+      ],
+      "frame": [
+        986,
+        0,
+        151,
+        156
+      ]
+    },
+    {
+      "id": "cat_007",
+      "name": "MuseumCat copy #2",
+      "x": 593,
+      "y": 594,
+      "width": 140,
+      "height": 123,
+      "hitX": 57.5,
+      "hitY": 59.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        804,
+        0,
+        180,
+        163
+      ],
+      "frame": [
+        0,
+        215,
+        140,
+        123
+      ]
+    },
+    {
+      "id": "cat_008",
+      "name": "MuseumCat copy #5",
+      "x": 236,
+      "y": 461,
+      "width": 73,
+      "height": 60,
+      "hitX": 40.5,
+      "hitY": 32.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        694,
+        215,
+        113,
+        100
+      ],
+      "frame": [
+        1749,
+        215,
+        73,
+        60
+      ]
+    },
+    {
+      "id": "cat_009",
+      "name": "MuseumCat copy #3",
+      "x": 885,
+      "y": 460,
+      "width": 40,
+      "height": 57,
+      "hitX": 19.5,
+      "hitY": 30,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        942,
+        215,
+        80,
+        97
+      ],
+      "frame": [
+        1824,
+        215,
+        40,
+        57
+      ]
+    },
+    {
+      "id": "cat_010",
+      "name": "MuseumCat copy #6",
+      "x": 1458,
+      "y": 106,
+      "width": 125,
+      "height": 105,
+      "hitX": 63.5,
+      "hitY": 52.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1386,
+        0,
+        165,
+        145
+      ],
+      "frame": [
+        567,
+        215,
+        125,
+        105
+      ]
+    },
+    {
+      "id": "cat_011",
+      "name": "MuseumCat copy #7",
+      "x": -4,
+      "y": 319,
+      "width": 94,
+      "height": 115,
+      "hitX": 48.5,
+      "hitY": 53.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1139,
+        0,
+        134,
+        155
+      ],
+      "frame": [
+        142,
+        215,
+        94,
+        115
+      ]
+    },
+    {
+      "id": "cat_012",
+      "name": "MuseumCat copy #4",
+      "x": 568,
+      "y": 426,
+      "width": 59,
+      "height": 49,
+      "hitX": 30,
+      "hitY": 27.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1187,
+        215,
+        99,
+        89
+      ],
+      "frame": [
+        1949,
+        215,
+        59,
+        49
+      ]
+    },
+    {
+      "id": "cat_013",
+      "name": "EXPERIMENT Cat",
+      "experimental": true,
+      "x": 1216,
+      "y": 600,
+      "width": 151,
+      "height": 88,
+      "hitX": 74.5,
+      "hitY": 42.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1810,
+        0,
+        191,
+        128
+      ],
+      "frame": [
+        1288,
+        215,
+        151,
+        88
+      ]
+    },
+    {
+      "id": "cat_014",
+      "name": "Experiment Cat",
+      "experimental": true,
+      "x": 792,
+      "y": 544,
+      "width": 131,
+      "height": 99,
+      "hitX": 67,
+      "hitY": 49,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1553,
+        0,
+        171,
+        139
+      ],
+      "frame": [
+        809,
+        215,
+        131,
+        99
+      ]
+    },
+    {
+      "id": "cat_015",
+      "name": "EXPERIMENT Cat #2",
+      "experimental": true,
+      "x": 1026,
+      "y": 412,
+      "width": 57,
+      "height": 37,
+      "hitX": 28.5,
+      "hitY": 18.5,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        1441,
+        215,
+        97,
+        77
+      ],
+      "frame": [
+        0,
+        340,
+        57,
+        37
+      ]
+    },
+    {
+      "id": "cat_016",
+      "name": "EXPERIMENT Cat #3",
+      "experimental": true,
+      "x": 999,
+      "y": 537,
+      "width": 83,
+      "height": 66,
+      "hitX": 33,
+      "hitY": 27,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        442,
+        215,
+        123,
+        106
+      ],
+      "frame": [
+        1664,
+        215,
+        83,
+        66
+      ]
+    },
+    {
+      "id": "cat_017",
+      "name": "EXPERIMENT Cat #4",
+      "experimental": true,
+      "x": 258,
+      "y": 142,
+      "width": 72,
+      "height": 68,
+      "hitX": 37.5,
+      "hitY": 33,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        328,
+        215,
+        112,
+        108
+      ],
+      "frame": [
+        1590,
+        215,
+        72,
+        68
+      ]
+    },
+    {
+      "id": "cat_018",
+      "name": "EXPERIMENT Cat #1",
+      "experimental": true,
+      "x": 1322,
+      "y": 224,
+      "width": 82,
+      "height": 136,
+      "hitX": 40,
+      "hitY": 56,
+      "hitOffsetX": -20,
+      "hitOffsetY": -20,
+      "hitFrame": [
+        532,
+        0,
+        122,
+        176
+      ],
+      "frame": [
+        1726,
+        0,
+        82,
+        136
+      ]
+    }
+  ]
+}

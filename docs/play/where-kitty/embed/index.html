@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#f7e9c7" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="preload" href="./fonts/lilita-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./loading-thumbnail.webp" as="image" type="image/webp" fetchpriority="high" />
+    <link rel="preload" href="./levels/wizard-school-level/background.webp" as="image" type="image/webp" fetchpriority="high" />
+    <style>
+      @font-face { font-family: 'Lilita One'; src: url('fonts/lilita-one-latin-400-normal.woff2') format('woff2'); font-style: normal; font-weight: 400; font-display: block; }
+      html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #f7e9c7; }
+      #boot-splash { position: fixed; inset: 0; z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; background: #f75f3e; opacity: 1; transition: opacity 240ms ease; }
+      #boot-splash.is-ready { opacity: 0; pointer-events: none; }
+      .boot-thumbnail { display: block; width: min(58vw, 256px, 48vh); height: auto; border: 3px solid rgba(255, 255, 255, .96); border-radius: 18px; box-shadow: 0 4px 0 rgba(111, 38, 25, .22); }
+      .boot-copy { min-height: 27px; margin-top: 19px; color: #fff; font: 400 21px/1.25 'Lilita One', sans-serif; letter-spacing: 1px; text-shadow: 0 2px 0 rgba(89, 35, 28, .35); }
+      .boot-dots { display: flex; justify-content: center; gap: 8px; margin-top: 11px; }
+      .boot-dots i { width: 8px; height: 8px; border-radius: 50%; background: #fff; animation: boot-dot 900ms ease-in-out infinite; }
+      .boot-dots i:nth-child(2) { animation-delay: 150ms; } .boot-dots i:nth-child(3) { animation-delay: 300ms; }
+      @keyframes boot-dot { 0%, 70%, 100% { transform: translateY(0); opacity: .42; } 35% { transform: translateY(-6px); opacity: 1; } }
+      @media (prefers-reduced-motion: reduce) { .boot-dots i { animation: none; } }
+    </style>
+    <title>Where Kitty?</title>
+    <script type="module" crossorigin src="./assets/index-DO2rb7A4.js"></script>
+  </head>
+  <body>
+    <main id="game" aria-label="Where Kitty game"></main>
+    <div id="boot-splash" role="status" aria-label="Loading Where Kitty">
+      <img class="boot-thumbnail" src="./loading-thumbnail.webp" width="256" height="256" alt="" />
+      <div class="boot-copy">LOADING</div>
+      <div class="boot-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+    </div>
+    <noscript>Where Kitty needs JavaScript to play.</noscript>
+  </body>
+</html>
