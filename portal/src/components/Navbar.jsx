@@ -1,7 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
-import { useAuth } from '../lib/useGames.js'
-import AuthModal from './AuthModal.jsx'
 
 function LogoIcon() {
   return (
@@ -16,15 +14,7 @@ const NAV_LINKS = [
 ]
 
 export default function Navbar() {
-  const user = useAuth()
-  const [authOpen, setAuthOpen] = useState(false)
-  const [authMode, setAuthMode] = useState('login')
   const [menuOpen, setMenuOpen] = useState(false)
-
-  function openAuth(mode) {
-    setAuthMode(mode)
-    setAuthOpen(true)
-  }
 
   return (
     <>
@@ -66,29 +56,7 @@ export default function Navbar() {
             />
           </div>
 
-          {/* Auth */}
-          <div className="ml-auto flex items-center gap-2 flex-shrink-0">
-            {user ? (
-              <div className="w-9 h-9 rounded-full bg-gray-900 flex items-center justify-center text-white font-black text-sm">
-                {user.email?.[0]?.toUpperCase() ?? '?'}
-              </div>
-            ) : (
-              <>
-                <button
-                  onClick={() => openAuth('login')}
-                  className="hidden md:block px-4 py-2 font-bold text-sm text-gray-600 hover:bg-gray-100 rounded-xl transition-colors"
-                >
-                  Log in
-                </button>
-                <button
-                  onClick={() => openAuth('signup')}
-                  className="px-4 py-2 font-bold text-sm bg-gray-900 text-white rounded-xl hover:bg-gray-700 transition-colors flex items-center gap-1"
-                >
-                  Sign up <span>🐾</span>
-                </button>
-              </>
-            )}
-          </div>
+          <div className="ml-auto" />
 
           {/* Mobile menu toggle */}
           <button className="md:hidden p-2 text-gray-500" onClick={() => setMenuOpen(o => !o)}>
@@ -118,7 +86,6 @@ export default function Navbar() {
         )}
       </nav>
 
-      <AuthModal open={authOpen} mode={authMode} onClose={() => setAuthOpen(false)} onSwitch={setAuthMode} />
     </>
   )
 }

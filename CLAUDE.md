@@ -37,7 +37,7 @@ CodenamesRandomizer/
 | Bundler | Vite 5 |
 | Routing | React Router v6 (browser history, real URLs) |
 | Styling | Tailwind CSS v3 + Google Fonts (Nunito) |
-| Backend | Supabase (free tier) — auth, games DB, scores |
+| Backend | None — game catalog is static in `portal/src/data/mockGames.js` |
 | Language | JavaScript (JSX), no TypeScript |
 
 ### Games (`js/`)
@@ -78,23 +78,9 @@ Push `docs/` to `main` on GitHub. GitHub Pages detects it automatically and publ
 
 ---
 
-## Supabase
+## Game catalog
 
-**Project ID**: `glaucokoxmfybkhqtlnl`  
-**Dashboard**: supabase.com → project → SQL Editor
-
-Credentials live in `portal/.env` (gitignored). Copy from `portal/.env.example`:
-```
-VITE_SUPABASE_URL=https://glaucokoxmfybkhqtlnl.supabase.co
-VITE_SUPABASE_ANON_KEY=<anon/publishable key>
-```
-
-The anon/publishable key is **intentionally public** — it's safe in client-side code. Row Level Security (RLS) policies in the DB enforce access control. Never put the `service_role` key here.
-
-If `VITE_SUPABASE_URL` is not set, the app falls back to mock data in `portal/src/data/mockGames.js` silently.
-
-### Schema (already applied)
-Tables: `games`, `user_games`, `scores`. Schema source: `portal/supabase-schema.sql`. Run this in the Supabase SQL Editor when setting up a fresh project.
+No backend. `portal/src/data/mockGames.js` is the single source of truth for every game (listed and unlisted). Adding or editing a game there and rebuilding is all that's needed. There is no login/accounts system.
 
 ---
 
@@ -130,12 +116,11 @@ Each game is a standalone HTML page served at `michicho.com/play/<game>.html`. T
 1. Create `js/<game-name>.html` and `js/src/entry-<game-name>.js`
 2. Add the entry to `rollupOptions.input` in `js/vite.config.js`
 3. Add game metadata to `portal/src/data/mockGames.js`
-4. Insert a row in Supabase `games` table (or re-run seed)
-5. Rebuild both (`npm run build`)
+4. Rebuild both (`npm run build`)
 
 **If the game is a separate project/repo:**
 1. Deploy it somewhere (its own GitHub Pages, Vercel, etc.)
-2. Its `play_url` in the `games` table is just its full URL
+2. Its `play_url` in `mockGames.js` is just its full URL
 3. No changes to this repo needed
 
 ---
@@ -144,11 +129,9 @@ Each game is a standalone HTML page served at `michicho.com/play/<game>.html`. T
 
 | File | Purpose |
 |---|---|
-| `portal/src/data/mockGames.js` | Game registry (fallback when Supabase is not configured) |
-| `portal/src/lib/supabase.js` | Supabase client init |
-| `portal/src/lib/useGames.js` | Data hooks (tries Supabase, falls back to mock) |
+| `portal/src/data/mockGames.js` | Game registry (single source of truth) |
+| `portal/src/lib/useGames.js` | Data hooks (read from mockGames.js) |
 | `portal/src/components/MascotSVG.jsx` | SVG cat mascot (placeholder, no art yet) |
-| `portal/supabase-schema.sql` | DB schema + seed data |
 | `js/vite.config.js` | Multi-page game build config |
 | `docs/404.html` | GitHub Pages SPA routing fix |
 
@@ -207,6 +190,4 @@ Add these to the checklist in "Adding a new game" above:
 
 - **Samsung TV blank screen**: open bug, error beacon added in `js/index.html` (pre-portal, may be resolved now that games are separate entry points)
 - **Cat mascot**: SVG placeholder only, no real art yet
-- **Auth UI**: login/signup modal wired to Supabase but not tested end-to-end
-- **Leaderboard / achievements**: schema exists, UI is stubbed
 - **`js/` folder**: still named `js/` for historical reasons; conceptually it's `games/`
