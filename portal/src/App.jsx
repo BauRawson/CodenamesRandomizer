@@ -7,6 +7,7 @@ import GameDetailPage from './pages/GameDetailPage.jsx'
 import GamePlayPage from './pages/GamePlayPage.jsx'
 import FamiliaPage from './pages/FamiliaPage.jsx'
 import CategoriesPage from './pages/CategoriesPage.jsx'
+import SupportPage from './pages/SupportPage.jsx'
 
 function Layout({ children }) {
   return (
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="/familia" element={<Layout><FamiliaPage /></Layout>} />
         <Route path="/categories" element={<Layout><CategoriesPage /></Layout>} />
         <Route path="/categories/:slug" element={<Layout><CategoriesPage /></Layout>} />
+        <Route path="/support" element={<Layout><SupportPage /></Layout>} />
 
         {/* Catch-all → home */}
         <Route path="*" element={<Layout><HomePage /></Layout>} />
