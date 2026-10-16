@@ -4,7 +4,7 @@ import { MOCK_GAMES } from '../data/mockGames.js'
 
 // Web3Forms relays submissions to the inbox tied to this key, so the
 // destination address never appears in the page. The key is safe to publish.
-const WEB3FORMS_ACCESS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY'
+const WEB3FORMS_ACCESS_KEY = '31d5f565-a7d6-474c-9155-fc1a601535f6'
 
 const TOPICS = ['Bug or crash', 'Purchases / restore', 'Ads', 'Feedback or idea', 'Other']
 
