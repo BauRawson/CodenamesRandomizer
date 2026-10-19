@@ -8,6 +8,8 @@ import GamePlayPage from './pages/GamePlayPage.jsx'
 import FamiliaPage from './pages/FamiliaPage.jsx'
 import CategoriesPage from './pages/CategoriesPage.jsx'
 import SupportPage from './pages/SupportPage.jsx'
+import TheKingPage from './pages/TheKingPage.jsx'
+import Analytics from './components/Analytics.jsx'
 
 function Layout({ children }) {
   return (
@@ -23,6 +25,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/theking" element={<TheKingPage />} />
         {/* Play page — no nav/footer, fullscreen */}
         <Route path="/play/:slug" element={<GamePlayPage />} />
 
@@ -38,6 +41,7 @@ export default function App() {
         {/* Catch-all → home */}
         <Route path="*" element={<Layout><HomePage /></Layout>} />
       </Routes>
+      <Analytics />
     </BrowserRouter>
   )
 }

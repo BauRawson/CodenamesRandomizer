@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.analytics-settings{position:fixed;bottom:10px;left:12px;z-index:55;padding:7px 11px;border:1px solid #7788a2;border-radius:7px;background:#0e1c3d;color:#e4eafa;font:600 10px 'Nunito',sans-serif;cursor:pointer}
+.analytics-consent{position:fixed;z-index:60;bottom:16px;right:16px;max-width:430px;width:calc(100% - 32px);background:#fff;color:#162345;border:1px solid #d4dcec;border-radius:14px;padding:20px;box-shadow:0 12px 50px #0005;font-family:'Nunito',sans-serif}
+.analytics-consent strong{font-size:16px;font-weight:900}.analytics-consent p{font-size:12px;line-height:1.6;margin:6px 0 14px;color:#52617c}.analytics-actions{display:flex;gap:10px;flex-wrap:wrap}.analytics-actions button{padding:10px 13px;border:1px solid #b1bfd4;border-radius:7px;font-size:12px;font-weight:800;cursor:pointer}.analytics-actions button:nth-child(2){background:#183c8f;color:white;border-color:#183c8f}.analytics-actions button:focus-visible,.analytics-settings:focus-visible{outline:3px solid #db9c13;outline-offset:3px}
+
 @layer base {
   html {
     font-family: 'Nunito', system-ui, sans-serif;

@@ -10,6 +10,7 @@ function LogoIcon() {
 const NAV_LINKS = [
   { to: '/', label: 'Home', exact: true },
   { to: '/games', label: 'Games' },
+  { to: '/theking', label: 'The King' },
   { to: '/categories', label: 'Categories' },
 ]
 
