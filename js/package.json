@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "mkdir -p ../docs/play/tower-defense ../docs/play/capybara-merge ../docs/play/dream-room ../docs/play/pop-pop ../docs/play/where-kitty ../docs/play/ricochet-dungeon && cp -r tower-defense/. ../docs/play/tower-defense/embed && cp -r capybara-merge/. ../docs/play/capybara-merge/embed && cp -r dream-room/. ../docs/play/dream-room/embed && cp -r pop-pop/. ../docs/play/pop-pop/embed && cp -r where-kitty/. ../docs/play/where-kitty/embed && cp -r ricochet-dungeon/. ../docs/play/ricochet-dungeon/embed",
+    "postbuild": "mkdir -p ../docs/play/tower-defense ../docs/play/capybara-merge ../docs/play/dream-room ../docs/play/pop-pop ../docs/play/where-kitty ../docs/play/ricochet-dungeon ../docs/play/pod-racer ../docs/play/pianito && cp -r tower-defense/. ../docs/play/tower-defense/embed && cp -r capybara-merge/. ../docs/play/capybara-merge/embed && cp -r dream-room/. ../docs/play/dream-room/embed && cp -r pop-pop/. ../docs/play/pop-pop/embed && cp -r where-kitty/. ../docs/play/where-kitty/embed && cp -r ricochet-dungeon/. ../docs/play/ricochet-dungeon/embed && cp -r pod-racer/. ../docs/play/pod-racer/embed && cp -r pianito/. ../docs/play/pianito/embed",
     "preview": "vite preview"
   },
   "devDependencies": {
