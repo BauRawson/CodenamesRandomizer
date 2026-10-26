@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#f1dfb8" />
+    <title>Capybara Merge</title>
+    <link rel="icon" href="data:," />
+    <style>
+      /* critical inline style so the first paint is never a white flash */
+      html, body { margin: 0; height: 100%; background: #f1dfb8; overflow: hidden; }
+      /* loading screen: inline so it paints before any script/CSS arrives */
+      #loading { position: fixed; inset: 0; z-index: 1000; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
+        background: #f1dfb8; font: 800 15px system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; color: #6c503b; transition: opacity 0.35s; }
+      #loading.done { opacity: 0; pointer-events: none; }
+      #loading img { width: min(70vw, 420px); height: auto; max-height: 55vh; object-fit: contain; }
+      #loading .load-bar { width: min(60vw, 260px); height: 12px; border-radius: 99px; background: #e2c99b; border: 2px solid #6c503b; overflow: hidden; }
+      #loading .load-bar div { height: 100%; width: 40%; border-radius: 99px; background: #f0a63a; animation: load-slide 1.1s ease-in-out infinite; }
+      #loading.error .load-bar { display: none; }
+      #loading.error { cursor: pointer; }
+      @keyframes load-slide { 0% { transform: translateX(-100%); } 100% { transform: translateX(250%); } }
+    </style>
+    <script type="module" crossorigin src="./assets/index-BvbCBiM3.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D8Uqde77.css">
+  </head>
+  <body class="portrait">
+    <!-- Inline loader paints the current game logo before the game bundle arrives. -->
+    <div id="loading">
+      <img alt="Capybara Merge" src="assets/ui/logo_capybara_merge.webp" width="1024" height="512" />
+      <div class="load-bar"><div></div></div>
+      <div id="loading-msg">Loading...</div>
+    </div>
+    <div id="app">
+      <div id="stage-wrap"></div>
+      <div id="joystick" class="hidden"><div id="joy-knob"></div></div>
+      <div id="ui">
+        <header id="topbar">
+          <div class="pill gold"><i class="ic ic-coin"></i><span id="gold">0</span></div>
+          <div id="stagebar">
+            <div class="stage-row"><span class="stage-label">Stage <b id="stage-num">1-1</b></span><span id="stage-pct">0%</span></div>
+            <div class="bar"><div id="stage-fill"></div><div id="stage-nodes"></div></div>
+          </div>
+          <button id="btn-wardrobe" class="icon-btn" aria-label="Wardrobe"><span class="dot hidden"></span></button>
+          <button id="btn-settings" class="icon-btn" aria-label="Settings"></button>
+        </header>
+        <button id="btn-boost" class="boost hidden"></button>
+        <div id="banner" class="hidden"></div>
+        <div id="toasts"></div>
+        <div id="transition" class="hidden"><div class="moving-capy"></div><div>Capys on the move...</div></div>
+
+        <section id="board">
+          <div id="squad"></div>
+          <div id="inv-grid"></div>
+          <div class="shop-row">
+            <button id="btn-auto-merge" class="toggle" aria-label="Auto merge"><span class="sw"></span>Auto</button>
+            <button id="btn-factory" class="factory hidden" aria-label="Upgrade gun factory"></button>
+            <button id="btn-buy-gun" class="buy"></button>
+            <button id="btn-free-gun" class="ad-btn hidden"></button>
+          </div>
+        </section>
+        <div id="gun-info"></div>
+        <div id="modal" class="hidden"></div>
+      </div>
+    </div>
+  </body>
+</html>
