@@ -171,7 +171,7 @@ export const MOCK_GAMES = [
     is_new: true,
     player_count: 0,
     tags: ['action', '3d', 'shooter', 'zombie', 'survival'],
-    color: '#102425',
+    color: '#3B2A5E',
   },
   {
     id: 'unlisted-dream-room',
