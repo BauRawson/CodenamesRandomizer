@@ -4,8 +4,8 @@ export const theKing = {
   title: 'THE KING: Tower Defense | Michicho',
   description: 'One King. Thousands of enemies. Ride into battle, shoot arrows into enormous hordes, collect gold, and build defenses to protect your kingdom.',
   platforms: {
-    android: { enabled: false, url: '', name: 'Google Play', eyebrow: 'GET IT ON' },
-    ios: { enabled: false, url: '', name: 'App Store', eyebrow: 'DOWNLOAD ON THE' },
+    android: { enabled: true, url: 'https://play.google.com/store/apps/details?id=com.wobbly.theking', name: 'Google Play', eyebrow: 'GET IT ON' },
+    ios: { enabled: true, url: 'https://apps.apple.com/us/app/the-king-horde-defense/id6823861817', name: 'App Store', eyebrow: 'DOWNLOAD ON THE' },
     web: { enabled: false, url: '', name: 'Play on Web', eyebrow: 'PLAY ON POKI' },
   },
   // Add original game assets to public/theking/ and enter their paths here.

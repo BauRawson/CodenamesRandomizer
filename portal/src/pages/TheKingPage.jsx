@@ -70,7 +70,7 @@ export default function TheKingPage() {
           <h1 id="king-title"><span className="king-title-name">THE KING</span><span>ONE KING.</span><span className="king-gold">THOUSANDS<br/>{' '}OF ENEMIES.</span></h1>
           <p className="king-hero-description">Ride into battle. Build your defenses.<br/>{' '}Survive the horde.</p>
           <StoreButtons device={device}/>
-          <p className="king-release-note"><span/> Sharpen your arrows. Launching soon.</p>
+          <p className="king-release-note"><span/> Out now on Google Play and the App Store.</p>
         </div>
         <div className="king-hero-art">
           <div className="king-art-glow"/>
